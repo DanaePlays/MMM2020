@@ -1,6 +1,6 @@
 # MMM2020
 More once we have a theme!
 
-- flying shup>
+- flying ship?
 - scripted events (boss battle?)
-- cutscenes (.bik video)
+- cutscenes (à la MW : sliding stills with effect and audio)
