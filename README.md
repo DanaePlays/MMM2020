@@ -16,15 +16,16 @@ Journal: I have found a shrine where Vernaccus spoke to me. He called me his cha
 
 3.  Horavatha
 - we need to make sure the player doesn’t kill her before they get a chance to speak with her (disabled + force greet until the player enters the cell?
-“What do you want mortal? I am not in the mood to play with your puny race today.”
-{1} I’ve come to fulfill my Master’s orders and kill you!
-{2} Vernaccus has better reward me well for this…
-“Master, hey? Let me guess… Is Xviliaresko still upset? No, that’s not it… Oh! Gharthium wants his black soulgems back? No, no… I have it! That pathetic excuse of a Daedra has found himself a foolish %PCRace willing to face me because he is too scared to do it himself!”
-“Vernaccus! *laughs uncontrollably*  That pathetic excuse for a Daedra has found a %PCRace willing to face me because he is too scared to do it himself!”
-{1} [stunned silence]
-“Look, ask him yourself, ask him about stones and arrows, see how he reacts.” [She vanishes]
-{goodbye}
-
+    ```
+  “What do you want mortal? I am not in the mood to play with your puny race today.”
+  {1} I’ve come to fulfill my Master’s orders and kill you!
+  {2} Vernaccus has better reward me well for this…
+  “Master, hey? Let me guess… Is Xviliaresko still upset? No, that’s not it… Oh! Gharthium wants his black soulgems back? No, no… I have it! That pathetic excuse of a Daedra has found himself a foolish %PCRace willing to face me because he is too scared to do it himself!”
+  “Vernaccus! *laughs uncontrollably*  That pathetic excuse for a Daedra has found a %PCRace willing to face me because he is too scared to do it himself!”
+  {1} [stunned silence]
+  “Look, ask him yourself, ask him about stones and arrows, see how he reacts.” [She vanishes]
+  {goodbye}
+    ```
 4.  Shrine again
 - the statue is silent. A note says ”Gone hunting big game in Hircine’s Hunting Grounds. <USE MY ARTIFACT>  with a mortal soul, the more souls we capture, the more power.
 V.
