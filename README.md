@@ -104,3 +104,18 @@ With proof of H death. Statue congratulates  us and grants us an artifact.
 - Restocking soul quests - go fight a bunch of spawned enemies somewhere
 - This is to avoid the player running out of NPCs to harvest
 
+## Journal entries
+### 1
+I found a book about a little known Daedra of great power. There was a map to a Shrine in the Sheogorad Region. 
+### 5
+I have found a cave leading to the Shrine with difficulty: the place has clearly been deserted for a long time.
+### 10
+Vernaccus spoke to me. He called me his champion though I have a nagging feeling he’d call a rat his champion if a rat has walked in before me. He tasked me with killing Horavatha, a seducer in <RUIN>.
+### 15
+I have met Horavatha: she was positively underwhelmed with the idea that Vernaccus wanted a dead, in fact, she found the idea quite comical. She vanished before I could draw my weapon, but not before suggesting I confront Vernaccus. I just might.
+### 20
+Vernaccus would not talk to me, he did however, leave a note (what sort of Daedra leaves notes?) I am to use a power he's granted me on someone who's been incapacitated first. It is worth trying but I should see if they're any information I can find on Vernaccus.
+### 21
+I was told there was a book titled "Vernaccus and Bourlor". It is pretty common in bookshops.
+### 25
+I have successfully captured a soul. The effect was quite spectacular and there was no body left. I can only assumed it's been moved to the Shrine or destroyed. I'd better return to the Shrine to find out. Maybe this time Vernaccus will deign answer my questions.
