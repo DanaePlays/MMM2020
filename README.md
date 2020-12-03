@@ -62,9 +62,13 @@ Trial: dodge arrows game (slow mo? Matrix?)
 
 
 11/ H again
-You are an interesting one, if you wish to replace V, I can help you. 
- “He once faced a legendary archer, who never missed but V vanished so far the arrow missed.The feat earned him the title le of Elusive Beast. Face a mighty hero to prove yourself
+"You are an interesting one, if you wish to replace V, I can help you. 
+ He once faced a legendary archer, who never missed but V vanished so the arrow missed. The feat earned him the title of The Elusive Beast. Face a mighty hero to prove yourself"
+
 Player can agree or kill her
+
+The hero is Bourlor's descendant who is on a quest to destroy all of Vernaccus' shrines across Tamriel. This is the last one. Because his ancestor died humiliated and he's seeking revenge. He shows up at the shrine and defiles the "Well of Fire" by messing up its roots deep in the earth. You have to go beneath the shrine into the caverns and kill him.
+
 12/ Shrine again
 with the proof of our victory over a hero, V enraged, attacks the player
 > cut scene, the player morphing into V.
