@@ -106,22 +106,37 @@ V side: he gives us his greatest artifact
 - Restocking soul quests - go fight a bunch of spawned enemies somewhere
 - This is to avoid the player running out of NPCs to harvest
 
-## Journal entries
+## Reward
+An amulet made from an arrowhead + note/tooltip "his final arrow found its target after all"
+
+## Journal entries QUEST 1
 ### 1
 I found a book about a little known Daedra of great power. There was a map to a Shrine in the Sheogorad Region. 
 ### 5
 I have found a cave leading to the Shrine with difficulty: the place has clearly been deserted for a long time.
 ### 10
-Vernaccus spoke to me. He called me his champion though I have a nagging feeling he’d call a rat his champion if a rat has walked in before me. He tasked me with killing Horavatha, a seducer in <RUIN>.
-### 15
-I have met Horavatha: she was positively underwhelmed with the idea that Vernaccus wanted a dead, in fact, she found the idea quite comical. She vanished before I could draw my weapon, but not before suggesting I confront Vernaccus. I just might.
-### 20
-Vernaccus would not talk to me, he did however, leave a note (what sort of Daedra leaves notes?) I am to use a power he's granted me on someone who's been incapacitated first. It is worth trying but I should see if they're any information I can find on Vernaccus.
-### 21
+Vernaccus spoke to me. He called me his champion though I have a nagging feeling he’d call a rat his champion if a rat has walked in before me. He tasked me picking stones in and outside his shrines. That's a peculiar request to say the least.
+### 11 (optional)
 I was told there was a book titled "Vernaccus and Bourlor". It is pretty common in bookshops.
+### 15
+A seducer talked to me as I was picking up stones outside the shrine. She quite plainly mocked me for serving Vernaccus and hinted that he is in fact, rather puny. She even suggested I became her champion instead. If I want to find her again, I should travel to Assalkushalit, southeast of Maar Gan. In the meanwhile, I should speak with Vernaccus.
+### 20
+Vernaccus would not talk to me, he did however, leave a note (what sort of Daedra leaves notes?)I could not confront Vernaccus and ask him how he earned his title The Elsusive Beast, though I am starting to wonder if it's because he's never around whwn you need him.
+At the very least, he's granted me a power that seems interesting. I should use it one someone who is incapacitated.
 ### 25
 I have successfully captured a soul. The effect was quite spectacular and there was no body left. I can only assumed it's been moved to the Shrine or destroyed. I'd better return to the Shrine to find out. Maybe this time Vernaccus will deign answer my questions.
 ### 30
-There is a golem in the Shrine. He was able to communicate a surprising amount of information without saying a word: he seems to be animated by the power of the captured souls, he uses that power to dig tunnels and rooms and he requires more souls to do fill the rooms.
+Vernaccus earned his titles of the Elusive Beast by dodging a thousand arrows. I doubt that's the story Horavatha the Seducer was refering to. Maybe I should look for information on Vernaccus, if shrines were built for him, there has got to be some records of his legend.
 ### 35
-A scamp materialized out of the small portal and delivered a message from Vernaccus. The Elusive Beast (did he earn that title but never being there?) demands a grand offering: the leg of an important mer. As per the tradition, after an acceptable offering, the Daedra reveal themselves to mortals.
+Vernaccus, eager to relive one of his most glorious times has asked me for a very specific offering: the flesh of Vivec. He seemed very serious about it too. Of all the reasons to commit , or maybe it is time to  see what Horavatha has to offer. She is in  Assalkushalit, southeast of Maar Gan.
+### 40
+Horavatha suggested I bring Vernaccus any meat as he won't be able to tell the difference. More importantly, she suggested I might gain some of Vernaccus' powers. She's also given me a Scroll of Mark in case I wanted to find her again quickly.
+### 45
+PICK SIDE
+
+
+## Journal entries QUEST 2
+### 1
+There is a golem in the Shrine. He was able to communicate a surprising amount of information without saying a word: he seems to be animated by the power of the captured souls, he uses that power to dig tunnels. I should walk to any of the crumbling walls in the shrine and talk to the golem again.
+### 5
+It seems that I can instruct the golem to follow me to a crumbling wall where he will conjure a whole room. This process seems to require a number of souls, so I'll have to enthrall quite a few to see this shrine fully constructed.
