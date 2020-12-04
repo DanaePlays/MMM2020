@@ -119,3 +119,7 @@ Vernaccus would not talk to me, he did however, leave a note (what sort of Daedr
 I was told there was a book titled "Vernaccus and Bourlor". It is pretty common in bookshops.
 ### 25
 I have successfully captured a soul. The effect was quite spectacular and there was no body left. I can only assumed it's been moved to the Shrine or destroyed. I'd better return to the Shrine to find out. Maybe this time Vernaccus will deign answer my questions.
+### 30
+There is a golem in the Shrine. He was able to communicate a surprising amount of information without saying a word: he seems to be animated by the power of the captured souls, he uses that power to dig tunnels and rooms and he requires more souls to do fill the rooms.
+### 35
+A scamp materialized out of the small portal and delivered a message from Vernaccus. The Elusive Beast (did he earn that title but never being there?) demands a grand offering: the leg of an important mer. As per the tradition, after an acceptable offering, the Daedra reveal themselves to mortals.
