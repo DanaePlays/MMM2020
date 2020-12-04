@@ -8,64 +8,66 @@
 2.  The Shrine and the Statue
 - The exterior of the shrine is pathetic (even for a ruin) and smaller than any other shrines on the continent
 - The interior is a large cave with a large statue (think Molag Bal-ish, but surrounded by corpses)
-- The Statue speaks and says:
-“My Champion, you have arrived at last! I am Vernaccus, the legendary Elusive beast, the Unpursuable One! Complete a task for me and you shall be rewarded richly. Find Horavatha in <insert Daedric RUIN>, a wily seducer and kill her. 
+- The Statue speaks and says:“My Champion, you have arrived at last! I am Vernaccus, the legendary Elusive beast, the Unpursuable One! Complete a task for me and you shall be rewarded richly. Heathens have thrown stones at my shrine, pick them up for me.Don't forget the one outside." 
 
-Journal: I have found a shrine where Vernaccus spoke to me. He called me his champion though I have a nagging feeling he’d call a rat his champion if a rat has walked in before me. He tasked me with killing Horavatha, a seducer in <insert RUINS>
+OnActivate when picking up stone outside, H appears.
+QUEST 0: PICK UP STONES around shrine
+Seducer appears and mocks the player, gives hints about Vernaccus true nature (only 1 arrow!)
+     ADD LINE: Vernaccus is so feeble even a mortal like you is more powerful
+     ADD IDEA idea that you can come to her after you confront V
+     
+Journal entried REDO find shrine, mett H, V's second mission
 > tooltips for the clutter in the shrine that show the place has never been great and has long been abandoned. Unusual amounts of stones
 
-3.  Horavatha
-- we need to make sure the player doesn’t kill her before they get a chance to speak with her (disabled + force greet until the player enters the cell?
-    ```
-  “What do you want mortal? I am not in the mood to play with your puny race today.”
-  {1} I’ve come to fulfill my Master’s orders and kill you!
-  {2} Vernaccus has better reward me well for this…
-  “Master, hey? Let me guess… Is Xviliaresko still upset? No, that’s not it… Oh! Gharthium wants his black soulgems back? No, no… I have it! That pathetic excuse of a Daedra has found himself a foolish %PCRace willing to face me because he is too scared to do it himself!”
-  “Vernaccus! *laughs uncontrollably*  That pathetic excuse for a Daedra has found a %PCRace willing to face me because he is too scared to do it himself!”
-  {1} [stunned silence]
-  “Look, ask him yourself, ask him about stones and arrows, see how he reacts.” [She vanishes]
-  {goodbye}
-    ```
-4.  Shrine again
+3.  Get a piece of the mayor
+V is flustered we doubt him and tells us of this one time he single-handedly massacred a village and ate the Mayor
+He want a suitable offering: the flesh of the most powerful mer in Morrowind: Vivec's
+Journal: he must have lost his marble, H was right, we should find her in <RUIN>
+
+4.  Horavatha
+Ruin expansionto find her.
+Give him ham, he won't know the difference
+
+5.  Shrine again
 - the statue is silent. A note says ”Gone hunting big game in Hircine’s Hunting Grounds. <USE MY ARTIFACT>  with a mortal soul, the more souls we capture, the more power.
 V.
 PS: Leave offerings by Shrine
 Journal: I am starting to have my doubts about Vernaccus. I could try to use his artifact/spell , and maybe see if I can find anything about him: a Daedra with a shrine cannot be totally unknown.
 
-5.  Finding the other book (optional)
+6.  Finding the other book (optional)
 - Player just goes shopping!
 - we need to check how common the book is.
 
-6.  Capture souls
+7.  Capture souls
 - cast the spell on the KO npc
 - spell effect woosh
 - npc gone
 - message box “The soul has been captured and sent to Vernaccus’ shrine.”
 
-7.  Shrine again
-- Daedric golem welcomes the player
+8.  Shrine again
+- Daedric golem 'welcomes' the player
 - it explains it was created from the soul we captured
 - it explains how more souls will expand the shrine (“restore it to its former state, but better, hopefully)
 - NEW: soul in pen, simple bedroom
-- it gives a message from V for the next quest (maybe like a recorded message coming from the golem:
-V is wants a worthy offering, he wants the leg of an important mer. 
-Can we stun the npc, cut their leg and force equip a peg leg on them?
+9a. Pick a side
+Conversation with V where our knowledge of H transpires.
+ is enraged hearing H is currently on Nirm and wants her dead.
+"She has be a thorn in my mighty side for far too long, speading lies about me, that jealous snake! 
+And now, she uses her Seducer;s charm to turn you, my Champion, against me? Find her, kill her
 
-8.  Get a piece of the mayor
+9b. H congratulates us, we’d make a fine Vernaccus. Are we interested? 
+Yes she tricked V into facing a hero, but his fall was his own undoing.
+We (the player) would do MUCH better, in fact, by re-enacting V's finest moment, we could ascend and for all inten and purposes, become V, only smarter and stronger
+YES: she tells us about Boulor's descendant
+NO: we fight her and return to V
+    V congratulates us andexplains that something is wrong with the shrine, a disturbance beneath and sends us to investigate
 
-9. Molag Bal congratulates us, we’d make a fine Vernaccus. Are we interested?
-Yes: re-enact V’s greatest achievement 
-No: go back to serving him
-Cutscene?
-Trial: dodge arrows game (slow mo? Matrix?)
-
-10. Shrine again
+10. Facing the Hero
 The hero is Bourlor's descendant who is on a quest to destroy all of Vernaccus' shrines across Tamriel. This is the last one. Because his ancestor died humiliated and he's seeking revenge. He shows up at the shrine and defiles the "Well of Fire" by messing up its roots deep in the earth. You have to go beneath the shrine into the caverns and kill him.
 
 11. Shrine again
-H congratulates the player on ascending
-> cut scene, the player morphing into V.
-With proof of H death. Statue congratulates  us and grants us an artifact. 
+H side: she speaks of our new powers
+V side: he gives us his greatest artifact
 
 
 
