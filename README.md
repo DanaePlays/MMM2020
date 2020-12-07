@@ -119,7 +119,7 @@ Vernaccus spoke to me. He called me his champion though I have a nagging feeling
 ### 11 (optional)
 I was told there was a book titled "Vernaccus and Bourlor". It is pretty common in bookshops.
 ### 15
-A seducer talked to me as I was picking up stones outside the shrine. She quite plainly mocked me for serving Vernaccus and hinted that he is in fact, rather puny. She even suggested I became her champion instead. If I want to find her again, I should travel to Assalkushalit, southeast of Maar Gan. In the meanwhile, I should speak with Vernaccus.
+A seducer talked to me as I was picking up stones outside the shrine. She quite plainly mocked me for serving Vernaccus and hinted that he is in fact, rather puny. She even suggested I became her champion instead. If I want to find her again, I should travel to Assalkushalit, southeast of Maar Gan and on the northern side of Red Mountain, just inside the Ghostfence. In the meanwhile, I should speak with Vernaccus.
 ### 20
 Vernaccus would not talk to me, he did however, leave a note (what sort of Daedra leaves notes?)I could not confront Vernaccus and ask him how he earned his title The Elsusive Beast, though I am starting to wonder if it's because he's never around whwn you need him.
 At the very least, he's granted me a power that seems interesting. I should use it one someone who is incapacitated.
