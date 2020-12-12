@@ -17,8 +17,8 @@ jobs:
         unzip assets.zip -d "Data Files"
         cp mod.esp "Data Files/MMM2020_1.esp"
 
-    - name: Publish mod
-      uses: actions/upload-artifact@v2
-      with:
-        name: MMM2020_1
-        path: "mod/Data Files"
+    #- name: Publish mod
+    #  uses: actions/upload-artifact@v2
+    #  with:
+    #    name: MMM2020_1
+    #    path: "mod/Data Files"
