@@ -27,14 +27,14 @@ The new room not only has a Well of Fire, but also a tall golem, the Guardian of
 
 ### cs 10
 I need to take a closer look at any of the crumbling walls in the shrine. I don't think the Golem will stop following me until I do.
-cs 15
+### cs 15
 The golem conjured a whole room using souls. I will need to get more souls if I want more rooms added. The room is very bare: it only has a book and a bottle of some sort. I assume both are very important.
-cs 20
+### cs 20
 I have managed to collect enough souls in the Bottle of Souls to have a second room built. It would seem that as long as I have collected enough souls, I can not only add rooms, but also unlock more objects. As amazing as the transmutation power is, it seems to be limited to the Shrine. I wonder...
 
-main 25
+### main 25
 Vernaccus wants to eat... Vivec. He seemed very serious about it too. It's either decide if he's actually serious, or use the scroll Horavatha gave me and see what she has to offer.
-main 30
+### main 30
 The spell Horvatha taught me took me... somewhere. I need to explore, survive and finally find Horvatha.
 
 *PROF journal entries?*
