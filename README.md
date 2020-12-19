@@ -47,7 +47,8 @@ She has given me a choice: follow her advice to somehow acquire Vernaccus' power
  have decided to follow Horvatha's advice. According to her, I could gain great powers if I could re-enact Vernaccus's greatest moment: defeat Boulror.
 As luck would have it, Bourlor's descendant has been destroying Vernaccus'shrines across Tamriel and should be heading to the last one here on Vvardenfell.
 
-### main 41 - The Shrine of Vernaccus is under attack but I see no sign of any archer. There must be a way forward. Or downward?
+### main 41
+The Shrine of Vernaccus is under attack but I see no sign of any archer. There must be a way forward. Or downward?
 	OR...
 
 ### main 45
