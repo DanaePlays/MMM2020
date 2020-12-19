@@ -44,10 +44,12 @@ I have survived Horvatha's Gauntlet abd have therefore proven my worth to her.
 She has given me a choice: follow her advice to somehow acquire Vernaccus' powers, or continue to serve Vernaccus
 
 ### main 40
- have decided to follow Horvatha's advice. According to her, I could gain great powers if I could re-enact Vernaccus's greatest moment: defeat Boulror.
+I have decided to follow Horvatha's advice. According to her, I could gain great powers if I could re-enact Vernaccus's greatest moment: defeat Boulror.
 As luck would have it, Bourlor's descendant has been destroying Vernaccus'shrines across Tamriel and should be heading to the last one here on Vvardenfell.
 
 ### main 41
+I have killed Vivec and obtained his flesh. Vernaccus will be pleased.
+### main 51
 The Shrine of Vernaccus is under attack but I see no sign of any archer. There must be a way forward. Or downward?
 
 	OR...
@@ -55,17 +57,12 @@ The Shrine of Vernaccus is under attack but I see no sign of any archer. There m
 ### main 45
 I have decided  to continue serving Vernaccus. Horvatha was dispeased, to say the least and attacked me.
 
-### main 46
+### main 55
 The Shrine of Vernaccus is under attack: I must find the source of the disturbance. There must be a way forward. Or downward?
 	OR...
 
-### main 50
-I have killed Vivec and obtained his flesh. Vernaccus will be pleased.
 
-### main 51
-The Shrine of Vernaccus is under attack: I must find the source of the disturbance. There must be a way forward. Or downward?
-
-*MD journal entries?* (42 sided with H, 47 sided with V/killed Vivec)
+*MD journal entries?* (55 sided with H, 60 sided with V/killed Vivec)
 
 ### cs 100 (end1)
 As far as I can tell, Vernaccus has vanished but I am feeling more powerful than ever, as though I was not channelling Vernaccus'power anymore, but I was Vernaccus myself. 
