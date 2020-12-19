@@ -49,6 +49,7 @@ As luck would have it, Bourlor's descendant has been destroying Vernaccus'shrine
 
 ### main 41
 The Shrine of Vernaccus is under attack but I see no sign of any archer. There must be a way forward. Or downward?
+
 	OR...
 
 ### main 45
@@ -64,7 +65,7 @@ I have killed Vivec and obtained his flesh. Vernaccus will be pleased.
 ### main 51
 The Shrine of Vernaccus is under attack: I must find the source of the disturbance. There must be a way forward. Or downward?
 
-*MD journal entries?*
+*MD journal entries?* (42 sided with H, 47 sided with V/killed Vivec)
 
 ### cs 100 (end1)
 As far as I can tell, Vernaccus has vanished but I am feeling more powerful than ever, as though I was not channelling Vernaccus'power anymore, but I was Vernaccus myself. 
@@ -74,10 +75,3 @@ As far as I can tell, Vernaccus has vanished but I am feeling more powerful than
 For my help saving the Shrine from Bourlor's descendant, Vernaccus has granted me the power to tranmutate outside the Shrine.
 [You may use Transmutation anywhere in Tamriel.]
 
-
-
-## Journal entries QUEST 2
-### 1
-There is a golem in the Shrine. He was able to communicate a surprising amount of information without saying a word: he seems to be animated by the power of the captured souls, he uses that power to dig tunnels. I should walk to any of the crumbling walls in the shrine and talk to the golem again.
-### 5
-It seems that I can instruct the golem to follow me to a crumbling wall where he will conjure a whole room. This process seems to require a number of souls, so I'll have to enthrall quite a few to see this shrine fully constructed.
