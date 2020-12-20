@@ -49,12 +49,9 @@ local function getCurrentMeleeSkill()
         skillIndex = weaponToSkillMapping[weapon.object.type]
     end
     if skillIndex then
-        mwse.log("Returning skill for index %s", skillIndex)
-        mwse.log("What the fuck is this then: %s", tes3.getSkill(skillIndex))
         return tes3.getSkill(skillIndex)
     end
     --false for marksman
-    mwse.log("returning false")
     return false
 end
 
@@ -68,7 +65,6 @@ local function getHitSuccess(skill)
     --attack term
     local agility = tes3.mobilePlayer.agility.current
     local luck = tes3.mobilePlayer.luck.current
-    mwse.log(skill.id)
     local attackTerm = ( tes3.mobilePlayer.skills[skill.id + 1].current +  0.2 * agility + 0.1 * luck ) * fatigueTerm
     attackTerm = attackTerm + tes3.mobilePlayer.attackBonus
     attackTerm = attackTerm - tes3.mobilePlayer.blind
@@ -87,21 +83,16 @@ local function getSkillExperienceBonus(thisSkill)
             elseif  table.find(tes3.player.object.class.minorSkills, skillId) then
                 gmstName = 'fMinorSkillBonus'
             end
-            mwse.log("thisSkill.id: %s", thisSkill.id)
-            mwse.log("skillId: %s", skillId)
             if skillId == thisSkill.id then
-                mwse.log("gmstname: %s", gmstName)
                 return tes3.findGMST(tes3.gmst[gmstName])
             end
         end
     end
     local gmst = getGmstForSkill()
-    mwse.log("gmst: %s", gmst)
     return gmst and gmst.value or 1.0
 end
 
 local function exerciseWeaponSkill(skill)
-    mwse.log("SKILL: %s", skill.id)
     local baseExperience = skill.actions[1]
     local skillBonus = getSkillExperienceBonus(skill)
     local experience = baseExperience * skillBonus
@@ -115,7 +106,6 @@ local function onAttack(e)
         if isPlayerLookingAtDummy() then
             local meleeSkill = getCurrentMeleeSkill()
             if meleeSkill then
-                mwse.log("Melee skill is not false or nil: %s", meleeSkill.id)
                 if getHitSuccess(meleeSkill) then
                     exerciseWeaponSkill(meleeSkill)
                     tes3.playSound{ sound = soundIds.hit}
@@ -126,7 +116,7 @@ local function onAttack(e)
         end
     end
 end
-livecoding.registerEvent("attack", onAttack )
+event.register("attack", onAttack )
 
 --Projectiles
 local function onProjectileHitObject(e)
@@ -140,4 +130,4 @@ local function onProjectileHitObject(e)
         end
     end
 end
-livecoding.registerEvent("projectileHitObject", onProjectileHitObject)
+event.register("projectileHitObject", onProjectileHitObject)
