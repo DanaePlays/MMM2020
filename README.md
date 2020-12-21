@@ -33,7 +33,8 @@ The golem conjured a whole room using souls. I will need to get more souls if I 
 I have managed to collect enough souls in the Bottle of Souls to have a second room built. It would seem that as long as I have collected enough souls, I can not only add rooms, but also unlock more objects. As amazing as the transmutation power is, it seems to be limited to the Shrine. I wonder...
 
 ### main 25
-Vernaccus wants to eat... Vivec. He seemed very serious about it too. It's either decide if he's actually serious, or use the scroll Horavatha gave me and see what she has to offer.
+Vernaccus wants to eat... Vivec. He seemed very serious about it too. Time to pay Horavatha a visit using the spell she gave me. If I don't like what she has to say, I can bring her flesh to Vernaccus.
+
 ### main 30
 The spell Horvatha taught me took me... somewhere. I need to explore, survive and finally find Horvatha.
 
@@ -47,20 +48,21 @@ She has given me a choice: follow her advice to somehow acquire Vernaccus' power
 I have decided to follow Horvatha's advice. According to her, I could gain great powers if I could re-enact Vernaccus's greatest moment: defeat Boulror.
 As luck would have it, Bourlor's descendant has been destroying Vernaccus'shrines across Tamriel and should be heading to the last one here on Vvardenfell.
 
-### main 41
-I have killed Vivec and obtained his flesh. Vernaccus will be pleased.
-### main 51
-The Shrine of Vernaccus is under attack but I see no sign of any archer. There must be a way forward. Or downward?
+### main 50
+The Shrine of Vernaccus is under attack, the Well of Power has dried up but I see no signs of an archer.There must be a way forward. Or downward?
 
+### main 60
+Horvatha congratulated me. She claims I have *become* Vernaccus. That makes no sense. I should step through the portal and take a look at Vernaccus'statue again.
 	OR...
 
 ### main 45
 I have decided  to continue serving Vernaccus. Horvatha was dispeased, to say the least and attacked me.
 
 ### main 55
-The Shrine of Vernaccus is under attack: I must find the source of the disturbance. There must be a way forward. Or downward?
-	OR...
+The Shrine of Vernaccus is under attack and the Well of Power has dried up. I must find the source of the disturbance. There must be a way forward. Or downward?
 
+### main 65
+Vernaccus congratulated me on deafeating the Archer hero. I should go through the portal and talk to Vernaccus again.
 
 *MD journal entries?* (55 sided with H, 60 sided with V/killed Vivec)
 
