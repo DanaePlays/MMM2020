@@ -50,8 +50,27 @@ Entry for the 2020 Modding Madness Competition
     maxMoveDistance = 800,
     --Spell Configs
     manipulateEffectName = 'Trasmutation',
-    manipulateEffectId = 'soulManipulation',
-    manipulateSpellId = 'manipulateSouls',
     manipulateSpellName = 'Transmutate',
-    shrineCellId = "Shrine of Impotence"
+    manipulateEffectId = 'ss20SoulManipulation',
+    manipulateSpellId = 'ss20ManipulateSouls',
+    
+
+    shrineTeleportEffectName = "Teleport to Shrine of Vernaccus",
+    shrineTeleportSpellName = "Teleport to Shrine of Vernaccus",
+    shrineTeleportEffectId = 'ss20VernTeleportEffect',
+    shrineTeleportSpellId = 'ss20VernaccusTeleport',
+
+
+    shrineTeleportPosition = {
+        cell = "Shrine of Vernaccus",
+        orientation = {0,0,0},
+        position = {0, 0, 38},
+        reference = tes3.player
+    },
+    horavathaTeleportPosition = {
+        cell = "Horavatha's Gauntlet, Entry",
+        orientation = {0,0,math.rad(180)},
+        position = {4545, 4160, 14274},
+        reference = tes3.player
+    }
 }
