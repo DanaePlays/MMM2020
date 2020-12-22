@@ -6,7 +6,7 @@ local mcmConfig = common.mcmConfig
 
 
 local function log(message, ...)
-    if mcmConfig.debug then
+    if config.debug then
         local output = string.format("[%s] %s", modName, tostring(message):format(...) )
         mwse.log(output)
     end
@@ -105,7 +105,8 @@ local function placeRoom(room, target)
     log("Placing room")
     for _, data in ipairs(room) do
         local obj = tes3.getObject(data.id)
-        if obj.objectType ~= tes3.objectType.light then
+        
+        if obj and obj.objectType ~= tes3.objectType.light then
             placeItem(data, target)
         end
     end
@@ -113,14 +114,17 @@ local function placeRoom(room, target)
     --place lights last I guess
     for _, data in ipairs(room) do
         local obj = tes3.getObject(data.id)
-        if obj.objectType == tes3.objectType.light then
+        if obj and  obj.objectType == tes3.objectType.light then
             placeItem(data, target)
         end
     end
 
 
     if target.disable then
+        log("disabling %s", target.object.id)
         target:disable()
+    else
+        log("%s does not have a disable function", target.object.id)
     end
     log("Finished placing room")
 end

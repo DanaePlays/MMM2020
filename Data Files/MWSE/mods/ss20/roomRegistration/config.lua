@@ -12,4 +12,5 @@ Tool for Registering and placing rooms
         },
         rooms = {}
     },
+    debug = true
 }

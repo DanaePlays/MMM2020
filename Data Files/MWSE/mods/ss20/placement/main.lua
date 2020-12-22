@@ -29,7 +29,7 @@ local function onActiveKey(e)
         event.trigger("SS20:DeleteActiveObject")
     end
 end
-event.register("keyDown", onActiveKey)
+event.register("keyDown", onActiveKey, { priority = 100 })
 
 
 
