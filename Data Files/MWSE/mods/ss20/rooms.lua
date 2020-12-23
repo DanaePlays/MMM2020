@@ -1,3 +1,4 @@
+local roomObjectConfig = mwse.loadConfig("Shrine of Vernaccus Room Registration")
 local common = require('ss20.common')
 local config = common.config
 local journal_cs = config.journal_cs

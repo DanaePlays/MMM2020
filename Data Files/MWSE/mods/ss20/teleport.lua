@@ -68,13 +68,23 @@ local function onActivateTeleport(e)
                 {
                     text = "Teleport",
                     callback = function()
-                        tes3.positionCell(config.horavathaBustTeleportPosition)
-                        tes3.playSound{
-                            reference = tes3.player,
-                            sound = 'mysticism cast'
-                        }
+                        if tes3.getJournalIndex{id = "ss20_main"} >= 25 then
+                            tes3.positionCell(config.horavathaBustTeleportPosition)
+                            tes3.playSound{
+                                reference = tes3.player,
+                                sound = 'mysticism cast'
+                            }
+                        else
+                            common.messageBox({
+                                message = "The bust is unresponsive...",
+                                buttons = {
+                                    { text = "Okay"}
+                                }
+                            })
+                        end
                     end
                 },
+
                 { text = "Cancel" }
             }
         }

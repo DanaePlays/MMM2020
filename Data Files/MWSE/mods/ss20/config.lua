@@ -70,10 +70,10 @@ Entry for the 2020 Modding Madness Competition
     
     tooltipMapping = {
         ss20_rock01 = '"Small enough to fit in the hand, big enough to hurt"',
-        ss20_furn_tapmayor = '"And he feasted on the Mayor\'s flesh"',
-        ss20_furn_tapworship = '"Worshippers flocked to his Shrines"',
-        ss20_furn_taparrows = '"A thousand archers could not hit him"',
-        ss20_furn_tapflood = '"He flooded an entire town"',
+        ss20_tapestry_mayor = '"And he feasted on the Mayor\'s flesh"',
+        ss20_tapestry_worship = '"Worshippers flocked to his Shrines"',
+        ss20_tapestry_arrows = '"A thousand archers could not hit him"',
+        ss20_tapestry_flood = '"He flooded an entire town"',
         ss20_well_fire = '"The source of Vernaccus\' power"',
         ss20_cave_door = '"The door is old and battered, rocks have hit it. A lot"',
         ss20_misc_bustHoravatha = "Certain... areas... appear to be more worn than others.",
