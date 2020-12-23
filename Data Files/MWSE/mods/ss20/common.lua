@@ -1,6 +1,8 @@
 local this  = {}
 this.config = require("ss20.config")
+local modName = this.config.modName
 this.mcmConfig = mwse.loadConfig(this.config.modName, this.config.mcmDefaultValues)
+
 function this.keyPressed(keyEvent, expected)
     return (
         keyEvent.keyCode == expected.keyCode and
@@ -41,32 +43,156 @@ local function initData()
 end
 event.register("loaded", initData)
 
+--[[
+    Allows the creation of messageboxes using buttons that each have their own callback.
+
+    callback: optional function that gets called when the button is clicked
+
+    tooltip: optional table with header and text that will display as a tooltip when the
+        button is hovered over
+
+    tooltipDisabled: optional tooltip for when a button has been disabled
+
+    requirements: optional function that, if provided, determines whether the button will be
+        call the callback when clicked, or be disabled + greyed out
+
+    {
+        message: string,
+        buttons: [
+            { 
+                text: string, 
+                callback?: function, 
+                tooltip?: { 
+                    header: string, 
+                    text: string
+                },
+                tooltipDisabled: { 
+                    header: string, 
+                    text: string
+                },
+                requirements?: function
+                showRequirements?: function
+            }
+        ]
+    }
+]]
+local messageBoxId = tes3ui.registerID("CustomMessageBox_")
 function this.messageBox(params)
     --[[
-        Button = { text, callback}
+        button = 
     ]]--
+    local header = params.header
     local message = params.message
     local buttons = params.buttons
-    local function callback(e)
-        --get button from 0-indexed MW param
-        local button = buttons[e.button+1]
-        if button.callback then
-            button.callback()
+    local sideBySide = params.sideBySide
+
+    local menu = tes3ui.createMenu{ id = messageBoxId, fixedFrame = true }
+    menu:getContentElement().childAlignX = 0.5
+    tes3ui.enterMenuMode(messageBoxId)
+    if header then
+        local headerLabel = menu:createLabel{id = tes3ui.registerID("SS20:MessageBox_Title"), text = header}
+        headerLabel.color = tes3ui.getPalette("header_color")
+    end
+    if message then
+        local messageLabel = menu:createLabel{id = tes3ui.registerID("SS20:MessageBox_Title"), text = message}
+        messageLabel.wrapText = true
+    end
+    local buttonsBlock = menu:createBlock()
+    buttonsBlock.borderTop = 4
+    buttonsBlock.autoHeight = true
+    buttonsBlock.autoWidth = true
+    if sideBySide then
+        buttonsBlock.flowDirection = "left_to_right"
+    else
+        buttonsBlock.flowDirection = "top_to_bottom"
+        buttonsBlock.childAlignX = 0.5
+    end
+    for i, data in ipairs(buttons) do
+        local doAddButton = true
+        if data.showRequirements then
+            if data.showRequirements() ~= true then
+                doAddButton = false
+            end
+        end
+        if doAddButton then
+            --If last button is a Cancel (no callback), register it for Right Click Menu Exit
+            local buttonId = tes3ui.registerID("CustomMessageBox_Button")
+            if data.doesCancel then
+                buttonId = tes3ui.registerID("CustomMessageBox_CancelButton")
+            end
+
+            local button = buttonsBlock:createButton{ id = buttonId, text = data.text}
+
+            local disabled = false
+            if data.requirements then
+                if data.requirements() ~= true then
+                    disabled = true
+                end
+            end
+
+            if disabled then
+                button.widget.state = 2
+            else
+                button:register( "mouseClick", function()
+                    if data.callback then
+                        data.callback()
+                    end
+                    tes3ui.leaveMenuMode()
+                    menu:destroy()
+                end)
+            end
+
+            if not disabled and data.tooltip then
+                button:register( "help", function()
+                    this.createTooltip(data.tooltip)
+                end)
+            elseif disabled and data.tooltipDisabled then
+                button:register( "help", function()
+                    this.createTooltip(data.tooltipDisabled)
+                end)
+            end
         end
     end
-    --Make list of strings to insert into buttons
-    local buttonStrings = {}
-    for _, button in ipairs(buttons) do
-        table.insert(buttonStrings, button.text)
-    end
-    tes3.messageBox({
-        message = message,
-        buttons = buttonStrings,
-        callback = callback
-    })
 end
 
-function this.createTooltip(tooltip, labelText, color)
+
+--Generic Tooltip with header and description
+function this.createTooltip(e)
+    local thisHeader, thisLabel = e.header, e.text
+    local tooltip = tes3ui.createTooltipMenu()
+    
+    local outerBlock = tooltip:createBlock({ id = tes3ui.registerID("Ashfall:temperatureIndicator_outerBlock") })
+    outerBlock.flowDirection = "top_to_bottom"
+    outerBlock.paddingTop = 6
+    outerBlock.paddingBottom = 12
+    outerBlock.paddingLeft = 6
+    outerBlock.paddingRight = 6
+    outerBlock.maxWidth = 300
+    outerBlock.autoWidth = true
+    outerBlock.autoHeight = true    
+    
+    if thisHeader then
+        local headerText = thisHeader
+        local headerLabel = outerBlock:createLabel({ id = tes3ui.registerID("Ashfall:temperatureIndicator_header"), text = headerText })
+        headerLabel.autoHeight = true
+        headerLabel.width = 285
+        headerLabel.color = tes3ui.getPalette("header_color")
+        headerLabel.wrapText = true
+        --header.justifyText = "center"
+    end
+    if thisLabel then
+        local descriptionText = thisLabel
+        local descriptionLabel = outerBlock:createLabel({ id = tes3ui.registerID("Ashfall:temperatureIndicator_description"), text = descriptionText })
+        descriptionLabel.autoHeight = true
+        descriptionLabel.width = 285
+        descriptionLabel.wrapText = true
+    end
+    
+    tooltip:updateLayout()
+end
+
+function this.addTooltipMessage(tooltip, labelText, color)
+
     local function setupOuterBlock(e)
         e.flowDirection = 'left_to_right'
         e.paddingTop = 0
@@ -220,10 +346,26 @@ function this.isShiftDown()
 end
 
 
-this.isViableObject = function(target)
+function this.isAllowedToManipulate()
+    return tes3.player.cell.id == this.config.shrineTeleportPosition.cell
+        or tes3.player.cell.id == this.config.horavathaTeleportPosition.cell
+        or tes3.getJournalIndex{id = "ss20_CS"} >= 100
+end
+
+
+function this.isViableObject(target)
     local id = target.baseObject.id:lower()
     return this.config.placeableObjects[id]
         or target.baseObject.objectType ~= tes3.objectType.static
+end
+
+function this.getSoulShards()
+    return tes3.player.object.inventory:contains("ss20_bottle_of_souls")
+        and tes3.player.data[modName].soulShards or 0
+end
+
+function this.modSoulShards(count)
+    tes3.player.data[modName].soulShards = this.getSoulShards() + count
 end
 
 return this

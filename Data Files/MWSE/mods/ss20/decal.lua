@@ -18,6 +18,7 @@ local states = {
     active = "textures\\ss20\\decal_white.dds",
     drop =  "textures\\ss20\\decal_green.dds",
     free =  "textures\\ss20\\decal_blue.dds",
+    wall = "textures\\ss20\\decal_pink.dds",
 }
 
 local textures = {}
