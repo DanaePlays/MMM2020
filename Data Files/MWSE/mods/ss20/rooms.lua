@@ -1,6 +1,7 @@
-local roomObjectConfig = mwse.loadConfig("Shrine of Vernaccus Room Registration")
+
 local common = require('ss20.common')
 local config = common.config
+local modName = config.modName
 local journal_cs = config.journal_cs
 local function rotateAboutOrigin(ref, zRot)
     --Rotate around the 0,0,0 origin
@@ -74,6 +75,7 @@ local function placeRoom()
         })
     end
     mwse.log("Placing room")
+    local roomObjectConfig = mwse.loadConfig("Shrine of Vernaccus Room Registration")
     local roomData = roomObjectConfig.rooms[selectedRoom.id]
     if not roomData then 
         error("Room data not found for %s", selectedRoom.id)
@@ -97,6 +99,8 @@ local function placeRoom()
 
     if targetWall.disable then
         mwse.log("disabling %s", targetWall.object.id)
+        --event.trigger("SS20:DestroyWall", { wall = targetWall })
+        tes3.playSound{ sound = "destruction area", reference = targetWall}
         targetWall:disable()
     else
         mwse.log("%s does not have a disable function", targetWall.object.id)
@@ -174,12 +178,10 @@ local function guardianBuildRoom()
                         }
                         local journalIndex =  tes3.getJournalIndex{ id = journal_cs.id }
                         if journalIndex < 15 then
+                            placeRoom()
                             timer.start{
                                 duration = 1,
                                 callback = function()
-
-                                    placeRoom()
-                                    
                                     common.messageBox{
                                         message = "The wall dissolves as the golem draws from the Well of Fire to create a small room.",
                                         buttons = {
@@ -195,7 +197,6 @@ local function guardianBuildRoom()
                                 end
                             }
                         else
-
                             placeRoom()
                             returnGuardian(golem)
                         end

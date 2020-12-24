@@ -313,9 +313,10 @@ end
 
 
 function this.isAllowedToManipulate()
-    return tes3.player.cell.id == this.config.shrineTeleportPosition.cell
+    return (tes3.player.cell.id == this.config.shrineTeleportPosition.cell
         or tes3.player.cell.id == this.config.horavathaTeleportPosition.cell
-        or tes3.getJournalIndex{id = "ss20_CS"} >= 100
+        or tes3.getJournalIndex{id = "ss20_CS"} >= 100)
+        and tes3.player.cell.isInterior
 end
 
 

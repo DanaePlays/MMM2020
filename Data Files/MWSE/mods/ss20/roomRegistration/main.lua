@@ -101,6 +101,7 @@ local function placeItem(data, target)
     log("Placed %s", data.id)
 
 end
+
 local function placeRoom(room, target)
     log("Placing room")
     for _, data in ipairs(room) do

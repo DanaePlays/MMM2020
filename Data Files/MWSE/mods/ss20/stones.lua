@@ -23,7 +23,7 @@ end
 local function pickUpStone(e)
     local data = tes3.player.data[modName]
     
-    local isStone = e.target.baseObject.id:lower() == 'ss20_2_stone' or e.target.baseObject.id:lower() == 'ss20_rock01' 
+    local isStone = e.target.baseObject.id:lower() == 'ss20_w_stone'
     local atJournal = tes3.getJournalIndex{ id = 'ss20_main' } == 10
     local atLocation = (tes3.player.cell.region and tes3.player.cell.region.id == "Sheogorad")
         and not tes3.player.cell.isInterior

@@ -143,7 +143,7 @@ Entry for the 2020 Modding Madness Competition
         },
         {
             id = 'ss20_magic_room',
-            name = "Arcane Quarters",
+            name = "Magic Room",
             description = "A small but functional room built for mages. Includes a Staff Recharging Station, and a Teleportation pad.",
             cost = 800
         },
@@ -274,6 +274,7 @@ Entry for the 2020 Modding Madness Competition
                 { id = "ss20_dae_bookshelf_04", name = "Dark Book Shelf 04" , cost = 10 },
                 { id = "ss20_dae_lecturn", name = "Dark Lecturn" , cost = 10 },
                 { id = 'ss20_dae_fireplace02', name = 'Fireplace', cost = 10 },
+                { id = 'ss20_light_logpile_177', name = 'Logpile', cost = 5 },
             }
         },
         {
@@ -319,7 +320,7 @@ Entry for the 2020 Modding Madness Competition
                 { id = "ss20_furn_daebench02", name = "Large Daedric bench" , cost = 10 },
                 { id = "ss20_furn_daeshelf01", name = "Large Stone Shelf" , cost = 10 },
                 { id = "ss20_furn_daeshelf02", name = "Small Stone Shelf" , cost = 10 },
-                { id = 'ss20_dae_brazier00', name = 'Daedric brazier' , cost = 10 },
+                { id = 'ss20_dae_brazier00', name = 'Daedric Brazier' , cost = 10 },
             }
         },
         {
