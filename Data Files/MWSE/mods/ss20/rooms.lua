@@ -99,9 +99,7 @@ local function placeRoom()
 
     if targetWall.disable then
         mwse.log("disabling %s", targetWall.object.id)
-        --event.trigger("SS20:DestroyWall", { wall = targetWall })
-        tes3.playSound{ sound = "destruction area", reference = targetWall}
-        targetWall:disable()
+        event.trigger("SS20:DestroyWall", { wall = targetWall })
     else
         mwse.log("%s does not have a disable function", targetWall.object.id)
     end

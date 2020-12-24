@@ -1,8 +1,6 @@
 
 local function removeWall(e)
-    mwse.log("removeWall()")
     if e.wall then
-        mwse.log("yeah wall")
         e.wall:disable()
         mwscript.setDelete{ reference = e.wall}
     end
@@ -10,15 +8,20 @@ end
 
 local function explodeWall(e)
     if e.wall then
-        local animWall = tes3.createReference{
-            object = 'ss20_in_daeBarrier01a',
-            position = e.wall.position:copy(),
-            orientation = e.wall.orientation:copy(),
-            cell = e.wall.cell,
-            scale = e.wall.scale,
-        }
+        local animWall = e.wall
+        tes3.playSound{ sound = "destruction area", reference = e.wall}
         animWall.data.ss20DoDestroy = true
         animWall.modified = true
+        
+        -- if animWall.sceneNode then
+        --     local destructionFX = tes3.loadMesh("e\\magic_area_dst.nif"):clone()
+        --     destructionFX.translation.x = -200
+        --     destructionFX.translation.z = 150
+        --     destructionFX.scale = 15
+        --     animWall.sceneNode:getObjectByName("attachEffect"):attachChild(destructionFX)
+        --     animWall.sceneNode:update()
+        --     animWall.sceneNode:updateNodeEffects()
+        -- end
         tes3.playAnimation({
             reference = animWall ,
             group = tes3.animationGroup.idle2,
@@ -30,13 +33,10 @@ local function explodeWall(e)
                 removeWall({wall = animWall })
             end
         }
-
-        removeWall(e)
     end
 end
 
 event.register("SS20:DestroyWall", explodeWall)
---event.register("SS20:DestroyWall", explodeWall)
 
 local function disableWallsOnLoad()
     for ref in tes3.player.cell:iterateReferences(tes3.objectType.activator) do
