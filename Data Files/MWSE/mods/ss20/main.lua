@@ -4,6 +4,7 @@ require('ss20.activators.alchemyStation')
 require('ss20.activators.staffStation')
 require('ss20.activators.teleportPad')
 require('ss20.activators.repair')
+--Other
 require('ss20.soulBottle')
 require('ss20.placement')
 require('ss20.rooms')
@@ -13,5 +14,6 @@ require('ss20.teleport')
 require('ss20.soulShop')
 require('ss20.stones')
 require('ss20.explodeWall')
---MCM MENU--------------------------------------------------
+require('ss20.attackShrine')
+--MCM MENU
 require('ss20.mcm')
