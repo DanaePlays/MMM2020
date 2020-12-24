@@ -76,7 +76,7 @@ local function onActivateTeleport(e)
                             }
                         else
                             common.messageBox({
-                                message = "The bust is unresponsive...",
+                                message = 'Horavatha: "Go talk to Vernie before pestering me!"',
                                 buttons = {
                                     { text = "Okay"}
                                 }

@@ -4,13 +4,12 @@ local config = common.config
 local journalID = 'ss20_CS'
 local jIndex = config.journal_cs.indexes.bottlePickedUp
 
-local skipActivate
 local function onBottlePickUp(e)
     local currentIndex = tes3.getJournalIndex{ id = journalID }
     if currentIndex >= jIndex then return end
 
     mwse.log("id: %s", e.target.baseObject.id)
-    if e.target.baseObject.id:lower() == 'ss20_bottle_of_souls' and not skipActivate then
+    if e.target.baseObject.id:lower() == 'ss20_bottle_of_souls' then
         common.messageBox{
             header = e.target.object.name,
             message = "This bottle will store the soul shards gathered from fallen enemies within it. With these soul shards, you can build new rooms, summon new furniture, or teleport back to the shrine. ",
@@ -43,14 +42,15 @@ end
 event.register("activate", onBottlePickUp)
 
 
+
 local function onDeath(e)
     if tes3.player.object.inventory:contains("ss20_Bottle_of_Souls") then
-        local shardsCaptured = math.floor(math.remap(e.reference.object.level, 1, 20, 10, 100))
-        if e.reference.baseObject.objectType == tes3.objectType.npc then
-            shardsCaptured = shardsCaptured * 5
+        local multi = config.soulMultipliers[e.reference.baseObject.objectType]
+        if multi then
+            local shardsCaptured = math.floor(multi * math.remap(e.reference.object.level, 1, 100, config.soulsAtLvl1, config.soulsAtLvl100))
+            tes3.messageBox("You captured %d soul shards!", shardsCaptured)
+            common.modSoulShards(shardsCaptured)
         end
-        tes3.messageBox("You captured %d soul shards!", shardsCaptured)
-        common.modSoulShards(shardsCaptured)
     end
 end
 event.register("death", onDeath)

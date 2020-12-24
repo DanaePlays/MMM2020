@@ -12,7 +12,6 @@ function this.keyPressed(keyEvent, expected)
     )
 end
 
-
 this.debug = function(message, ...)
     if this.mcmConfig.debug then
         local output = string.format("[%s] %s", this.config.modName, tostring(message):format(...) )
@@ -43,39 +42,6 @@ local function initData()
 end
 event.register("loaded", initData)
 
---[[
-    Allows the creation of messageboxes using buttons that each have their own callback.
-
-    callback: optional function that gets called when the button is clicked
-
-    tooltip: optional table with header and text that will display as a tooltip when the
-        button is hovered over
-
-    tooltipDisabled: optional tooltip for when a button has been disabled
-
-    requirements: optional function that, if provided, determines whether the button will be
-        call the callback when clicked, or be disabled + greyed out
-
-    {
-        message: string,
-        buttons: [
-            { 
-                text: string, 
-                callback?: function, 
-                tooltip?: { 
-                    header: string, 
-                    text: string
-                },
-                tooltipDisabled: { 
-                    header: string, 
-                    text: string
-                },
-                requirements?: function
-                showRequirements?: function
-            }
-        ]
-    }
-]]
 local messageBoxId = tes3ui.registerID("CustomMessageBox_")
 function this.messageBox(params)
     --[[
@@ -365,7 +331,10 @@ function this.getSoulShards()
 end
 
 function this.modSoulShards(count)
+    mwse.log("Modding soul shards! They are curently: %s", tes3.player.data[modName].soulShards )
+    mwse.log("Modding by %s", count)
     tes3.player.data[modName].soulShards = this.getSoulShards() + count
+    mwse.log("New value: %s", tes3.player.data[modName].soulShards )
 end
 
 return this

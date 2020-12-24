@@ -29,15 +29,18 @@ local function isDummy(reference)
 end
 
 local function isPlayerLookingAtDummy()
-    local result = tes3.rayTest({
-        position = tes3.getPlayerEyePosition(),
-        direction = tes3.getPlayerEyeVector(),
-        ignore = { tes3.player },
-    })
-    if result and result.reference then
-        return isDummy(result.reference)
-    end
-    return false
+    local target = tes3.getPlayerTarget()
+    return  target and isDummy(target)
+    -- local result = tes3.rayTest({
+    --     position = tes3.getPlayerEyePosition(),
+    --     direction = tes3.getPlayerEyeVector(),
+    --     ignore = { tes3.player },
+    --     maxDistance = 300
+    -- })
+    -- if result and result.reference then
+    --     return isDummy(result.reference)
+    -- end
+    -- return false
 end
 
 local function getCurrentMeleeSkill()

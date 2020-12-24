@@ -50,7 +50,6 @@ local function placeItem(data, target)
 
 end
 
-local roomObjectConfig = mwse.loadConfig("Shrine of Vernaccus Room Registration")
 local targetWall
 local selectedRoom
 
@@ -59,7 +58,7 @@ local function onWallObjectInvalidated(e)
         targetWall = nil
     end
 end
-livecoding.registerEvent("objectInvalidated", onWallObjectInvalidated)
+event.register("objectInvalidated", onWallObjectInvalidated)
 
 local function placeRoom()
     local journalIndex =  tes3.getJournalIndex{ id = journal_cs.id }
@@ -125,7 +124,6 @@ local function returnGuardian(golemRef)
                     position = originalLocation,
                     cell = "Shrine of Vernaccus"
                 }
-                
                 
                 tes3.setAIWander{ 
                     reference = golemRef, 
@@ -257,7 +255,7 @@ local function makeRoomSelectButton(roomConfig, parent)
     nameButton.widthProportional = 1.0
 
     local costButton = block:createLabel()
-    costButton.text = string.format("%s Soul Shards", cost)
+    costButton.text = string.format("%d Shards", cost)
 
     local souls = common.getSoulShards()
     nameButton:register("mouseClick", function()
@@ -291,10 +289,15 @@ local function openBuildRoomMenu()
     headerLabel.text = "Room Builder"
     headerLabel.color = tes3ui.getPalette("header_color")
 
-    local souls = common.getSoulShards()
-    local menuDescriptionLabel = mainBlock:createLabel()
-    menuDescriptionLabel.text = string.format("You have %s Soul Shards.", souls)
-
+    do
+        local souls = common.getSoulShards()
+        local menuDescriptionLabel = mainBlock:createLabel()
+        menuDescriptionLabel.text = string.format("Soul Shards: %d", souls)
+        menuDescriptionLabel:register("help", function()
+            local tooltip = tes3ui.createTooltipMenu()
+            tooltip:createLabel{ text = "Earn Soul Shards by killing enemies with the Bottle of Souls in your inventory."}
+        end)
+    end
     do
         local listBlock = mainBlock:createVerticalScrollPane{
             id = roomMenuIds.itemsList
@@ -343,6 +346,7 @@ local function openBuildRoomMenu()
         menu:destroy()
         tes3ui.leaveMenuMode()
         timer.delayOneFrame(function()
+            mwse.log("Modding soul shards to %s", -selectedRoom.cost)
             common.modSoulShards(-selectedRoom.cost)
             placeRoom()
         end)

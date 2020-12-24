@@ -1,9 +1,9 @@
 --[[
     run code without restarting the game! hotkey alt+x
 --]]
-local modName = "Shrine of Vernaccus"
 local common = require('ss20.common')
 local config = common.config
+local modName = config.modName
 --local sortByName = function(a,b) return a.name < b.name; end
 
 local uiids = {
@@ -107,13 +107,14 @@ end
 local function toggleButtonDisabled(button, isVisible, isDisabled)
     button.visible = isVisible
     button.widget.state = isDisabled and 2 or 1
+    button.disabled = isDisabled
     if isDisabled then
         button:register("help", function()
             local tooltip = tes3ui.createTooltipMenu()
             tooltip:createLabel{ text = "You don't have enough shards."}
         end)
-        button.disabled = true
     end
+    
 end
 
 
@@ -295,6 +296,9 @@ local function updateSelectedResourcePack()
     shopMenu:updateLayout()
 end
 
+local function getShardText()
+    return string.format("Soul Shards: %d", common.getSoulShards())
+end
 
 local function updateShopMenu(e)
     e = e or {}
@@ -328,6 +332,10 @@ local function updateShopMenu(e)
             updateSelectedResourcePack()
         end)
     end
+
+    local shardCount = menu:findChild(uiids.shardCount)
+    shardCount.text = getShardText()
+
     menu:updateLayout()
     updateSelectedResourcePack()
 end
@@ -336,6 +344,7 @@ event.register("SS20:UpdateShopMenu", updateShopMenu)
 
 
 local function unlockPack()
+    common.modSoulShards(-tes3.player.data[modName].selectedPack.cost)
     tes3.player.data[modName].unlockedResourcePacks[tes3.player.data[modName].selectedPack.id] = true
     updateShopMenu()
 end
@@ -347,7 +356,11 @@ local function createTitle(block)
     title.color = tes3ui.getPalette("header_color")
 
     local shardCount = block:createLabel{id = uiids.shardCount}
-    shardCount.text = string.format("Soul Shards: %d", common.getSoulShards())
+    shardCount:register("help", function()
+        local tooltip = tes3ui.createTooltipMenu()
+        tooltip:createLabel{ text = "Earn Soul Shards by killing enemies with the Bottle of Souls in your inventory."}
+    end)
+    shardCount.text = getShardText()
     return title
 end
 

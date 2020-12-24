@@ -10,5 +10,6 @@ require('ss20.spell')
 require('ss20.tooltip')
 require('ss20.teleport')
 require('ss20.soulShop')
+require('ss20.stones')
 --MCM MENU--------------------------------------------------
 require('ss20.mcm')
