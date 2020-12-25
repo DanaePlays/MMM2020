@@ -55,11 +55,10 @@ Entry for the 2020 Modding Madness Competition
 
         }
     },
-
     shrineTeleportPosition = {
         cell = "Shrine of Vernaccus",
-        orientation = {0,0,0},
-        position = {0, 0, 38},
+        orientation = {0,0,3.14},
+        position = {-8.32,5260.69,194.00},
         reference = tes3.player
     },
     horavathaTeleportPosition = {

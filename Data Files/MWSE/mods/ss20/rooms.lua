@@ -98,8 +98,9 @@ local function placeRoom()
     end
 
     if targetWall.disable then
-        mwse.log("disabling %s", targetWall.object.id)
         event.trigger("SS20:DestroyWall", { wall = targetWall })
+
+        
     else
         mwse.log("%s does not have a disable function", targetWall.object.id)
     end

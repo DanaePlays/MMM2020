@@ -163,6 +163,7 @@ local function checkTeleportPadDistance(e)
             steppedOnPad = true
             --If it hasn't been named yet, enter the name menu
             if not thisTeleporter.data.ss20TeleporterName then
+                thisTeleporter.data.ss20TeleporterName = string.format("Teleporter #%d", #teleporters + 1)
                 nameTeleporter(thisTeleporter)
             else
                 --Otherwise, enter the teleport menu
