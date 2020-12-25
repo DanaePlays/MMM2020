@@ -348,7 +348,9 @@ local function togglePlacement(e)
 
     -- Filter by allowed object type.
     if not isPlaceable(target) then
-        tes3.playSound{ soundPath = "ss20\\ss20_s_bad.wav"}
+        if target.baseObject.objectType == tes3.objectType.static then
+            tes3.playSound{ soundPath = "ss20\\ss20_s_bad.wav"}
+        end
         return
     end
 
@@ -448,7 +450,7 @@ end
 
 local function toggleMode(e)
     if not common.data then return end
-    this.shadow_model = tes3.loadMesh("hrn/shadow.nif")
+    this.shadow_model = tes3.loadMesh("ss20/e/shadow.nif")
     if (common.data.manipulation) then
         if (e.keyCode == config.keybindModeCycle) then
             
@@ -553,15 +555,13 @@ end
 event.register("mouseWheel", onMouseScroll)
 
 
-
-
-local function onActivate(e)
-    if common.data.manipulation then
+local function blockActivation(e)
+    if common.data.manipulation and isPlaceable(e.target) then
         mwse.log("Manipulation Active")
         return (e.activator ~= tes3.player)
     end
 end
-event.register("activate", onActivate, { priority = 500 })
+event.register("activate", blockActivation, { priority = 500 })
 
 local function onActiveKey(e)
     local inputController = tes3.worldController.inputController

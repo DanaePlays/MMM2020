@@ -4,6 +4,36 @@ local config = common.config
 local journalID = 'ss20_CS'
 local jIndex = config.journal_cs.indexes.bottlePickedUp
 
+
+local function doAttackSounds()
+    local path = 'Vo\\d\\m\\'
+    local soundIds = {
+        'CrAtk_AM001.mp3',
+        'CrAtk_AM002.mp3',
+        'CrAtk_AM003.mp3',
+        'CrAtk_AM004.mp3',
+    }
+    local sourceRef = tes3.getReference("ss20_in_daeCenserOut") or tes3.player
+    mwse.log("sound source: %s", sourceRef)
+    local interval = 0.5
+    for i, sound in ipairs(soundIds) do
+        timer.start{
+            type = timer.real,
+            duration = i * interval + math.random(0, 0.5),
+            callback = function()
+                local soundPath = string.format("%s%s", path, sound)
+                mwse.log("playing %s", soundPath)
+                tes3.playSound{
+                    reference = sourceRef,
+                    soundPath = soundPath,
+                    volume = 1.0
+                }
+            end
+        }
+    end
+end
+
+
 local function onBottlePickUp(e)
     local currentIndex = tes3.getJournalIndex{ id = journalID }
     if currentIndex >= jIndex then return end
@@ -14,7 +44,8 @@ local function onBottlePickUp(e)
             header = e.target.object.name,
             message = "This bottle will store the soul shards gathered from fallen enemies within it. With these soul shards, you can build new rooms, summon new furniture, or teleport back to the shrine. ",
             buttons = {
-                { text = "Okay", 
+                { 
+                    text = "Okay", 
                     callback = function() timer.delayOneFrame(function() 
                         mwscript.addSpell{ reference = tes3.player, spell = config.manipulateSpellId }
                         tes3.playSound{ reference = tes3.player, sound = "mysticism cast"}
@@ -25,10 +56,19 @@ local function onBottlePickUp(e)
                                 { 
                                     text = "Okay",
                                     callback = function()
-                                        tes3.updateJournal({
-                                            id = journalID,
-                                            index = jIndex
-                                        })
+                                        doAttackSounds()
+                                        
+                                        timer.start{
+                                            duration = 2,
+                                            callback = function()
+                                                tes3.messageBox("You hear a commotion outside the shrine.")
+                                                tes3.updateJournal({
+                                                    id = journalID,
+                                                    index = jIndex
+                                                })
+                                            end
+                                        }
+                                        
                                     end
                                 }
                             }
