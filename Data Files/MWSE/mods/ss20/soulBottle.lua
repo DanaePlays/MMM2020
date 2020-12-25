@@ -94,5 +94,3 @@ local function onDeath(e)
     end
 end
 event.register("death", onDeath)
-
-tes3.messageBox("refresh")
