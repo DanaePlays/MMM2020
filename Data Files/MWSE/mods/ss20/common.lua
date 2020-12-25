@@ -320,11 +320,6 @@ function this.isAllowedToManipulate()
 end
 
 
-function this.isViableObject(target)
-    local id = target.baseObject.id:lower()
-    return this.config.placeableObjects[id]
-        or target.baseObject.objectType ~= tes3.objectType.static
-end
 
 function this.getSoulShards()
     return tes3.player.object.inventory:contains("ss20_bottle_of_souls")

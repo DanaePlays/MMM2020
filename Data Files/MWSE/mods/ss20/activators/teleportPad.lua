@@ -80,7 +80,6 @@ local function teleportTo(teleporter)
 end
 
 local function teleportMenu(active, teleporters)
-    tes3.messageBox("Activate")
     local menu = tes3ui.createMenu{ id = teleportMenuId, fixedFrame = true }
     menu.minWidth = 250
     menu.autoHeight = true
