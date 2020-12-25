@@ -471,7 +471,7 @@ local function toggleMode(e)
 end
 
 local function onInitialized()
-    this.shadow_model = tes3.loadMesh("hrn/shadow.nif")
+    this.shadow_model = tes3.loadMesh("ss20/e/shadow.nif")
 
     this.id_guide = tes3ui.registerID("ObjectPlacement:GuideMenu")
     event.register("load", onLoad)
