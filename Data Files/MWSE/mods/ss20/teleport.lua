@@ -31,7 +31,7 @@ local function onActivateTeleport(e)
                 },
                 {
                     header = e.item.name,
-                    text = string.format("Teleport to Horvatha's Gauntlet (%s Soul Shards)", teleportShardCost),
+                    text = string.format("Teleport to Horvatha's Boudoir (%s Soul Shards)", teleportShardCost),
                     callback = function()
                         common.modSoulShards(-teleportShardCost)
                         tes3.positionCell(config.horavathaTeleportPosition)
@@ -63,7 +63,7 @@ local function onActivateTeleport(e)
     elseif e.item.id == 'ss20_misc_bustHoravatha' then
         common.messageBox{
             header = e.item.name,
-            message = "Teleport to Horavatha's Gauntlet?",
+            message = "Teleport to Horavatha?",
             buttons = {
                 {
                     text = "Teleport",
