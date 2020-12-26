@@ -90,6 +90,15 @@ local function onDeath(e)
             local shardsCaptured = math.floor(multi * math.remap(e.reference.object.level, 1, 100, config.soulsAtLvl1, config.soulsAtLvl100))
             tes3.messageBox("You captured %d soul shards!", shardsCaptured)
             common.modSoulShards(shardsCaptured)
+            local journal = {
+                id = 'ss20_CS',
+                index = 19
+            }
+            if tes3.getJournalIndex{id = journal.id} < journal.index then
+                if common.getSoulShards() > 400 then
+                    tes3.updateJournal(journal)
+                end
+            end
         end
     end
 end
