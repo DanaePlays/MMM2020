@@ -4,7 +4,7 @@ local function activateLockedDoor(e)
     if isDoor and isPlayer then
         local hasKey = tes3.player.object.inventory:contains('ss20_key_priest')
         if not hasKey then
-            tes3.messageBox("This door will not open without the key.!!")
+            tes3.messageBox("This door will not open without the key.")
             return false
         end
     end
