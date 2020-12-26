@@ -7,6 +7,7 @@ local function removeWall(e)
 end
 local function explodeWall(e)
     if e.wall then
+        mwse.log("Exploding wall")
         local animWall = e.wall
         tes3.playSound{ sound = "destruction area", reference = e.wall}
         animWall.data.ss20DoDestroy = true

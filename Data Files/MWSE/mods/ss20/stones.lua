@@ -36,3 +36,49 @@ local function pickUpStone(e)
     end
 end
 event.register("activate", pickUpStone)
+
+--[[
+    Place a few extra stones in case the player already picked
+    them all up before the quest
+]]
+
+local stones = {
+    {
+        position = {8190.80,180437.56,312.81},
+        orientation = {0.00,0.00,1.90},
+    },
+    {
+        position = {8142.70,180545.64,286.64},
+        orientation = {0.00,0.30,1.30},
+    },
+    {
+        position = {8155.78,180573.42,302.05},
+        orientation = {0.00,0.00,2.12},
+    },
+    {
+        position = {8168.12,180473.64,307.27},
+        orientation = {0.00,0.30,5.38},
+    },
+    {
+        position = {8150.51,180518.81,299.82},
+        orientation = {0.00,0.00,1.57}
+    }
+}
+
+local function placeExtraStones(e)
+    local atJournal = tes3.getJournalIndex{ id = 'ss20_main' } == 10
+    local data = tes3.player.data[modName]
+    if atJournal and not data.extraStonesPlaced then
+        for _, location in ipairs(stones) do
+            tes3.createReference{
+                object = 'ss20_w_stone',
+                position = location.position,
+                orientation = location.orientation,
+                cell = "Vas",
+                scale = 2
+            }
+        end
+        data.extraStonesPlaced = true
+    end
+end
+event.register("cellChanged", placeExtraStones)
