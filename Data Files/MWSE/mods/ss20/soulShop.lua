@@ -126,7 +126,7 @@ local function updateBuyButtons()
     local createButton = shopMenu:findChild(uiids.createItemButton)
     local resourceUnlocked = isPackUnlocked()
 
-    mwse.log("Resource %s", resourceUnlocked and "unlocked" or "locked")
+    common.log:debug("Resource %s", resourceUnlocked and "unlocked" or "locked")
     if unlockButton and createButton then
         unlockButton.text = string.format("Unlock %s (%d Soul Shards)", tes3.player.data[modName].selectedPack.name, tes3.player.data[modName].selectedPack.cost)
         createButton.text = string.format("Build %s (%d Soul Shards)", tes3.player.data[modName].selectedResource.name, tes3.player.data[modName].selectedResource.cost)
@@ -142,7 +142,7 @@ local function updatePreviewPane()
     local itemName = tes3.player.data[modName].selectedResource.name
     local shopMenu = tes3ui.findMenu(uiids.shopMenu)
     if not shopMenu then return end
-    mwse.log("itemId: %s", itemId)
+    common.log:debug("itemId: %s", itemId)
     local item = tes3.getObject(itemId)
     if item then
 
@@ -162,8 +162,8 @@ local function updatePreviewPane()
             if not nif then return end 
             --nif.scaleMode = true
             shopMenu:updateLayout()
-            mwse.log("mesh: %s", item.mesh)
-            mwse.log(nif.sceneNode.name)
+            common.log:debug("mesh: %s", item.mesh)
+            common.log:debug(nif.sceneNode.name)
 
             local node = nif.sceneNode:getObjectByName("SS20_ShopMenu_NifPreview")
             common.removeLight(node)
@@ -176,9 +176,9 @@ local function updatePreviewPane()
 
             local maxDimension = math.max(width, depth, height)
             --local maxDimension = node.worldBoundRadius
-            mwse.log("bb min: %s, max: %s", bb.min, bb.max)
-            mwse.log("height: %s", height)
-            mwse.log("worldBoundRadius: %s", node.worldBoundRadius)
+            common.log:debug("bb min: %s, max: %s", bb.min, bb.max)
+            common.log:debug("height: %s", height)
+            common.log:debug("worldBoundRadius: %s", node.worldBoundRadius)
 
 
             node.scale = math.max(math.remap(maxDimension, 20, 150, 3.5, 1.0), 1.0)
@@ -186,7 +186,7 @@ local function updatePreviewPane()
             --     node.scale = node.scale * 2
             -- end
             local lowestPoint = bb.min.z
-            mwse.log("lowestPoint = %s", lowestPoint)
+            common.log:debug("lowestPoint = %s", lowestPoint)
             node.translation.z = node.translation.z - lowestPoint*node.scale 
 
             do --add properties
@@ -249,7 +249,7 @@ end
 local function updateSelectedResourcePack()
     local shopMenu = tes3ui.findMenu(uiids.shopMenu)
     if not shopMenu then return end
-    mwse.log("updating selected resource: %s", tes3.player.data[modName].selectedPack.id)
+    common.log:debug("updating selected resource: %s", tes3.player.data[modName].selectedPack.id)
 
     --update preview pane
     local nifPreviewBlock = shopMenu:findChild(uiids.nifPreviewBlock)
@@ -307,7 +307,7 @@ local function updateShopMenu(e)
     local menu = tes3ui.findMenu(uiids.shopMenu)
     if not menu then return end
 
-    mwse.log("Updating shop meny azdzfguj")
+    common.log:debug("Updating shop meny azdzfguj")
 
     local shopListScrollPane = menu:findChild(uiids.shopListScrollPane)
     if not shopListScrollPane then
@@ -317,7 +317,7 @@ local function updateShopMenu(e)
     contentElement:destroyChildren()
 
     local shop = e.shop or shopConfig.defaultShop
-    mwse.log("shop: %s", shop)
+    common.log:debug("shop: %s", shop)
     table.sort(config.resourcePacks, resourceSorter)
     for _, resourcePack in ipairs(config.resourcePacks) do
         local button = shopListScrollPane:createTextSelect{}
@@ -478,7 +478,7 @@ local function createPreviewPane(parent)
     nifPreviewBlock.width = shopConfig.previewWidth
     nifPreviewBlock.height = shopConfig.previewHeight
 
-    mwse.log("width: %s", shopConfig.menuWidth)
+    common.log:debug("width: %s", shopConfig.menuWidth)
     nifPreviewBlock.childOffsetX = shopConfig.previewWidth/2
     nifPreviewBlock.childOffsetY = shopConfig.previewYOffset
     nifPreviewBlock.paddingAllSides = 2

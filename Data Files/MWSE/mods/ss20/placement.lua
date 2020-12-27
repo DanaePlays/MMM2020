@@ -547,7 +547,7 @@ event.register("mouseWheel", onMouseScroll)
 
 local function blockActivation(e)
     if common.data.manipulation and isPlaceable(e.target) then
-        mwse.log("Manipulation Active")
+        common.log:debug("Manipulation Active")
         return (e.activator ~= tes3.player)
     end
 end
@@ -557,9 +557,9 @@ local function onActiveKey(e)
     local inputController = tes3.worldController.inputController
     local keyTest = inputController:keybindTest(tes3.keybind.activate)
     if keyTest then
-        mwse.log("Activate key pressed")
+        common.log:debug("Activate key pressed")
         if common.data.manipulation then
-            mwse.log("manipulation active activate key pressed")
+            common.log:debug("manipulation active activate key pressed")
             togglePlacement()
         end
     end

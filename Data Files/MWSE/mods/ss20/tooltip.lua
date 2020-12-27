@@ -18,7 +18,6 @@ local function onTooltip(e)
             elseif type(message) == 'string' then
                 msg = message
             end
-
             common.addTooltipMessage(e.tooltip, msg)
         end
     end
