@@ -46,6 +46,7 @@ Entry for the 2020 Modding Madness Competition
         [tes3.objectType.creature] = 1,
         [tes3.objectType.npc] = 5
     },
+    roomCostMulti = 1.4,
 
 
     journal_cs = {
@@ -98,97 +99,71 @@ Entry for the 2020 Modding Madness Competition
             id = 'ss20_Lshaped',
             name = "Empty L-Shaped Room",
             description = "A small, L-shaped room with minimal furnishings.",
-            cost = 400,
+            cost = 500,
         },
         {
             id = 'ss20_smallsquareroom',
             name = "Small Square Room",
             description = "A hallway with a small room off to the side and minimal furnishings",
-            cost = 400,
+            cost = 500,
         },
         {
             id = 'ss20_ushaped',
             name = "Empty U-Shaped Room",
             description = "A medium sized, U-shaped room with minimal furnishings.",
-            cost = 400,
+            cost = 500,
         },
         {
             id = 'ss20_storage',
             name = "Storage Room",
             description = "Includes a second story for additional storage space. Comes with a selection of chests and containers.",
-            cost = 400
-        },
-        {
-            id = 'ss20_study',
-            name = "Study",
-            description = "A well-furnished medium sized room with fireplace, desk and bookshelves.",
-            cost = 600,
+            cost = 1000
         },
         {
             id = 'ss20_living_quarters',
             name = "Living Quarters",
             description = "A well furnished room with a bed, bath, fireplace and cushions.",
-            cost = 600
-        },
-        {
-            id = 'ss20_portal',
-            name = "Portal room",
-            description = "A small room with a teleportation pad to take you to any other pad.",
-            cost = 800,
-        },
-        {
-            id = 'ss20_armory',
-            name = "Armory",
-            description = "A large room filled with everything you need to keep your combat skills fresh, including a forge, and target dummy.",
-            cost = 800
+            cost = 1000
         },
         {
             id = 'ss20_VeryLargeDuplex',
             name = "Duplex",
             description = "A large room with a grand staircase in the middle.",
-            cost = 1000
+            cost = 2000
+        },
+        {
+            id = 'ss20_portal',
+            name = "Portal room",
+            description = "A small room with a teleportation pad to take you to any other pad.",
+            cost = 2000,
+        },
+        {
+            id = 'ss20_study',
+            name = "Study",
+            description = "A well-furnished medium sized room with fireplace, desk and bookshelves.",
+            cost = 3000,
+        },
+        {
+            id = 'ss20_armory',
+            name = "Armory",
+            description = "A large room filled with everything you need to keep your combat skills fresh, including a forge, and target dummy.",
+            cost = 3000
         },
         {
             id = 'ss20_magic_room',
             name = "Magic Room",
             description = "A small but functional room built for mages. Includes a Staff Recharging Station, and a Teleportation pad.",
-            cost = 1000
+            cost = 5000
         },
         {
             id = 'ss20_gallery',
             name = "Gallery",
             description = "A large series of rooms with plenty of space to hang your paintings and display your treasures.",
-            cost = 1000
+            cost = 5000
         },
-
-
---        {
---            id = 'ss20_underwatertunnel',
---            name = "Submerged room",
---            description = "...",
---            cost = 250,
---        },
-
     },
     
     resourcePacks = {
-        {
-            id = 'art',
-            name = "Paintings",
-            cost = 500,
-            description = "A variety of oil paintings.",
-            items = {
-                { id = "ss20_art_01", name = "Painting: Ascadian Isles", cost = prices.clutter },
-                { id = "ss20_art_02", name = "Painting: Azura's Coast", cost = prices.clutter },
-                { id = "ss20_art_03", name = "Painting: Imperial City", cost = prices.clutter },
-                { id = "ss20_art_04", name = "Painting: Molag Mar", cost = prices.clutter },
-                { id = "ss20_art_05", name = "Painting: Vivec City", cost = prices.clutter },
-                { id = "ss20_art_06", name = "Painting: Moons", cost = prices.clutter },
-                { id = "ss20_art_07", name = "Painting: Sadrith Mora", cost = prices.clutter },
-                { id = "ss20_art_08", name = "Painting: Vos", cost = prices.clutter },
-            }
-        },
-
         {
             id = 'beds_01',
             name = "Beds",
@@ -207,7 +182,22 @@ Entry for the 2020 Modding Madness Competition
                 { id = 'ss20_dae_bed05a', name = 'Simple double bed 02' , cost = prices.furniture},
             }
         },
-
+        {
+            id = 'art',
+            name = "Paintings",
+            cost = 500,
+            description = "A variety of oil paintings.",
+            items = {
+                { id = "ss20_art_01", name = "Painting: Ascadian Isles", cost = prices.clutter },
+                { id = "ss20_art_02", name = "Painting: Azura's Coast", cost = prices.clutter },
+                { id = "ss20_art_03", name = "Painting: Imperial City", cost = prices.clutter },
+                { id = "ss20_art_04", name = "Painting: Molag Mar", cost = prices.clutter },
+                { id = "ss20_art_05", name = "Painting: Vivec City", cost = prices.clutter },
+                { id = "ss20_art_06", name = "Painting: Moons", cost = prices.clutter },
+                { id = "ss20_art_07", name = "Painting: Sadrith Mora", cost = prices.clutter },
+                { id = "ss20_art_08", name = "Painting: Vos", cost = prices.clutter },
+            }
+        },
         {
             id = 'chairs_01',
             name = "Chairs",

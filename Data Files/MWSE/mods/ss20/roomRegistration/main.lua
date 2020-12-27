@@ -94,7 +94,7 @@ local function placeItem(data, target)
     if placedRef.object.objectType == tes3.objectType.light then
         
         timer.delayOneFrame(function()
-            mwse.log("Turning lights on")
+            log("Turning lights on")
             common.onLight(placedRef)
         end)
     end

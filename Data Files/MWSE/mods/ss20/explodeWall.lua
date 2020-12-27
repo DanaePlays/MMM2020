@@ -1,13 +1,12 @@
-
+local common = require('ss20.common')
 local function removeWall(e)
     if e.wall then
         e.wall:disable()
-        mwscript.setDelete{ reference = e.wall}
     end
 end
 local function explodeWall(e)
     if e.wall then
-        mwse.log("Exploding wall")
+        common.log:debug("Exploding wall")
         local animWall = e.wall
         tes3.playSound{ sound = "destruction area", reference = e.wall}
         animWall.data.ss20DoDestroy = true

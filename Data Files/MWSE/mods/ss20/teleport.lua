@@ -1,7 +1,7 @@
 local common = require('ss20.common')
 local config = common.config
 
-local teleportShardCost = 10
+local teleportShardCost = 100
 local function onActivateTeleport(e)
     if e.item.id == 'ss20_Bottle_of_Souls' then
         tes3ui.leaveMenuMode()

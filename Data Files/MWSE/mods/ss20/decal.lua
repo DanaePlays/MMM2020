@@ -1,3 +1,4 @@
+local common = require('ss20.common')
 local this = {}
 
 local function traverseNIF(roots)
@@ -24,7 +25,7 @@ local states = {
 local textures = {}
 
 local function preloadTextures()
-    mwse.log("preloading textures for SS20")
+    common.log:debug("preloading textures for SS20")
     for state, path in pairs(states) do
         local texture = niSourceTexture.createFromPath(path)
         textures[state] = texture
