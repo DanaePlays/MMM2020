@@ -1,6 +1,6 @@
 return {
     --Mod name will be used for the MCM menu as well as the name of the config .json file.
-    modName = "Shrine of Vernaccus",
+    modName = "The Legend of Vernaccus",
     --Description for the MCM sidebar
     modDescription =
 [[
@@ -33,10 +33,10 @@ Entry for the 2020 Modding Madness Competition
     shrineTeleportSpellId = 'ss20VernaccusTeleport',
 
     soulsAtLvl1 = 50,
-    soulsAtLvl100 = 1000,
+    soulsAtLvl100 = 4000,
     soulMultipliers = {
         [tes3.objectType.creature] = 1,
-        [tes3.objectType.npc] = 10
+        [tes3.objectType.npc] = 5
     },
 
 
@@ -90,19 +90,19 @@ Entry for the 2020 Modding Madness Competition
             id = 'ss20_Lshaped',
             name = "Empty L-Shaped Room",
             description = "A small, L-shaped room with minimal furnishings.",
-            cost = 200,
+            cost = 400,
         },
         {
             id = 'ss20_smallsquareroom',
             name = "Small Square Room",
             description = "A hallway with a small room off to the side and minimal furnishings",
-            cost = 200
+            cost = 400,
         },
         {
             id = 'ss20_ushaped',
             name = "Empty U-Shaped Room",
             description = "A medium sized, U-shaped room with minimal furnishings.",
-            cost = 200,
+            cost = 400,
         },
         {
             id = 'ss20_storage',
@@ -114,43 +114,43 @@ Entry for the 2020 Modding Madness Competition
             id = 'ss20_study',
             name = "Study",
             description = "A well-furnished medium sized room with fireplace, desk and bookshelves.",
-            cost = 400,
+            cost = 600,
         },
         {
             id = 'ss20_living_quarters',
             name = "Living Quarters",
             description = "A well furnished room with a bed, bath, fireplace and cushions.",
-            cost = 400
+            cost = 600
         },
         {
             id = 'ss20_portal',
             name = "Portal room",
             description = "A small room with a teleportation pad to take you to any other pad.",
-            cost = 600,
+            cost = 800,
         },
         {
             id = 'ss20_armory',
             name = "Armory",
             description = "A large room filled with everything you need to keep your combat skills fresh, including a forge, and target dummy.",
-            cost = 600
+            cost = 800
         },
         {
             id = 'ss20_VeryLargeDuplex',
             name = "Duplex",
             description = "A large room with a grand staircase in the middle.",
-            cost = 800
+            cost = 1000
         },
         {
             id = 'ss20_magic_room',
             name = "Magic Room",
             description = "A small but functional room built for mages. Includes a Staff Recharging Station, and a Teleportation pad.",
-            cost = 800
+            cost = 1000
         },
         {
             id = 'ss20_gallery',
             name = "Gallery",
             description = "A large series of rooms with plenty of space to hang your paintings and display your treasures.",
-            cost = 800
+            cost = 1000
         },
 
 
@@ -165,15 +165,65 @@ Entry for the 2020 Modding Madness Competition
     
     resourcePacks = {
         {
-            id = 'workshop',
-            name = "Workshop Pack",
-            cost = 60,
-            description = "Workbench, grindstone, forge, and anvil",
+            id = 'art',
+            name = "Paintings",
+            cost = 80,
+            description = "A variety of oil paintings.",
             items = {
-                { id = 'ss20_furn_dae_workbench_01', name = "Workbench", cost = 30 },
-                { id = 'ss20_furn_dae_grindstone_01', name = "Grindstone", cost = 30 },
-                { id = 'ss20_dae_forge_01', name = 'Forge', cost = 10 },
-                { id = 'ss20_furn_anvil00', name = 'Anvil' , cost = 10},
+                { id = "ss20_art_01", name = "Painting: Ascadian Isles", cost = 5 },
+                { id = "ss20_art_02", name = "Painting: Azura's Coast", cost = 5 },
+                { id = "ss20_art_03", name = "Painting: Imperial City", cost = 5 },
+                { id = "ss20_art_04", name = "Painting: Molag Mar", cost = 5 },
+                { id = "ss20_art_05", name = "Painting: Vivec City", cost = 5 },
+                { id = "ss20_art_06", name = "Painting: Moons", cost = 5 },
+                { id = "ss20_art_07", name = "Painting: Sadrith Mora", cost = 5 },
+                { id = "ss20_art_08", name = "Painting: Vos", cost = 5 },
+            }
+        },
+
+        {
+            id = 'beds_01',
+            name = "Beds",
+            cost = 100,
+            description = "A collection of beds",
+            items = {
+                { id = 'ss20_dae_bed01', name = 'Fancy single bed 01' , cost = 10},
+                { id = 'ss20_dae_bed01a', name = 'Fancy single bed 02' , cost = 10 },
+                { id = 'ss20_dae_Bed02', name = 'Extravagant Bed 01' , cost = 10},
+                { id = 'ss20_dae_Bed02a', name = 'Extravagant Bed 02' , cost = 10},
+                { id = 'ss20_dae_bed03', name = 'Fancy double bed 01' , cost = 10},
+				{ id = 'ss20_dae_bed03a', name = 'Fancy double bed 02' , cost = 10},
+                { id = 'ss20_dae_bed04', name = 'Simple Bed 01' , cost = 10 },
+                { id = 'ss20_dae_Bed04a', name = 'Simple bed 02' , cost = 10},
+                { id = 'ss20_dae_Bed05', name = 'Simple double bed 01' , cost = 10},
+                { id = 'ss20_dae_bed05a', name = 'Simple double bed 02' , cost = 10},
+            }
+        },
+
+        {
+            id = 'chairs_01',
+            name = "Chairs",
+            cost = 50,
+            description = "A collection of wooden chairs.",
+            items = {
+                { id = "ss20_furn_dae_r_chair_02", name = "Wooden Chair 01" , cost = 10 },
+                { id = "ss20_furn_dea2_chair_01", name = "Wooden Chair 02" , cost = 10 },
+                { id = "ss20_furn_dea2_chair_01a", name = "Wooden Chair 03" , cost = 10 },
+                { id = "ss20_furn_dea2_chair_01b", name = "Wooden Chair 04" , cost = 10 },
+                { id = "ss20_furn_dea2_chair_01c", name = "Wooden Chair 05" , cost = 10 },
+            }
+        },
+
+        {
+            id = 'containers_03',
+            name = "Container Pack",
+            cost = 40,
+            description = "Desks, closets, drawers and crates",
+            items = {
+                { id = 'ss20_dae_chest_small_01', name = 'Small chest' , cost = 10},
+                { id = 'ss20_dae_Sack_01', name = 'Cloth sack (flat)' , cost = 10 },
+                { id = 'ss20_dae_Sack_02', name = 'Cloth sack (round)' , cost = 10 },
+                { id = 'ss20_dae_crate', name = 'Crate (Closed)' , cost = 10},
             }
         },
         {
@@ -197,96 +247,6 @@ Entry for the 2020 Modding Madness Competition
                 { id = 'ss20_light_daeCrystal03_purple', name = 'Large purple crystal' , cost = 10 },
                 { id = 'ss20_light_daeCrystal03_red', name = 'Large red crystal' , cost = 10 },
                 { id = 'ss20_light_daeCrystal03_white', name = 'Large white crystal' , cost = 10 },
-            }
-        },
-        {
-            id = "display",
-            name = "Display Cases",
-            cost = 50,
-            description = "",
-            items = {
-                { id = 'ss20_dae_display_03', name = "Round display", cost = 10 },
-                { id = 'ss20_dae_display_02', name = "Rectanglular display", cost = 10 },
-                { id = 'ss20_dae_display_01', name = "Square display", cost = 10 },
-                { id = 'ss20_dae_dispcase', name = 'Large display case' , cost = 10 },
-            }
-        },
-        {
-            id = 'art',
-            name = "Paintings",
-            cost = 80,
-            description = "A variety of oil paintings.",
-            items = {
-                { id = "ss20_art_01", name = "Painting: Ascadian Isles", cost = 5 },
-                { id = "ss20_art_02", name = "Painting: Azura's Coast", cost = 5 },
-                { id = "ss20_art_03", name = "Painting: Imperial City", cost = 5 },
-                { id = "ss20_art_04", name = "Painting: Molag Mar", cost = 5 },
-                { id = "ss20_art_05", name = "Painting: Vivec City", cost = 5 },
-                { id = "ss20_art_06", name = "Painting: Moons", cost = 5 },
-                { id = "ss20_art_07", name = "Painting: Sadrith Mora", cost = 5 },
-                { id = "ss20_art_08", name = "Painting: Vos", cost = 5 },
-            }
-        },
-        {
-            id = 'lights_01',
-            name = "Lights",
-            cost = 80,
-            description = "A collection of lights",
-            items = {
-                { id = 'ss20_dae_candleblk_01', name = 'Daedric candle 01' , cost = 10},
-                { id = 'ss20_dae_candleblk_02', name = 'Daedric candle 02' , cost = 10},
-                { id = 'ss20_dae_candleblk_03', name = 'Daedric candle 03' , cost = 10},
-                { id = 'ss20_light_dae_chnd_01', name = 'Chandelier 01' , cost = 10 },
-                { id = 'ss20_light_dae_chnd_02', name = 'Chandelier 02' , cost = 10 },
-                { id = 'ss20_light_dae_sconce_01', name = 'Sconce 01', cost = 10 },
-                { id = 'ss20_light_dae_sconce_02', name = 'Sconce 02', cost = 10 },
-                { id = 'ss20_light_daeLamp01_256', name = 'Lamp' , cost = 10 },
-            }
-        },
-        {
-            id = 'beds_01',
-            name = "Beds",
-            cost = 100,
-            description = "A collection of beds",
-            items = {
-                { id = 'ss20_dae_bed01', name = 'Fancy single bed 01' , cost = 10},
-                { id = 'ss20_dae_bed01a', name = 'Fancy single bed 02' , cost = 10 },
-                { id = 'ss20_dae_Bed02', name = 'Extravagant Bed 01' , cost = 10},
-                { id = 'ss20_dae_Bed02a', name = 'Extravagant Bed 02' , cost = 10},
-                { id = 'ss20_dae_bed03', name = 'Fancy double bed 01' , cost = 10},
-				{ id = 'ss20_dae_bed03a', name = 'Fancy double bed 02' , cost = 10},
-                { id = 'ss20_dae_bed04', name = 'Simple Bed 01' , cost = 10 },
-                { id = 'ss20_dae_Bed04a', name = 'Simple bed 02' , cost = 10},
-                { id = 'ss20_dae_Bed05', name = 'Simple double bed 01' , cost = 10},
-                { id = 'ss20_dae_bed05a', name = 'Simple double bed 02' , cost = 10},
-            }
-        },
-        {
-            id = 'library_01',
-            name = "Library Pack",
-            cost = 50,
-            description = "A collection of wooden bookshelves, lecturns and a fireplace.",
-            items = {
-                { id = "ss20_dae_bookshelf_01", name = "Dark Book Shelf 01" , cost = 10 },
-                { id = "ss20_dae_bookshelf_02", name = "Dark Book Shelf 02" , cost = 10 },
-                { id = "ss20_dae_bookshelf_03", name = "Dark Book Shelf 03" , cost = 10 },
-                { id = "ss20_dae_bookshelf_04", name = "Dark Book Shelf 04" , cost = 10 },
-                { id = "ss20_dae_lecturn", name = "Dark Lecturn" , cost = 10 },
-                { id = 'ss20_dae_fireplace02', name = 'Fireplace', cost = 10 },
-                { id = 'ss20_light_logpile_177', name = 'Logpile', cost = 5 },
-            }
-        },
-        {
-            id = 'chairs_01',
-            name = "Chairs",
-            cost = 50,
-            description = "A collection of wooden chairs.",
-            items = {
-                { id = "ss20_furn_dae_r_chair_02", name = "Wooden Chair 01" , cost = 10 },
-                { id = "ss20_furn_dea2_chair_01", name = "Wooden Chair 02" , cost = 10 },
-                { id = "ss20_furn_dea2_chair_01a", name = "Wooden Chair 03" , cost = 10 },
-                { id = "ss20_furn_dea2_chair_01b", name = "Wooden Chair 04" , cost = 10 },
-                { id = "ss20_furn_dea2_chair_01c", name = "Wooden Chair 05" , cost = 10 },
             }
         },
         {
@@ -323,6 +283,18 @@ Entry for the 2020 Modding Madness Competition
             }
         },
         {
+            id = "display",
+            name = "Display Cases",
+            cost = 50,
+            description = "",
+            items = {
+                { id = 'ss20_dae_display_03', name = "Round display", cost = 10 },
+                { id = 'ss20_dae_display_02', name = "Rectanglular display", cost = 10 },
+                { id = 'ss20_dae_display_01', name = "Square display", cost = 10 },
+                { id = 'ss20_dae_dispcase', name = 'Large display case' , cost = 10 },
+            }
+        },
+        {
             id = 'fabric_01',
             name = "Fabric Set",
             cost = 50,
@@ -339,6 +311,51 @@ Entry for the 2020 Modding Madness Competition
                 { id = "ss20_dea_cloth03", name = "Cloth 03" , cost = 10 },
                 { id = "ss20_dea_cloth04", name = "Cloth 04" , cost = 10 },
                 { id = "ss20_dea_cloth05", name = "Cloth 05" , cost = 10 },
+            }
+        },
+        {
+            id = 'containers_02',
+            name = "Furniture Pack",
+            cost = 80,
+            description = "Desks, closets and drawers",
+            items = {
+                { id = 'ss20_dae_Closet_01', name = 'Closet 01' , cost = 10},
+                { id = 'ss20_dae_Closet_02', name = 'Closet 02' , cost = 10},
+                { id = 'ss20_dae_Closet_03', name = 'Closet 03' , cost = 10},
+                { id = 'ss20_dae_desk01', name = 'Desk' , cost = 10},
+                { id = 'ss20_dae_table01', name = 'Table with drawers' , cost = 10},
+                { id = 'ss20_dae_table02', name = 'Small table with drawer' , cost = 10},
+            }
+        },
+        {
+            id = 'library_01',
+            name = "Library Pack",
+            cost = 50,
+            description = "A collection of wooden bookshelves, lecturns and a fireplace.",
+            items = {
+                { id = "ss20_dae_bookshelf_01", name = "Dark Book Shelf 01" , cost = 10 },
+                { id = "ss20_dae_bookshelf_02", name = "Dark Book Shelf 02" , cost = 10 },
+                { id = "ss20_dae_bookshelf_03", name = "Dark Book Shelf 03" , cost = 10 },
+                { id = "ss20_dae_bookshelf_04", name = "Dark Book Shelf 04" , cost = 10 },
+                { id = "ss20_dae_lecturn", name = "Dark Lecturn" , cost = 10 },
+                { id = 'ss20_dae_fireplace02', name = 'Fireplace', cost = 10 },
+                { id = 'ss20_light_logpile_177', name = 'Logpile', cost = 5 },
+            }
+        },
+        {
+            id = 'lights_01',
+            name = "Lights",
+            cost = 80,
+            description = "A collection of lights",
+            items = {
+                { id = 'ss20_dae_candleblk_01', name = 'Daedric candle 01' , cost = 10},
+                { id = 'ss20_dae_candleblk_02', name = 'Daedric candle 02' , cost = 10},
+                { id = 'ss20_dae_candleblk_03', name = 'Daedric candle 03' , cost = 10},
+                { id = 'ss20_light_dae_chnd_01', name = 'Chandelier 01' , cost = 10 },
+                { id = 'ss20_light_dae_chnd_02', name = 'Chandelier 02' , cost = 10 },
+                { id = 'ss20_light_dae_sconce_01', name = 'Sconce 01', cost = 10 },
+                { id = 'ss20_light_dae_sconce_02', name = 'Sconce 02', cost = 10 },
+                { id = 'ss20_light_daeLamp01_256', name = 'Lamp' , cost = 10 },
             }
         },
         {
@@ -411,6 +428,7 @@ Entry for the 2020 Modding Madness Competition
                 { id = "ss20_dae_stone_shelves03", name = "Stone Shelves 03" , cost = 10 },
             }
         },
+        
         {
             id = 'containers_01',
             name = "Stone Containers",
@@ -494,30 +512,17 @@ Entry for the 2020 Modding Madness Competition
                 { id = 'ss20_practice_dummy', name = 'Practice Dummy', cost = 10 },
             }
         },
+
         {
-            id = 'containers_02',
-            name = "Furniture Pack",
-            cost = 80,
-            description = "Desks, closets and drawers",
+            id = 'workshop',
+            name = "Workshop Pack",
+            cost = 60,
+            description = "Workbench, grindstone, forge, and anvil",
             items = {
-                { id = 'ss20_dae_Closet_01', name = 'Closet 01' , cost = 10},
-                { id = 'ss20_dae_Closet_02', name = 'Closet 02' , cost = 10},
-                { id = 'ss20_dae_Closet_03', name = 'Closet 03' , cost = 10},
-                { id = 'ss20_dae_desk01', name = 'Desk' , cost = 10},
-                { id = 'ss20_dae_table01', name = 'Table with drawers' , cost = 10},
-                { id = 'ss20_dae_table02', name = 'Small table with drawer' , cost = 10},
-            }
-        },
-        {
-            id = 'containers_03',
-            name = "Container Pack",
-            cost = 40,
-            description = "Desks, closets, drawers and crates",
-            items = {
-                { id = 'ss20_dae_chest_small_01', name = 'Small chest' , cost = 10},
-                { id = 'ss20_dae_Sack_01', name = 'Cloth sack (flat)' , cost = 10 },
-                { id = 'ss20_dae_Sack_02', name = 'Cloth sack (round)' , cost = 10 },
-                { id = 'ss20_dae_crate', name = 'Crate (Closed)' , cost = 10},
+                { id = 'ss20_furn_dae_workbench_01', name = "Workbench", cost = 30 },
+                { id = 'ss20_furn_dae_grindstone_01', name = "Grindstone", cost = 30 },
+                { id = 'ss20_dae_forge_01', name = 'Forge', cost = 10 },
+                { id = 'ss20_furn_anvil00', name = 'Anvil' , cost = 10},
             }
         },
     },

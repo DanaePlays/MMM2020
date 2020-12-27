@@ -241,6 +241,9 @@ local function rotateNif(e)
     end
 end
 
+local function resourceSorter(a, b)
+	return a.name:lower() < b.name:lower()
+end
 
 
 local function updateSelectedResourcePack()
@@ -251,33 +254,30 @@ local function updateSelectedResourcePack()
     --update preview pane
     local nifPreviewBlock = shopMenu:findChild(uiids.nifPreviewBlock)
     nifPreviewBlock:destroyChildren()
-    -- local imagePreviewBlock = shopMenu:findChild(uiids.imagePreviewBlock)
-    -- if imagePreviewBlock then 
-    --     imagePreviewBlock:destroyChildren()
-    --     if tes3.player.data[modName].selectedPack and tes3.player.data[modName].selectedPack.imagePath and tes3.getFileExists(tes3.player.data[modName].selectedPack.imagePath) then
-    --         mwse.log("imagepath = %s", tes3.player.data[modName].selectedPack.imagePath)
-    --         local image = imagePreviewBlock:createImage{ path = tes3.player.data[modName].selectedPack.imagePath }
-    --         formatImage(image)
-    --     end
-    -- end
+
+    local pack = tes3.player.data[modName].selectedPack
 
     --update name/description
     local previewName = shopMenu:findChild(uiids.previewName)
-    previewName.text = tes3.player.data[modName].selectedPack and tes3.player.data[modName].selectedPack.name or ""
+    previewName.text = pack and pack.name or ""
 
     local previewDescription = shopMenu:findChild(uiids.previewDescription)
-    previewDescription.text = tes3.player.data[modName].selectedPack and tes3.player.data[modName].selectedPack.description or ""
+    previewDescription.text = pack and pack.description or ""
 
     --List all the items in the tes3.player.data[modName].selectedPack 
     local previewList = shopMenu:findChild(uiids.previewList)
     previewList:getContentElement():destroyChildren()
-    if tes3.player.data[modName].selectedPack then
-        for _, data in ipairs(tes3.player.data[modName].selectedPack.items) do
+    
+    if pack then
+        
+        local items = pack.items
+        table.sort(items, resourceSorter)
+        for _, data in ipairs(items) do
             --replace preview pane with nif on click?
             local button = previewList:createTextSelect()
             button.text = string.format("(%d) - %s", data.cost, data.name)
             if (
-                not isPackUnlocked(tes3.player.data[modName].selectedPack)
+                not isPackUnlocked(pack)
                 or data.cost > common.getSoulShards()
             ) then
                 button.color = tes3ui.getPalette("disabled_color")
@@ -300,6 +300,8 @@ local function getShardText()
     return string.format("Soul Shards: %d", common.getSoulShards())
 end
 
+
+
 local function updateShopMenu(e)
     e = e or {}
     local menu = tes3ui.findMenu(uiids.shopMenu)
@@ -316,6 +318,7 @@ local function updateShopMenu(e)
 
     local shop = e.shop or shopConfig.defaultShop
     mwse.log("shop: %s", shop)
+    table.sort(config.resourcePacks, resourceSorter)
     for _, resourcePack in ipairs(config.resourcePacks) do
         local button = shopListScrollPane:createTextSelect{}
         

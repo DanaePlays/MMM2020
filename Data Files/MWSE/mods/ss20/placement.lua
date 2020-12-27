@@ -24,7 +24,6 @@ local settings = {
 }
 local endPlacement
 
-
 local function isPlaceable(target)
     local isInShop = false
     for _, pack in ipairs(config.resourcePacks) do
@@ -65,7 +64,6 @@ local function showGuide()
     menu.paddingRight = 16
     menu.flowDirection = "top_to_bottom"
 
-
     local function addLine(line, verb, scancode)
         local row = menu:createBlock{}
         row.widthProportional = 1.0
@@ -83,8 +81,6 @@ local function showGuide()
     menu:updateLayout()
 end
 
-
-
 local function finalPlacement()
     this.shadow_model.appCulled = true
     this.lastItemOri = this.active.orientation:copy()
@@ -96,51 +92,47 @@ local function finalPlacement()
         -- Drop to ground.
         local from = this.active.position + tes3vector3.new(0, 0, this.height + const_epsilon + 10)
         local rayhit = tes3.rayTest{ position = from, direction = tes3vector3.new(0, 0, -1), ignore = { this.active} }
-
-
         if (rayhit) then
             this.active.position = rayhit.intersection + tes3vector3.new(0, 0, this.height + const_epsilon)
         end
     end
-    
 
     tes3.playSound{ soundPath = "ss20\\ss20_s_drop.wav" }
-
     if this.active.baseObject.objectType == tes3.objectType.light then
         common.removeLight(this.active.sceneNode)
         common.onLight(this.active)
     end
 
-
     endPlacement()
 end
 
-local function doDestroyActive()
+local function doDestroyActive(shardsRecovered)
     tes3.playSound{ soundPath = "ss20\\ss20_s_destroy.wav"}
     this.active:disable()
     mwscript.setDelete{ reference = this.active }
+    common.modSoulShards(shardsRecovered)
+    tes3.messageBox("Recovered %s Soul Shards.", shardsRecovered)
     endPlacement()
 end
 
 local function deleteActive()
     if this.active then
+        local soulShards = this.active.data and this.active.data.soulShards or 0
         if this.active.baseObject.objectType == tes3.objectType.container then
             if #this.active.object.inventory > 0 then
                 tes3.messageBox()
                 common.messageBox{
-                    message  = string.format("Destroy and recover %d soul shards?",
-                        this.active.data and this.active.data.soulShards or 0
-                    ),
+                    message  = string.format("Destroy and recover %d soul shards?",soulShards),
                     buttons = {
                         { text = "Transfer Contents and Destroy", callback = function()
                             for _, stack in pairs(this.active.object.inventory) do
                                 tes3.transferItem{from=this.active, to=tes3.player, item=stack.object, count=stack.count, playSound=false}
                             end
                             tes3.playSound{reference=tes3.player, sound="Item Misc Up"}
-                            doDestroyActive()
+                            doDestroyActive(soulShards)
                         end},
                         { text = "Destroy Container and all Contents", callback = function()
-                            doDestroyActive()
+                            doDestroyActive(soulShards)
                         end},
                         { text = "Cancel"}
                     }
@@ -150,12 +142,10 @@ local function deleteActive()
         end
 
         common.messageBox{
-            message  = string.format("Destroy and recover %d soul shards?",
-                this.active.data and this.active.data.soulShards or 0
-            ),
+            message  = string.format("Destroy and recover %d soul shards?",soulShards),
             buttons = {
                 { text = "Destroy", callback = function()
-                    doDestroyActive()
+                    doDestroyActive(soulShards)
                 end},
                 { text = "Cancel"}
             }

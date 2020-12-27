@@ -30,7 +30,7 @@ local function pickUpStone(e)
 
     if isStone and atJournal and atLocation then
         incrementStones()
-        if data.stonesPickedUp == 3 then
+        if data.stonesPickedUp == 5 then
             summonSeducer()
         end
     end
@@ -41,7 +41,6 @@ event.register("activate", pickUpStone)
     Place a few extra stones in case the player already picked
     them all up before the quest
 ]]
-
 local stones = {
     {
         position = {8190.80,180437.56,312.81},
