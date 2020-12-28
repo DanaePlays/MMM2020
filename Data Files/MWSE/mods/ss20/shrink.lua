@@ -148,7 +148,7 @@ local function onKeyDown(e)
                 resetPlayerSize()
                 growEffect()
             else
-                tes3.messageBox("You need to grow up!")
+                tes3.messageBox("The orb is too heavy, you need to get bigger!")
             end
         end
     end
