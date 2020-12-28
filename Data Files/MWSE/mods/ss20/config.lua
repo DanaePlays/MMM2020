@@ -15,13 +15,8 @@ local config = {
 Entry for the 2020 Modding Madness Competition
 ]],
     mcmDefaultValues = {
-        enabled = true,
+        showSoulMessage = true,
         logLevel = "INFO",
-        debug = false,
-        menuKey = {
-            keyCode = tes3.scanCode.z,
-        },
-        rooms = {}
     },
     
     keybindRotate = tes3.scanCode.lShift,
