@@ -5,7 +5,8 @@ local modName = config.modName
 local function summonSeducer()
     local seducerRef = mwscript.placeAtPC{
         reference = tes3.player,
-        object= 'ss20_seducer01', 
+        object= 'ss20_seducer01',
+        direction = 0
     }
     tes3.say{
         soundPath = "ss20\\laugh.wav", 
@@ -22,16 +23,23 @@ end
 
 local function pickUpStone(e)
     local data = tes3.player.data[modName]
-    
     local isStone = e.target.baseObject.id:lower() == 'ss20_w_stone'
     local atJournal = tes3.getJournalIndex{ id = 'ss20_main' } == 10
     local atLocation = (tes3.player.cell.region and tes3.player.cell.region.id == "Sheogorad")
-        and not tes3.player.cell.isInterior
+    local outside = not tes3.player.cell.isInterior
 
-    if isStone and atJournal and atLocation then
-        incrementStones()
-        if data.stonesPickedUp == 5 then
-            summonSeducer()
+    if isStone then
+        common.log:debug("Is Stone")
+        if atJournal then
+            common.log:debug("At Journal")
+            if atLocation and outside then
+                common.log:debug("At location, incrementing stones")
+                incrementStones()
+                if data.stonesPickedUp == 5 then
+                    common.log:debug("Picked up 5, summoning seducer")
+                    summonSeducer()
+                end
+            end
         end
     end
 end

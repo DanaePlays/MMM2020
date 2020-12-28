@@ -8,13 +8,15 @@ local jIndex = config.journal_cs.indexes.bottlePickedUp
 local function doAttackSounds()
     local path = 'Vo\\d\\m\\'
     local soundIds = {
+        'CrAtk_AM003.mp3',
         'CrAtk_AM001.mp3',
         'CrAtk_AM002.mp3',
-        'CrAtk_AM003.mp3',
         'CrAtk_AM004.mp3',
+        'CrAtk_AM001.mp3',
+        'CrAtk_AM003.mp3',
     }
     local sourceRef = tes3.getReference("ss20_in_daeCenserOut") or tes3.player
-    mwse.log("sound source: %s", sourceRef)
+    common.log:debug("sound source: %s", sourceRef)
     local interval = 0.5
     for i, sound in ipairs(soundIds) do
         timer.start{
@@ -22,7 +24,7 @@ local function doAttackSounds()
             duration = i * interval + math.random(0, 0.5),
             callback = function()
                 local soundPath = string.format("%s%s", path, sound)
-                mwse.log("playing %s", soundPath)
+                common.log:debug("playing %s", soundPath)
                 tes3.playSound{
                     reference = sourceRef,
                     soundPath = soundPath,
@@ -38,7 +40,7 @@ local function onBottlePickUp(e)
     local currentIndex = tes3.getJournalIndex{ id = journalID }
     if currentIndex >= jIndex then return end
 
-    mwse.log("id: %s", e.target.baseObject.id)
+    common.log:debug("id: %s", e.target.baseObject.id)
     if e.target.baseObject.id:lower() == 'ss20_bottle_of_souls' then
         common.messageBox{
             header = e.target.object.name,

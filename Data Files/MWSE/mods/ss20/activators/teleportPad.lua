@@ -93,7 +93,7 @@ local function teleportMenu(active, teleporters)
 
     local directionsMenu = menu:createLabel()
     directionsMenu.borderBottom = 5
-    mwse.log(#teleporters)
+    common.log:debug(#teleporters)
     if #teleporters == 0 then
         directionsMenu.text = "You have not registered any new teleporters."
     else

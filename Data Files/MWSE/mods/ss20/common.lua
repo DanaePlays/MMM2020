@@ -3,6 +3,17 @@ this.config = require("ss20.config")
 local modName = this.config.modName
 this.mcmConfig = mwse.loadConfig(this.config.modName, this.config.mcmDefaultValues)
 
+
+local logLevel = this.mcmConfig.logLevel
+mwse.log("loglevel")
+local logger = require("ss20.logger")
+
+this.log = logger.new{
+    name = modName,
+    --outputFile = "Ashfall.log",
+    logLevel = logLevel
+}
+
 function this.keyPressed(keyEvent, expected)
     return (
         keyEvent.keyCode == expected.keyCode and
@@ -12,12 +23,6 @@ function this.keyPressed(keyEvent, expected)
     )
 end
 
-this.debug = function(message, ...)
-    if this.mcmConfig.debug then
-        local output = string.format("[%s] %s", this.config.modName, tostring(message):format(...) )
-        mwse.log(output)
-    end
-end
 
 function this.traverse(roots)
     local function iter(nodes)
@@ -38,7 +43,7 @@ local function initData()
     tes3.player.data[this.config.modName] = tes3.player.data[this.config.modName] or {}
     this.data = tes3.player.data[this.config.modName]
     this.data.unlockedResourcePacks = this.data.unlockedResourcePacks or {}
-    mwse.log("Shrine of Vernaccus Data Initialised")
+    this.log:debug("Shrine of Vernaccus Data Initialised")
 end
 event.register("loaded", initData)
 
@@ -191,7 +196,7 @@ function this.makeFilteredList(objectTypes, searchParam)
 
 
     local list = {}
-    mwse.log("searchParam: %s, objectTypes: %s", searchParam)
+    this.log:debug("searchParam: %s, objectTypes: %s", searchParam)
     for objectType, _ in ipairs(objectTypes) do
         for obj in tes3.iterateObjects(objectType) do
             if not searchParam or searchParam.len == 0 then
@@ -253,7 +258,7 @@ function this.onLight(lightRef)
     lightRef.sceneNode:update()
     lightRef.sceneNode:updateNodeEffects()
     lightRef:getOrCreateAttachedDynamicLight(lightNode, 1.0)
-    mwse.log("onlight done")
+    this.log:debug("onlight done")
 end
 function this.removeLight(lightNode) 
 
@@ -312,13 +317,36 @@ function this.isShiftDown()
 end
 
 
+
 function this.isAllowedToManipulate()
-    return (tes3.player.cell.id == this.config.shrineTeleportPosition.cell
-        or tes3.player.cell.id == this.config.horavathaTeleportPosition.cell
-        or tes3.getJournalIndex{id = "ss20_CS"} >= 100)
-        and tes3.player.cell.isInterior
+    local inShrine = tes3.player.cell.id == this.config.shrineTeleportPosition.cell
+    local inBoudoir = tes3.player.cell.id == this.config.horavathaTeleportPosition.cell
+    local finishedQuest = tes3.getJournalIndex{id = "ss20_CS"} >= 100
+    local isInside = tes3.player.cell.isInterior
+
+    local ss20_main_i = tes3.getJournalIndex({id="ss20_main"})
+    local duringAttack = ss20_main_i >= 50 and ss20_main_i < 59
+
+    --Always block when outside
+    if not isInside then return false end
+    --Block during final attack and statue is crumbled
+    if duringAttack then return false end
+    --ALlowed only in shrines unless quest is finished
+    if finishedQuest or inShrine or inBoudoir then
+        return true
+    else
+        return false
+    end
 end
 
+
+
+function this.getRoomCost(room)
+    local data = tes3.player.data[modName]
+    local multiplier = data.roomsBuilt and (this.config.roomCostMulti * data.roomsBuilt) or 1
+    local cost = room.cost * multiplier
+    return cost
+end
 
 
 function this.getSoulShards()
@@ -327,10 +355,12 @@ function this.getSoulShards()
 end
 
 function this.modSoulShards(count)
-    mwse.log("Modding soul shards! They are curently: %s", tes3.player.data[modName].soulShards )
-    mwse.log("Modding by %s", count)
+    this.log:debug("Modding soul shards! They are curently: %s", tes3.player.data[modName].soulShards )
+    this.log:debug("Modding by %s", count)
     tes3.player.data[modName].soulShards = this.getSoulShards() + count
-    mwse.log("New value: %s", tes3.player.data[modName].soulShards )
+    this.log:debug("New value: %s", tes3.player.data[modName].soulShards )
 end
 
+
+mwse.log("Common done just fine")
 return this
