@@ -40,7 +40,7 @@ Read a book about Vernaccus at Jobasha's to begin.
         [tes3.objectType.creature] = 1,
         [tes3.objectType.npc] = 10
     },
-
+    roomCostMulti = 1.4,
 
     journal_cs = {
         id = "ss20_CS",
