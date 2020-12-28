@@ -33,6 +33,26 @@ end
 
 event.register("SS20:DestroyWall", explodeWall)
 
+
+
+local function onActivate(e)
+    --Triggered from mwscript, so no activator
+    if e.activator == nil then
+        if e.target.baseObject.id:lower() == 'ss20_in_daebarrierwell' then
+            e.target.data.ss20DoDestroy = true
+            timer.start{
+                type = timer.real,
+                duration = 27.5,
+                callback = function()
+                    event.trigger("SS20:DestroyWall", { wall = e.target })
+                end
+            } 
+        end
+    end
+end
+event.register("activate", onActivate)
+
+
 local function disableWallsOnLoad()
     for ref in tes3.player.cell:iterateReferences(tes3.objectType.activator) do
         if ref.data.ss20DoDestroy == true then

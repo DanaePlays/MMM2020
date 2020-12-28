@@ -91,7 +91,7 @@ local function onDeath(e)
         if multi then
             local shardsCaptured = math.floor(multi * math.remap(e.reference.object.level, 1, 100, config.soulsAtLvl1, config.soulsAtLvl100))
             if common.mcmConfig.showSoulMessage then
-                tes3.messageBox("%d soul shard scaptured!", shardsCaptured)
+                tes3.messageBox("%d soul shards captured!", shardsCaptured)
             end
             common.modSoulShards(shardsCaptured)
             local journal = {
