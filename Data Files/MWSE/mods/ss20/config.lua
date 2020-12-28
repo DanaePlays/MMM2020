@@ -8,7 +8,7 @@ local prices = {
 
 local config = {
     --Mod name will be used for the MCM menu as well as the name of the config .json file.
-    modName = "The Legend of Vernaccus",
+    modName = "Pimp My Shrine",
     --Description for the MCM sidebar
     modDescription =
 [[
