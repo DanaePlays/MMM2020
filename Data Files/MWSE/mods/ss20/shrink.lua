@@ -98,7 +98,6 @@ local function onSimulate()
 end
 event.register("simulate", onSimulate)
 
-tes3.messageBox("refresh")
 
 local function growEffect()
     local effect = tes3.createReference{
