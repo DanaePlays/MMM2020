@@ -17,5 +17,6 @@ require('ss20.spirit')
 require('ss20.stones')
 require('ss20.teleport')
 require('ss20.tooltip')
+require('ss20.shrink')
 --MCM MENU
 require('ss20.mcm')
