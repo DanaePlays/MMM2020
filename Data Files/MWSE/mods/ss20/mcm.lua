@@ -11,6 +11,16 @@ local function registerModConfig()
     local settings = template:createSideBarPage("Settings")
     settings.description = config.modDescription
 
+
+    settings:createYesNoButton{
+        label = "Show Soul Harvest Message",
+        description = "Show a message box whenever you harvest soul shards from a fallen enemy.",
+        variable = mwse.mcm.createTableVariable{
+            id = 'showSoulMessage',
+            table = mcmConfig
+        }
+    }
+
     settings:createDropdown{
         label = "Log Level",
         description = "Set the logging level for common.log:debug. Keep on INFO unless you are debugging.",

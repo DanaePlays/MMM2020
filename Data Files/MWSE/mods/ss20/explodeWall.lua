@@ -14,7 +14,8 @@ local function explodeWall(e)
         tes3.createReference{
             object = 'ss20_FX_explosion',
             position = animWall.position:copy(),
-            orientation = animWall.orientation:copy()
+            orientation = animWall.orientation:copy(),
+            cell = animWall.cell
         }
         tes3.playAnimation({
             reference = animWall ,
