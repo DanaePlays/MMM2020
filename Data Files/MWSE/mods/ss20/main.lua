@@ -18,5 +18,6 @@ require('ss20.stones')
 require('ss20.teleport')
 require('ss20.tooltip')
 require('ss20.shrink')
+require('ss20.blockWaterSound')
 --MCM MENU
 require('ss20.mcm')
