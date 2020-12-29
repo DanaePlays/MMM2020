@@ -158,6 +158,36 @@ local config = {
             description = "A large series of rooms with plenty of space to hang your paintings and display your treasures.",
             cost = 5000
         },
+        {
+            id = 'ss20_garden',
+            name = "Greenhouse",
+            description = "Mid-sized room with 6 planters and most plants.",
+            cost = 600,
+        },
+        {
+            id = 'ss20_pool',
+            name = "Large Pool",
+            description = "Mid-sized with a pool in its center.",
+            cost = 500,
+        },
+        {
+            id = 'ss20_round room',
+            name = "Round Room",
+            description = "A small, round room with minimal furnishings.",
+            cost = 500,
+        },
+        {
+            id = 'ss20_smallsquareroom',
+            name = "Small Gallery",
+            description = "A small room with many alcoved to display items. No furnishing.",
+            cost = 550,
+        },
+        {
+            id = 'ss20_worshiproom',
+            name = "Worship Room",
+            description = "A room large enough to fit a statue, with benches and braziers.",
+            cost = 550,
+        },
     },
     
     resourcePacks = {
@@ -363,7 +393,6 @@ local config = {
                 { id = "ss20_dae_overhang_01", name = "Overhang 01" , cost = prices.furniture },
                 { id = "ss20_dae_overhang_04", name = "Overhang 02" , cost = prices.furniture },
                 { id = "ss20_dae_planter_large02", name = "Planter 01" , cost = prices.furniture },
-                { id = "ss20_dae_planter_small", name = "Planter 02" , cost = prices.furniture },
                 { id = "ss20_dae_planter_small02", name = "Planter 03" , cost = prices.furniture },
                 { id = "ss20_dae_crate_open_05", name = "Crate (Open)" , cost = prices.furniture },
             }
