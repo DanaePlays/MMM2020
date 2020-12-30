@@ -4,6 +4,9 @@ local prices = {
     container = 50,
     activator = 100,
     vernaccus = 50,
+    trophy01 = 20000,
+    trophy02 = 50000,
+    trophy03 = 100000,
 }
 
 local config = {
@@ -202,7 +205,7 @@ local config = {
                 { id = 'ss20_dae_Bed02', name = 'Extravagant Bed 01' , cost = prices.furniture},
                 { id = 'ss20_dae_Bed02a', name = 'Extravagant Bed 02' , cost = prices.furniture},
                 { id = 'ss20_dae_bed03', name = 'Fancy double bed 01' , cost = prices.furniture},
-				{ id = 'ss20_dae_bed03a', name = 'Fancy double bed 02' , cost = prices.furniture},
+                { id = 'ss20_dae_bed03a', name = 'Fancy double bed 02' , cost = prices.furniture},
                 { id = 'ss20_dae_bed04', name = 'Simple Bed 01' , cost = prices.furniture },
                 { id = 'ss20_dae_Bed04a', name = 'Simple bed 02' , cost = prices.furniture},
                 { id = 'ss20_dae_Bed05', name = 'Simple double bed 01' , cost = prices.furniture},
@@ -509,11 +512,15 @@ local config = {
                 { id = 'ss20_furn_tapMayor', name = "Vernaccus Tapestry 02" , cost = prices.vernaccus },
                 { id = 'ss20_furn_tapWorship', name = "Vernaccus Tapestry 04" , cost = prices.vernaccus },
                 { id = 'ss20_furn_tapArrows', name = "Vernaccus Tapestry 03" , cost = prices.vernaccus },
-                { id = 'ss20_in_daeVernaccus02', name = 'Medium-sized statue of Vernaccus' , cost = prices.vernaccus },
+                { id = 'ss20_in_daeVernaccus02', name = 'Large statue of Vernaccus' , cost = prices.vernaccus },
+                { id = 'ss20_Vernaccus_small', name = 'Medium-sized statue of Vernaccus' , cost = prices.vernaccus },
                 { id = "ss20_art_09", name = "Painting: Vernaccus 01", cost = prices.vernaccus },
                 { id = "ss20_art_10", name = "Painting: Vernaccus 02", cost = prices.vernaccus },
                 { id = "ss20_art_11", name = "Painting: Vernaccus 03", cost = prices.vernaccus },
                 { id = "ss20_art_12", name = "Painting: Vernaccus 04", cost = prices.vernaccus },
+                { id = "ss20_Vernaccus_bronze", name = "Bronze statue of Vernaccus", cost = prices.trophy01 },
+                { id = "ss20_Vernaccus_silver", name = "Silver statue of Vernaccus", cost = prices.trophy02 },
+                { id = "ss20_Vernaccus_gold", name = "Gold statue of Vernaccus", cost = prices.trophy03 },
             }
         },
         {
