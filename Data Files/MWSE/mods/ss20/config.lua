@@ -177,7 +177,7 @@ local config = {
             cost = 500,
         },
         {
-            id = 'ss20_smallsquareroom',
+            id = 'ss20_smallgallery',
             name = "Small Gallery",
             description = "A small room with many alcoved to display items. No furnishing.",
             cost = 550,
