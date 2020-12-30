@@ -98,19 +98,19 @@ local config = {
         {
             id = 'ss20_Lshaped',
             name = "Empty L-Shaped Room",
-            description = "A small, L-shaped room with minimal furnishings.",
+            description = "A small, L-shaped room with no furnishings.",
             cost = 500,
         },
         {
             id = 'ss20_smallsquareroom',
             name = "Small Square Room",
-            description = "A hallway with a small room off to the side and minimal furnishings",
+            description = "A hallway with a small room off to the side and no furnishings",
             cost = 500,
         },
         {
             id = 'ss20_ushaped',
             name = "Empty U-Shaped Room",
-            description = "A medium sized, U-shaped room with minimal furnishings.",
+            description = "A medium sized, U-shaped room with no furnishings.",
             cost = 500,
         },
         {
@@ -128,8 +128,8 @@ local config = {
         {
             id = 'ss20_VeryLargeDuplex',
             name = "Duplex",
-            description = "A large room with a grand staircase in the middle.",
-            cost = 2000
+            description = "A large, unfurnished room with a grand staircase in the middle.",
+            cost = 1000
         },
         {
             id = 'ss20_portal',
@@ -140,7 +140,7 @@ local config = {
         {
             id = 'ss20_study',
             name = "Study",
-            description = "A well-furnished medium sized room with fireplace, desk and bookshelves.",
+            description = "A furnished medium sized room with fireplace, desk and bookshelves.",
             cost = 3000,
         },
         {
@@ -152,19 +152,19 @@ local config = {
         {
             id = 'ss20_magic_room',
             name = "Magic Room",
-            description = "A small but functional room built for mages. Includes a Staff Recharging Station, and a Teleportation pad.",
+            description = "A small but functional room built for mages. Includes an alchemy table, and a Teleportation pad.",
             cost = 5000
         },
         {
             id = 'ss20_gallery',
             name = "Gallery",
-            description = "A large series of rooms with plenty of space to hang your paintings and display your treasures.",
+            description = "A large series of furnished rooms with plenty of space to hang your paintings and display your treasures.",
             cost = 5000
         },
         {
             id = 'ss20_garden',
             name = "Greenhouse",
-            description = "Mid-sized room with 6 planters and most plants.",
+            description = "Mid-sized room with 6 planters and most plants of Vvardenfell.",
             cost = 600,
         },
         {
@@ -176,20 +176,20 @@ local config = {
         {
             id = 'ss20_round room',
             name = "Round Room",
-            description = "A small, round room with minimal furnishings.",
+            description = "A small, round room with no furnishings.",
             cost = 500,
         },
         {
             id = 'ss20_smallgallery',
             name = "Small Gallery",
-            description = "A small room with many alcoved to display items. No furnishing.",
-            cost = 550,
+            description = "A small room with many alcoves to display items. No furnishing.",
+            cost = 600,
         },
         {
             id = 'ss20_worshiproom',
             name = "Worship Room",
             description = "A room large enough to fit a statue, with benches and braziers.",
-            cost = 550,
+            cost = 1000,
         },
     },
     
@@ -507,7 +507,6 @@ local config = {
             cost = 2000,
             description = "Decorative items featuring Vernaccus",
             items = {
-
                 { id = 'ss20_furn_tapFlood', name = "Vernaccus Tapestry 01" , cost = prices.vernaccus },
                 { id = 'ss20_furn_tapMayor', name = "Vernaccus Tapestry 02" , cost = prices.vernaccus },
                 { id = 'ss20_furn_tapWorship', name = "Vernaccus Tapestry 04" , cost = prices.vernaccus },
@@ -527,10 +526,11 @@ local config = {
             id = 'magic',
             name = "Magic Pack",
             cost = 2000,
-            description = "Magical tool and mystical lights",
+            description = "Magical tools and mystical lights",
             items = {
                 { id = 'ss20_tbl_staff', name = 'Staff Recharging Station', cost = prices.activator },
                 { id = 'ss20_tbl_alch', name = 'Alchemy Station', cost = prices.activator },
+                { id = 'ss20_furn_musicBox', name = 'Music Box', cost = prices.activator },
             }
         },
         {
