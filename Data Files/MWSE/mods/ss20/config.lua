@@ -326,7 +326,7 @@ local config = {
             id = "display",
             name = "Display Cases",
             cost = 1200,
-            description = "",
+            description = "Displays of various sizes",
             items = {
                 { id = 'ss20_dae_display_03', name = "Round display", cost = prices.furniture },
                 { id = 'ss20_dae_display_04', name = "Tall display", cost = prices.furniture },
