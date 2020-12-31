@@ -1,12 +1,12 @@
 local prices = {
-    clutter = 10,
-    furniture = 20,
-    container = 50,
-    activator = 100,
-    vernaccus = 50,
+    clutter = 100,
+    furniture = 200,
+    container = 1000,
+    activator = 5000,
+    vernaccus = 10000,
     trophy01 = 50000,
     trophy02 = 100000,
-    trophy03 = 200000,
+    trophy03 = 1000000,
 }
 
 local config = {
@@ -183,7 +183,7 @@ local config = {
             id = 'ss20_pool',
             name = "Large Pool",
             description = "Mid-sized with a pool in its center.",
-            cost = 1000,
+            cost = 2000,
         },
         {
             id = 'ss20_round room',
@@ -195,13 +195,13 @@ local config = {
             id = 'ss20_smallgallery',
             name = "Small Gallery",
             description = "A small room with many alcoves to display items. No furnishing.",
-            cost = 1200,
+            cost = 1500,
         },
         {
             id = 'ss20_worshiproom',
             name = "Worship Room",
             description = "A room large enough to fit a statue, with benches and braziers.",
-            cost = 2000,
+            cost = 5000,
         },
     },
     
@@ -209,13 +209,13 @@ local config = {
         {
             id = 'beds_01',
             name = "Beds",
-            cost = 800,
+            cost = 1000,
             description = "A collection of beds",
             items = {
                 { id = 'ss20_dae_bed01', name = 'Fancy single bed 01' , cost = prices.furniture},
                 { id = 'ss20_dae_bed01a', name = 'Fancy single bed 02' , cost = prices.furniture },
-                { id = 'ss20_dae_Bed02', name = 'Extravagant Bed 01' , cost = prices.furniture},
-                { id = 'ss20_dae_Bed02a', name = 'Extravagant Bed 02' , cost = prices.furniture},
+                -- { id = 'ss20_dae_Bed02', name = 'Extravagant Bed 01' , cost = prices.furniture},
+                -- { id = 'ss20_dae_Bed02a', name = 'Extravagant Bed 02' , cost = prices.furniture},
                 { id = 'ss20_dae_bed03', name = 'Fancy double bed 01' , cost = prices.furniture},
                 { id = 'ss20_dae_bed03a', name = 'Fancy double bed 02' , cost = prices.furniture},
                 { id = 'ss20_dae_bed04', name = 'Simple Bed 01' , cost = prices.furniture },
@@ -227,7 +227,7 @@ local config = {
         {
             id = 'art',
             name = "Paintings",
-            cost = 1000,
+            cost = 5000,
             description = "A variety of oil paintings.",
             items = {
                 { id = "ss20_art_01", name = "Painting: Ascadian Isles", cost = prices.clutter },
@@ -269,7 +269,7 @@ local config = {
         {
             id = 'crystal',
             name = "Crystal Pack",
-            cost = 2000,
+            cost = 10000,
             description = "A collection of luminous crystals of various colors",
             items = {
                 { id = 'ss20_light_daeCrystal01_blue', name = 'Small blue crystal' , cost = prices.furniture },
@@ -310,7 +310,7 @@ local config = {
         {
             id = 'altars_01',
             name = "Daedric Pack",
-            cost = 1200,
+            cost = 5000,
             description = "A collection of Stone Daedric furniture.",
             items = {
                 { id = "ss20_furn_daealtar01", name = "Daedric Altar" , cost = prices.furniture },
@@ -325,7 +325,7 @@ local config = {
         {
             id = "display",
             name = "Display Cases",
-            cost = 1200,
+            cost = 10000,
             description = "Displays of various sizes",
             items = {
                 { id = 'ss20_dae_display_03', name = "Round display", cost = prices.furniture },
@@ -338,7 +338,7 @@ local config = {
         {
             id = 'fabric_01',
             name = "Fabric Set",
-            cost = 300,
+            cost = 500,
             description = "A collection of miscellaneous fabric items.",
             items = {
                 { id = "ss20_furn_dae_chair_02", name = "Fabric Chair 01" , cost = prices.furniture },
@@ -357,7 +357,7 @@ local config = {
         {
             id = 'containers_02',
             name = "Furniture Pack",
-            cost = 800,
+            cost = 1000,
             description = "Desks, closets and drawers",
             items = {
                 { id = 'ss20_dae_Closet_01', name = 'Closet 01' , cost = prices.container},
@@ -371,7 +371,7 @@ local config = {
         {
             id = 'library_01',
             name = "Library Pack",
-            cost = 800,
+            cost = 2000,
             description = "A collection of wooden bookshelves, lecturns and a fireplace.",
             items = {
                 { id = "ss20_dae_bookshelf_01", name = "Dark Book Shelf 01" , cost = prices.furniture },
@@ -386,7 +386,7 @@ local config = {
         {
             id = 'lights_01',
             name = "Lights",
-            cost = 400,
+            cost = 500,
             description = "A collection of lights",
             items = {
                 { id = 'ss20_dae_candleblk_01', name = 'Daedric candle 01' , cost = prices.furniture},
@@ -402,7 +402,7 @@ local config = {
         {
             id = 'outdoors_01',
             name = "Outdoors Set",
-            cost = 400,
+            cost = 500,
             description = "A collection of various outdoor decorations",
             items = {
                 { id = "ss20_furn_dae_ex_table_02", name = "Wooden Table" , cost = prices.furniture },
@@ -416,7 +416,7 @@ local config = {
         {
             id = 'rugs_01',
             name = "Rugs",
-            cost = 800,
+            cost = 1000,
             description = "A collection of rugs of various patterns and sizes",
             items = {
                 { id = "ss20_dae_rug_01", name = "Rug 01" , cost = prices.furniture },
@@ -435,7 +435,7 @@ local config = {
         {
             id = 'screens_01',
             name = "Screens",
-            cost = 800,
+            cost = 1500,
             description = "A collection of fabric screens",
             items = {
                 { id = "ss20_dae_screen_01", name = "Fabric Screen 01" , cost = prices.furniture },
@@ -458,7 +458,7 @@ local config = {
         {
             id = 'shelves_01',
             name = "Shelves",
-            cost = 400,
+            cost = 500,
             description = "A collection of various shelves.",
             items = {
                 { id = "ss20_dae_shelf03", name = "Small Wooden Shelf 01" , cost = prices.furniture },
@@ -472,7 +472,7 @@ local config = {
         {
             id = 'containers_01',
             name = "Stone Containers",
-            cost = 800,
+            cost = 1500,
             description = "A collection of stone containers",
             items = {
                 { id = 'ss20_o_daeChest01', name = 'Large Daedric chest' , cost = prices.container},
@@ -485,7 +485,7 @@ local config = {
         {
             id = 'tables_01',
             name = "Tables",
-            cost = 400,
+            cost = 500,
             description = "A collection of wooden tables.",
             items = {
                 { id = "ss20_dae_table_06", name = "Round Table" , cost = prices.furniture },
@@ -517,7 +517,7 @@ local config = {
         {
             id = 'tapestries_03',
             name = "Vernaccus Pack",
-            cost = 4000,
+            cost = 10000,
             description = "Decorative items featuring Vernaccus",
             items = {
                 { id = 'ss20_furn_tapFlood', name = "Vernaccus Tapestry 01" , cost = prices.vernaccus },
@@ -530,15 +530,15 @@ local config = {
                 { id = "ss20_art_10", name = "Painting: Vernaccus 02", cost = prices.vernaccus },
                 { id = "ss20_art_11", name = "Painting: Vernaccus 03", cost = prices.vernaccus },
                 { id = "ss20_art_12", name = "Painting: Vernaccus 04", cost = prices.vernaccus },
-                { id = "ss20_trophy_bronze", name = "Bronze Trophy", cost = prices.trophy01 },
-                { id = "ss20_trophy_silver", name = "Silver Trophy", cost = prices.trophy02 },
-                { id = "ss20_trophy_gold", name = "Gold Trophy", cost = prices.trophy03 },
+                { id = "ss20_trophy_bronze", name = "Trophy: Bronze", cost = prices.trophy01 },
+                { id = "ss20_trophy_silver", name = "Trophy: Silver", cost = prices.trophy02 },
+                { id = "ss20_trophy_gold", name = "Trophy: Gold", cost = prices.trophy03 },
             }
         },
         {
             id = 'magic',
             name = "Magic Pack",
-            cost = 2000,
+            cost = 20000,
             description = "Magical wonders",
             items = {
                 { id = 'ss20_tbl_staff', name = 'Staff Recharging Station', cost = prices.activator },
@@ -549,7 +549,7 @@ local config = {
         {
             id = 'dummy',
             name = "Training Pack",
-            cost = 2000,
+            cost = 5000,
             description = "Functionnal practice dummy and a practice mat",
             items = {
                 { id = 'ss20_dae_mat', name = 'Practice mat', cost = prices.furniture },
@@ -560,7 +560,7 @@ local config = {
         {
             id = 'workshop',
             name = "Workshop Pack",
-            cost = 2000,
+            cost = 5000,
             description = "Workbench, grindstone, forge, and anvil",
             items = {
                 { id = 'ss20_furn_dae_workbench_01', name = "Workbench", cost = prices.activator},
