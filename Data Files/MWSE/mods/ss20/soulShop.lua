@@ -138,8 +138,9 @@ end
 
 
 local function updatePreviewPane()
-    local itemId = tes3.player.data[modName].selectedResource.id
-    local itemName = tes3.player.data[modName].selectedResource.name
+    local selectedResource = tes3.player.data[modName].selectedResource
+    local itemId = selectedResource.id
+    local itemName = selectedResource.name
     local shopMenu = tes3ui.findMenu(uiids.shopMenu)
     if not shopMenu then return end
     common.log:debug("itemId: %s", itemId)
@@ -169,17 +170,25 @@ local function updatePreviewPane()
             common.removeLight(node)
             removeCollision(node)
             node:update()
+
+            local maxDimension
             local bb = node:createBoundingBox(node.scale)
-            local height = bb.max.z - bb.min.z
-            local width = bb.max.y - bb.min.y
-            local depth = bb.max.x - bb.min.x
+            if selectedResource.height then
+                --custom heights for fucky meshes
+                maxDimension = selectedResource.height
+            else
+                --get size from bounding box
 
-            local maxDimension = math.max(width, depth, height)
-            --local maxDimension = node.worldBoundRadius
-            common.log:debug("bb min: %s, max: %s", bb.min, bb.max)
-            common.log:debug("height: %s", height)
-            common.log:debug("worldBoundRadius: %s", node.worldBoundRadius)
+                local height = bb.max.z - bb.min.z
+                local width = bb.max.y - bb.min.y
+                local depth = bb.max.x - bb.min.x
 
+                maxDimension = math.max(width, depth, height)
+                --local maxDimension = node.worldBoundRadius
+                common.log:debug("bb min: %s, max: %s", bb.min, bb.max)
+                common.log:debug("height: %s", height)
+                common.log:debug("worldBoundRadius: %s", node.worldBoundRadius)
+            end
             local targetHeight = 250
             node.scale = targetHeight / maxDimension
 
@@ -192,7 +201,7 @@ local function updatePreviewPane()
                 vertexColorProperty.name = "vcol yo"
                 vertexColorProperty.source = 2
                 node:attachProperty(vertexColorProperty)
-                
+
                 local zBufferProperty = niZBufferProperty.new()
                 zBufferProperty.name = "zbuf yo"
                 zBufferProperty:setFlag(true, 0)

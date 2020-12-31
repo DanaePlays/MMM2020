@@ -541,7 +541,7 @@ local config = {
             items = {
                 { id = 'ss20_tbl_staff', name = 'Staff Recharging Station', cost = prices.activator },
                 { id = 'ss20_tbl_alch', name = 'Alchemy Station', cost = prices.activator },
-                { id = 'ss20_furn_musicBox', name = 'Music Box', cost = prices.activator },
+                { id = 'ss20_furn_musicBox', name = 'Music Box', cost = prices.activator, height = 150 },
             }
         },
         {
