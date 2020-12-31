@@ -328,10 +328,10 @@ local config = {
             cost = 1200,
             description = "",
             items = {
-                { id = 'ss20_dae_display_03', name = "Round display", cost = prices.activator },
-                { id = 'ss20_dae_display_04', name = "Tall display", cost = prices.activator },
-                { id = 'ss20_dae_display_02', name = "Rectanglular display", cost = prices.activator },
-                { id = 'ss20_dae_display_01', name = "Square display", cost = prices.activator },
+                { id = 'ss20_dae_display_03', name = "Round display", cost = prices.furniture },
+                { id = 'ss20_dae_display_04', name = "Tall display", cost = prices.furniture },
+                { id = 'ss20_dae_display_02', name = "Rectanglular display", cost = prices.furniture },
+                { id = 'ss20_dae_display_01', name = "Square display", cost = prices.furniture },
                 { id = 'ss20_dae_dispcase', name = 'Large display case' , cost = prices.activator },
             }
         },
