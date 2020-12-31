@@ -344,13 +344,8 @@ local config = {
                 { id = "ss20_furn_dae_chair_02a", name = "Fabric Chair 02" , cost = prices.furniture },
                 { id = "ss20_furn_dae_chair_02b", name = "Fabric Chair 03" , cost = prices.furniture },
                 { id = "ss20_furn_dae_chair_02c", name = "Fabric Chair 04" , cost = prices.furniture },
-                { id = "ss20_pillow02", name = "Pillow (plain)" , cost = prices.furniture },
-                { id = "ss20_pillow_01", name = "Pillow (pattern)" , cost = prices.furniture },
---                { id = "ss20_dea_cloth01", name = "Cloth 01" , cost = prices.furniture },
---                { id = "ss20_dea_cloth02", name = "Cloth 02" , cost = prices.furniture },
---                { id = "ss20_dea_cloth03", name = "Cloth 03" , cost = prices.furniture },
---                { id = "ss20_dea_cloth04", name = "Cloth 04" , cost = prices.furniture },
---                { id = "ss20_dea_cloth05", name = "Cloth 05" , cost = prices.furniture },
+                { id = "ss20_pillow02", name = "Pillow: Pattern" , cost = prices.furniture },
+                { id = "ss20_pillow_01", name = "Pillow: Plain" , cost = prices.furniture },
             }
         },
         {
