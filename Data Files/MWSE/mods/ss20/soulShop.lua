@@ -180,11 +180,9 @@ local function updatePreviewPane()
             common.log:debug("height: %s", height)
             common.log:debug("worldBoundRadius: %s", node.worldBoundRadius)
 
+            local targetHeight = 250
+            node.scale = targetHeight / maxDimension
 
-            node.scale = math.max(math.remap(maxDimension, 20, 150, 3.5, 1.0), 1.0)
-            -- if item.objectType == tes3.objectType.light then
-            --     node.scale = node.scale * 2
-            -- end
             local lowestPoint = bb.min.z
             common.log:debug("lowestPoint = %s", lowestPoint)
             node.translation.z = node.translation.z - lowestPoint*node.scale 

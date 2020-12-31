@@ -329,7 +329,6 @@ local config = {
             description = "Displays of various sizes",
             items = {
                 { id = 'ss20_dae_display_03', name = "Round display", cost = prices.furniture },
-                { id = 'ss20_dae_display_04', name = "Tall display", cost = prices.furniture },
                 { id = 'ss20_dae_display_02', name = "Rectanglular display", cost = prices.furniture },
                 { id = 'ss20_dae_display_01', name = "Square display", cost = prices.furniture },
                 { id = 'ss20_dae_dispcase', name = 'Large display case' , cost = prices.activator },
@@ -524,8 +523,7 @@ local config = {
                 { id = 'ss20_furn_tapMayor', name = "Vernaccus Tapestry 02" , cost = prices.vernaccus },
                 { id = 'ss20_furn_tapWorship', name = "Vernaccus Tapestry 04" , cost = prices.vernaccus },
                 { id = 'ss20_furn_tapArrows', name = "Vernaccus Tapestry 03" , cost = prices.vernaccus },
-                { id = 'ss20_in_daeVernaccus02', name = 'Large statue of Vernaccus' , cost = prices.vernaccus },
-                { id = 'ss20_Vernaccus_small', name = 'Medium-sized statue of Vernaccus' , cost = prices.vernaccus },
+                { id = 'ss20_Vernaccus_small', name = 'Statue of Vernaccus' , cost = prices.vernaccus },
                 { id = "ss20_art_09", name = "Painting: Vernaccus 01", cost = prices.vernaccus },
                 { id = "ss20_art_10", name = "Painting: Vernaccus 02", cost = prices.vernaccus },
                 { id = "ss20_art_11", name = "Painting: Vernaccus 03", cost = prices.vernaccus },
