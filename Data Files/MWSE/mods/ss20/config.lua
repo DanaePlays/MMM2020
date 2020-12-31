@@ -92,6 +92,18 @@ local config = {
         ss20_cave_door = '"The door is old and battered, rocks have hit it. A lot"',
         ss20_misc_bustHoravatha = "Certain... areas... appear to be more worn than others.",
         ss20_2_stone = "A small stone perfectly shaped for throwing."
+        ss20_daedplaque7 = '"Bread crumbs might help."',
+        ss20_daedplaque6 = '"Someone didn\'t eat their greens...."',
+        ss20_daedplaque5 = '"Did you bring a compass?"',
+        ss20_daedplaque4 = '"Better find those bubbles."',
+        ss20_daedplaque3 = '"Unlock the path that leads to me, and prove yourself worthy of my favor."',
+        ss20_daedplaque2 = '"Unlock the path that leads to me, and prove yourself worthy of my favor."',
+        ss20_daedplaque1 = "Unlock the path that leads to me, and prove yourself worthy of my favor.",
+        ss20_daedplaque8 = "Oh Bane of Kynareth, may the darts of our enemies catch Foul Winds and stray from their mark!"
+        ss20_daedplaque9 = "Mighty Vernaccus, who art in Oblivion, devour our souls that we might dwell with thee in Flame Forever!"
+        ss20_daedplaque10 = "Ye though a thousand archers and armies of mercenaries oppose us, The Unpursuable One will evade them all!"
+        ss20_daedplaque11 = "Though we are flawed, you Cannot Be Touched, Lord. Therefore we raise your name in exaltation and Touch ourselves!"
+        ss20_daedplaque12 = "We sit at your feet, The Elusive Beast, that your Immutable Skill may wash over us like the water which dare not Touch thee!"
     },
 
     rooms = {
@@ -317,6 +329,7 @@ local config = {
             description = "",
             items = {
                 { id = 'ss20_dae_display_03', name = "Round display", cost = prices.activator },
+                { id = 'ss20_dae_display_04', name = "Tall display", cost = prices.activator },
                 { id = 'ss20_dae_display_02', name = "Rectanglular display", cost = prices.activator },
                 { id = 'ss20_dae_display_01', name = "Square display", cost = prices.activator },
                 { id = 'ss20_dae_dispcase', name = 'Large display case' , cost = prices.activator },
@@ -325,7 +338,7 @@ local config = {
         {
             id = 'fabric_01',
             name = "Fabric Set",
-            cost = 400,
+            cost = 300,
             description = "A collection of miscellaneous fabric items.",
             items = {
                 { id = "ss20_furn_dae_chair_02", name = "Fabric Chair 01" , cost = prices.furniture },
@@ -334,11 +347,11 @@ local config = {
                 { id = "ss20_furn_dae_chair_02c", name = "Fabric Chair 04" , cost = prices.furniture },
                 { id = "ss20_pillow_02", name = "Pillow (plain)" , cost = prices.furniture },
                 { id = "ss20_pillow_01", name = "Pillow (pattern)" , cost = prices.furniture },
-                { id = "ss20_dea_cloth01", name = "Cloth 01" , cost = prices.furniture },
-                { id = "ss20_dea_cloth02", name = "Cloth 02" , cost = prices.furniture },
-                { id = "ss20_dea_cloth03", name = "Cloth 03" , cost = prices.furniture },
-                { id = "ss20_dea_cloth04", name = "Cloth 04" , cost = prices.furniture },
-                { id = "ss20_dea_cloth05", name = "Cloth 05" , cost = prices.furniture },
+--                { id = "ss20_dea_cloth01", name = "Cloth 01" , cost = prices.furniture },
+--                { id = "ss20_dea_cloth02", name = "Cloth 02" , cost = prices.furniture },
+--                { id = "ss20_dea_cloth03", name = "Cloth 03" , cost = prices.furniture },
+--                { id = "ss20_dea_cloth04", name = "Cloth 04" , cost = prices.furniture },
+--                { id = "ss20_dea_cloth05", name = "Cloth 05" , cost = prices.furniture },
             }
         },
         {
@@ -517,9 +530,9 @@ local config = {
                 { id = "ss20_art_10", name = "Painting: Vernaccus 02", cost = prices.vernaccus },
                 { id = "ss20_art_11", name = "Painting: Vernaccus 03", cost = prices.vernaccus },
                 { id = "ss20_art_12", name = "Painting: Vernaccus 04", cost = prices.vernaccus },
-                { id = "ss20_Vernaccus_bronze", name = "Bronze statue of Vernaccus", cost = prices.trophy01 },
-                { id = "ss20_Vernaccus_silver", name = "Silver statue of Vernaccus", cost = prices.trophy02 },
-                { id = "ss20_Vernaccus_gold", name = "Gold statue of Vernaccus", cost = prices.trophy03 },
+                { id = "ss20_trophy_bronze", name = "Bronze Trophy", cost = prices.trophy01 },
+                { id = "ss20_trophy_silver", name = "Silver Trophy", cost = prices.trophy02 },
+                { id = "ss20_trophy_gold", name = "Gold Trophy", cost = prices.trophy03 },
             }
         },
         {
