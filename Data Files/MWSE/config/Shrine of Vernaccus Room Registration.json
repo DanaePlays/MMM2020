@@ -154,29 +154,11 @@
         "orientation":[0,0,0],
         "id":"ss20_dae_brazier00"
       }],
-    "ss20_storage":[{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":79.232810974121,
-          "x":6.703245639801,
-          "z":258
-        },
-        "id":"ss20_BB_Mannequin_F1"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":58.480709075928,
-          "x":2.4823250770569,
-          "z":258
-        },
-        "id":"ss20_BB_Mannequin_M1"
-      },{
+    "ss20_magic_room":[{
         "orientation":[0,0,0],
         "scale":0.5,
         "position":{
-          "y":256,
+          "y":0,
           "x":1280,
           "z":0
         },
@@ -198,16 +180,115 @@
           "x":256,
           "z":0
         },
-        "id":"ss20_in_daeRoomSCorner"
+        "id":"ss20_in_daeRoomSSide"
       },{
-        "orientation":[0,0,1.5707963705063],
+        "orientation":[0,0,6.2831854820251],
         "scale":1,
         "position":{
-          "y":256,
-          "x":512,
+          "y":-256,
+          "x":256,
           "z":0
         },
         "id":"ss20_in_daeRoomSSide"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-384,
+          "x":1152,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-640,
+          "x":384,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-384,
+          "x":128,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":384,
+          "x":128,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":640,
+          "x":384,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":384,
+          "x":1152,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":1024,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":-128,
+          "x":512,
+          "z":0
+        },
+        "id":"in_dae_pillar_tall.max"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":128,
+          "x":768,
+          "z":0
+        },
+        "id":"in_dae_pillar_tall.max"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":128,
+          "x":512,
+          "z":0
+        },
+        "id":"in_dae_pillar_tall.max"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":-128,
+          "x":768,
+          "z":0
+        },
+        "id":"in_dae_pillar_tall.max"
       },{
         "orientation":[0,0,0],
         "scale":1,
@@ -218,61 +299,115 @@
         },
         "id":"ss20_in_daeRoomSCenter"
       },{
-        "orientation":[0,0,0],
+        "orientation":[0,0,4.7123894691467],
         "scale":1,
         "position":{
-          "y":-512,
-          "x":256,
-          "z":256
+          "y":576,
+          "x":192,
+          "z":-64
         },
-        "id":"ss20_in_daeHallSStair"
+        "id":"in_dae_platform_512_01"
       },{
-        "orientation":[0,0,3.1415927410126],
+        "orientation":[0,3.1415927410126,4.7123894691467],
         "scale":1,
         "position":{
-          "y":-512,
-          "x":512,
+          "y":576,
+          "x":192,
+          "z":320
+        },
+        "id":"in_dae_platform_512_01"
+      },{
+        "orientation":[0,0,3.9269917011261],
+        "scale":1,
+        "position":{
+          "y":576,
+          "x":192,
           "z":128
         },
-        "id":"ss20_in_daeHallSStair"
+        "id":"ss20_in_daeLedge"
       },{
-        "orientation":[0,0,4.7123889923096],
+        "orientation":[0,0,3.1415929794312],
         "scale":1,
         "position":{
-          "y":-768.09997558594,
-          "x":256,
-          "z":128.10000610352
+          "y":-576,
+          "x":192,
+          "z":-64
         },
-        "id":"ss20_in_daeRoomSCorner"
+        "id":"in_dae_platform_512_01"
       },{
-        "orientation":[0,0,3.1415927410126],
+        "orientation":[0,0,2.3561952114105],
         "scale":1,
         "position":{
-          "y":-768.09997558594,
-          "x":512,
-          "z":128.10000610352
+          "y":-576,
+          "x":192,
+          "z":128
         },
-        "id":"ss20_in_daeRoomSCorner"
+        "id":"ss20_in_daeLedge"
+      },{
+        "orientation":[0,3.1415927410126,3.1415929794312],
+        "scale":1,
+        "position":{
+          "y":-576,
+          "x":192,
+          "z":320
+        },
+        "id":"in_dae_platform_512_01"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":384,
-          "x":384,
+          "y":256,
+          "x":512,
           "z":0
         },
-        "id":"ss20_in_daeColumn01"
+        "id":"ss20_in_daeRoomSCenter"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-256,
+          "x":512,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCenter"
       },{
         "orientation":[0,0,1.5707957744598],
         "scale":1,
         "position":{
-          "y":256,
+          "y":512,
           "x":768,
           "z":0
         },
         "id":"ss20_in_daeRoomSSide"
       },{
-        "orientation":[0,0,3.1415927410126],
+        "orientation":[0,0,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":-512,
+          "x":768,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSSide"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-640,
+          "x":896,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":640,
+          "x":896,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
         "scale":1,
         "position":{
           "y":0,
@@ -281,23 +416,32 @@
         },
         "id":"ss20_in_daeRoomSCenter"
       },{
-        "orientation":[0,0,4.7123889923096],
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":256,
+          "x":768,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCenter"
+      },{
+        "orientation":[0,0,0],
         "scale":1,
         "position":{
           "y":-256,
           "x":768,
           "z":0
         },
-        "id":"ss20_in_daeRoomSSide"
+        "id":"ss20_in_daeRoomSCenter"
       },{
         "orientation":[0,0,3.1415927410126],
         "scale":1,
         "position":{
-          "y":256.10000610352,
-          "x":1024.0999755859,
-          "z":0.10000000149012
+          "y":256,
+          "x":1024,
+          "z":0
         },
-        "id":"ss20_in_daeRoomSEntry"
+        "id":"ss20_in_daeRoomSSide"
       },{
         "orientation":[0,0,3.1415927410126],
         "scale":1,
@@ -306,853 +450,313 @@
           "x":1024,
           "z":0
         },
-        "id":"ss20_in_daeRoomSCorner"
+        "id":"ss20_in_daeRoomSSide"
       },{
         "orientation":[0,0,4.7123889923096],
         "scale":1,
         "position":{
-          "y":-256,
-          "x":256,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,4.7123889923096],
-        "scale":1,
-        "position":{
-          "y":-256,
+          "y":-512,
           "x":512,
           "z":0
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,4.7123889923096],
-        "scale":1,
-        "position":{
-          "y":-256,
-          "x":0,
-          "z":256
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,4.7123889923096],
-        "scale":1,
-        "position":{
-          "y":-256,
-          "x":256,
-          "z":256
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":-256,
-          "x":512,
-          "z":256
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":0,
-          "z":256
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":256,
-          "z":256
         },
         "id":"ss20_in_daeRoomSSide"
       },{
-        "orientation":[0,0,1.5707963705063],
+        "orientation":[0,0,1.5707957744598],
         "scale":1,
         "position":{
-          "y":-128,
-          "x":384,
-          "z":0
-        },
-        "id":"ss20_dae_brazier00"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":327,
-          "x":196,
-          "z":0
-        },
-        "id":"ss20_dae_stone_shelves02"
-      },{
-        "orientation":[0,0,4.7123889923096],
-        "scale":1,
-        "position":{
-          "y":384,
-          "x":256,
-          "z":0
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":384,
+          "y":512,
           "x":512,
           "z":0
         },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,3.1415927410126,4.7123889923096],
-        "scale":1,
-        "position":{
-          "y":384,
-          "x":512,
-          "z":402.73565673828
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,3.1415927410126,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":384.10000610352,
-          "x":256.10000610352,
-          "z":402.13598632813
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":246,
-          "x":384,
-          "z":-776
-        },
-        "id":"in_dae_pillar_tall.max"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":-121.55432891846,
-          "x":896,
-          "z":0
-        },
-        "id":"ss20_dae_brazier00"
+        "id":"ss20_in_daeRoomSSide"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":320,
-          "x":768,
-          "z":81.572326660156
+          "y":576,
+          "x":1088,
+          "z":-64
         },
-        "id":"ss20_dae_Closet_02"
+        "id":"in_dae_platform_512_01"
       },{
         "orientation":[0,0,5.4977874755859],
         "scale":1,
         "position":{
-          "y":323.48648071289,
-          "x":189.21868896484,
-          "z":169.08337402344
+          "y":576,
+          "x":1088,
+          "z":128
         },
-        "id":"ss20_o_daeChest01"
+        "id":"ss20_in_daeLedge"
       },{
-        "orientation":[0,0,2.3561944961548],
+        "orientation":[0,3.1415927410126,0],
         "scale":1,
         "position":{
-          "y":296.39801025391,
-          "x":161.32418823242,
-          "z":120.59971618652
+          "y":576,
+          "x":1088,
+          "z":320
         },
-        "id":"ss20_o_daeChest02"
+        "id":"in_dae_platform_512_01"
       },{
-        "orientation":[0,0,2.3561944961548],
+        "orientation":[0,0,1.5707963705063],
         "scale":1,
         "position":{
-          "y":347.18756103516,
-          "x":213.22927856445,
-          "z":120.59971618652
+          "y":-576,
+          "x":1088,
+          "z":-64
         },
-        "id":"ss20_o_daeChest02"
+        "id":"in_dae_platform_512_01"
       },{
-        "orientation":[0,0,2.3561944961548],
+        "orientation":[0,0,0.7853986620903],
         "scale":1,
         "position":{
-          "y":347.22091674805,
-          "x":213.50132751465,
-          "z":72.116012573242
+          "y":-576,
+          "x":1088,
+          "z":128
         },
-        "id":"ss20_o_daeChest02"
+        "id":"ss20_in_daeLedge"
       },{
-        "orientation":[0,0,2.3561944961548],
+        "orientation":[0,3.1415927410126,1.5707963705063],
         "scale":1,
         "position":{
-          "y":296.4313659668,
-          "x":161.59622192383,
-          "z":72.116012573242
+          "y":-576,
+          "x":1088,
+          "z":320
         },
-        "id":"ss20_o_daeChest02"
-      },{
-        "orientation":[0,0,2.3561944961548],
-        "scale":1,
-        "position":{
-          "y":295.59036254883,
-          "x":162.56230163574,
-          "z":23.632278442383
-        },
-        "id":"ss20_o_daeChest02"
-      },{
-        "orientation":[0,0,2.3561944961548],
-        "scale":1,
-        "position":{
-          "y":347.01736450195,
-          "x":213.46557617188,
-          "z":23.632278442383
-        },
-        "id":"ss20_o_daeChest02"
+        "id":"in_dae_platform_512_01"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":-320,
-          "x":840,
-          "z":32.000034332275
-        },
-        "id":"ss20_dae_crate"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-320,
-          "x":768,
-          "z":160.00003051758
-        },
-        "id":"ss20_dae_crate"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-320,
-          "x":696,
-          "z":31.999988555908
-        },
-        "id":"ss20_dae_crate"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-320,
-          "x":795.52801513672,
-          "z":96.000030517578
-        },
-        "id":"ss20_dae_crate"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-320,
-          "x":723.52801513672,
-          "z":96.000022888184
-        },
-        "id":"ss20_dae_crate"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-320,
-          "x":768,
-          "z":32.000022888184
-        },
-        "id":"ss20_dae_crate"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":64,
+          "y":0,
           "x":0,
-          "z":292.65551757813
+          "z":0
         },
-        "id":"ss20_dae_crate_open_05"
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":533.67449951172,
+          "x":236.95428466797,
+          "z":186.83752441406
+        },
+        "id":"Amber"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":542.45422363281,
+          "x":1050.0501708984,
+          "z":165.67141723633
+        },
+        "id":"Amber"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-553.92724609375,
+          "x":216.31979370117,
+          "z":169.50405883789
+        },
+        "id":"Amber"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-554.18511962891,
+          "x":1068.8428955078,
+          "z":160.42242431641
+        },
+        "id":"Amber"
+      },{
+        "orientation":[0,0,4.7123894691467],
+        "scale":0.5,
+        "position":{
+          "y":0,
+          "x":640,
+          "z":-26.863088607788
+        },
+        "id":"in_dae_platform_512_01"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":0.5,
+        "position":{
+          "y":10.166780471802,
+          "x":696.88714599609,
+          "z":264.13381958008
+        },
+        "id":"ss20_in_daeCrackFloor01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":582.98724365234,
+          "x":428.91394042969,
+          "z":22.169031143188
+        },
+        "id":"ss20_light_daeCrystal02_red"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":353.43856811523,
+          "x":182.34777832031,
+          "z":22.169031143188
+        },
+        "id":"ss20_light_daeCrystal02_red"
+      },{
+        "orientation":[0,0,0.90000009536743],
+        "scale":1,
+        "position":{
+          "y":593.20391845703,
+          "x":847.92901611328,
+          "z":22.16902923584
+        },
+        "id":"ss20_light_daeCrystal02_red"
+      },{
+        "orientation":[0,0,6.1831860542297],
+        "scale":1,
+        "position":{
+          "y":340.43240356445,
+          "x":1105.1538085938,
+          "z":22.16902923584
+        },
+        "id":"ss20_light_daeCrystal02_red"
+      },{
+        "orientation":[0,0,0.60000002384186],
+        "scale":1,
+        "position":{
+          "y":-338.57986450195,
+          "x":1101.9895019531,
+          "z":22.16902923584
+        },
+        "id":"ss20_light_daeCrystal02_red"
+      },{
+        "orientation":[0,0,3.4831881523132],
+        "scale":1,
+        "position":{
+          "y":-587.60900878906,
+          "x":856.06311035156,
+          "z":22.169031143188
+        },
+        "id":"ss20_light_daeCrystal02_red"
+      },{
+        "orientation":[0,0,4.5831871032715],
+        "scale":1,
+        "position":{
+          "y":-592.91595458984,
+          "x":425.77993774414,
+          "z":22.169031143188
+        },
+        "id":"ss20_light_daeCrystal02_red"
       },{
         "orientation":[0,0,5.0831866264343],
         "scale":1,
         "position":{
-          "y":12.021026611328,
-          "x":-86.525207519531,
-          "z":262.14776611328
+          "y":-339.10845947266,
+          "x":182.69177246094,
+          "z":22.169031143188
         },
-        "id":"ss20_misc_daeBoethiah"
+        "id":"ss20_light_daeCrystal02_red"
       },{
-        "orientation":[4.7831864356995,0.10000000149012,3.0999999046326],
+        "orientation":[0,0,3.8831872940063],
         "scale":1,
         "position":{
-          "y":9.9248199462891,
-          "x":-53.974060058594,
-          "z":271.583984375
+          "y":-548.62817382813,
+          "x":229.31246948242,
+          "z":26.48978805542
         },
-        "id":"ss20_misc_daeMalacath"
+        "id":"ss20_tbl_alch"
       },{
-        "orientation":[1.6000007390976,6.08318567276,5.9831857681274],
-        "scale":1,
+        "orientation":[0,0,5.4977874755859],
+        "scale":0.75000005960464,
         "position":{
-          "y":-18.999877929688,
-          "x":-50.755615234375,
-          "z":266.47863769531
+          "y":512,
+          "x":256,
+          "z":22.169013977051
         },
-        "id":"ss20_misc_daeMehrunesDagon"
+        "id":"in_dae_doorjamb_01"
       },{
-        "orientation":[5.5831861495972,1.8000003099442,0],
-        "scale":1,
+        "orientation":[0,0,3.9269909858704],
+        "scale":0.75000005960464,
         "position":{
-          "y":-9.9261779785156,
-          "x":-74.396667480469,
-          "z":267.88220214844
+          "y":-512,
+          "x":256,
+          "z":22.169017791748
         },
-        "id":"ss20_misc_daeMolagBal"
+        "id":"in_dae_doorjamb_01"
       },{
-        "orientation":[1.6000002622604,6.1831855773926,5.9831857681274],
-        "scale":1,
+        "orientation":[0,0,5.4977874755859],
+        "scale":0.75000005960464,
         "position":{
-          "y":3.931884765625,
-          "x":-71.519165039063,
-          "z":270.31079101563
+          "y":-512,
+          "x":1024,
+          "z":22.169017791748
         },
-        "id":"ss20_misc_daeSheogorath"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":64,
-          "x":64,
-          "z":292.65551757813
-        },
-        "id":"ss20_dae_crate_open_05"
-      },{
-        "orientation":[5.0614547729492,0,0],
-        "scale":1,
-        "position":{
-          "y":79.404571533203,
-          "x":65.435302734375,
-          "z":293.98211669922
-        },
-        "id":"ss20_pillow02"
-      },{
-        "orientation":[5.0614547729492,0,0],
-        "scale":1,
-        "position":{
-          "y":67.519134521484,
-          "x":73.832946777344,
-          "z":293.98211669922
-        },
-        "id":"ss20_pillow_01"
-      },{
-        "orientation":[5.0614547729492,0,0],
-        "scale":1,
-        "position":{
-          "y":48.907775878906,
-          "x":52.347778320313,
-          "z":295.17065429688
-        },
-        "id":"ss20_pillow_01"
-      },{
-        "orientation":[5.0614547729492,0,0],
-        "scale":1,
-        "position":{
-          "y":60.074066162109,
-          "x":59.390930175781,
-          "z":295.17065429688
-        },
-        "id":"ss20_pillow02"
-      },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
-        "position":{
-          "y":-64,
-          "x":-64,
-          "z":292.65551757813
-        },
-        "id":"ss20_dae_crate_open_05"
-      },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":-64,
-          "z":292.65551757813
-        },
-        "id":"ss20_dae_crate_open_05"
-      },{
-        "orientation":[0,0,5.8831858634949],
-        "scale":1,
-        "position":{
-          "y":7.45654296875,
-          "x":-57.836303710938,
-          "z":267.56213378906
-        },
-        "id":"ss20_dea_cloth02"
-      },{
-        "orientation":[0,0,5.383186340332],
-        "scale":1,
-        "position":{
-          "y":7.45654296875,
-          "x":-57.836303710938,
-          "z":266.56213378906
-        },
-        "id":"ss20_dea_cloth03"
-      },{
-        "orientation":[0,0,6.08318567276],
-        "scale":1,
-        "position":{
-          "y":7.45654296875,
-          "x":-57.836303710938,
-          "z":265.56213378906
-        },
-        "id":"ss20_dea_cloth04"
-      },{
-        "orientation":[0,0,0.20000001788139],
-        "scale":1,
-        "position":{
-          "y":7.45654296875,
-          "x":-57.836303710938,
-          "z":264.56213378906
-        },
-        "id":"ss20_dea_cloth05"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":7.45654296875,
-          "x":-57.836303710938,
-          "z":263.56213378906
-        },
-        "id":"ss20_dea_cloth01"
-      },{
-        "orientation":[0,0,0.5],
-        "scale":1,
-        "position":{
-          "y":-74.350311279297,
-          "x":-54.398620605469,
-          "z":270.23980712891
-        },
-        "id":"misc_com_basket_01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-63.137359619141,
-          "x":-82.44287109375,
-          "z":277.74237060547
-        },
-        "id":"misc_com_bottle_01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-76.967895507813,
-          "x":-83.433837890625,
-          "z":278.05096435547
-        },
-        "id":"misc_com_bottle_02"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-89.124786376953,
-          "x":-77.163330078125,
-          "z":279.94775390625
-        },
-        "id":"Misc_Com_Bottle_04"
-      },{
-        "orientation":[5.5501470565796,0,0],
-        "scale":1,
-        "position":{
-          "y":-77.613983154297,
-          "x":-46.756713867188,
-          "z":307.14288330078
-        },
-        "id":"misc_com_broom_01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-73.139068603516,
-          "x":-54.198669433594,
-          "z":266.41003417969
-        },
-        "id":"AB_Misc_DeClayFlask_01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-74.072387695313,
-          "x":-53.900451660156,
-          "z":267.52319335938
-        },
-        "id":"misc_com_redware_bowl_01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-73.660736083984,
-          "x":-53.906066894531,
-          "z":266.43322753906
-        },
-        "id":"misc_com_wood_bowl_02"
-      },{
-        "orientation":[0,0,5.6831860542297],
-        "scale":1,
-        "position":{
-          "y":-45.344604492188,
-          "x":-81.550354003906,
-          "z":273.8681640625
-        },
-        "id":"misc_lw_flask"
-      },{
-        "orientation":[0,0,0.70000004768372],
-        "scale":1,
-        "position":{
-          "y":322.59936523438,
-          "x":184.12261962891,
-          "z":121.68316650391
-        },
-        "id":"ss20_dae_candleBLK_02"
-      },{
-        "orientation":[0,0,0.70000004768372],
-        "scale":1,
-        "position":{
-          "y":323.39666748047,
-          "x":184.29986572266,
-          "z":73.200218200684
-        },
-        "id":"ss20_dae_candleBLK_02"
+        "id":"in_dae_doorjamb_01"
       },{
         "orientation":[0,0,0.78539818525314],
-        "scale":1,
-        "position":{
-          "y":324.08099365234,
-          "x":185.25213623047,
-          "z":24.700000762939
-        },
-        "id":"ss20_dae_candleBLK_02"
-      },{
-        "orientation":[0,0,3.1415929794312],
-        "scale":1,
+        "scale":0.75000005960464,
         "position":{
           "y":512,
-          "x":768,
-          "z":256
-        },
-        "id":"ss20_in_daeHallSStair"
-      },{
-        "orientation":[0,0,1.5707964897156],
-        "scale":1,
-        "position":{
-          "y":768.09997558594,
-          "x":1024,
-          "z":128.10000610352
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,6.283185005188],
-        "scale":1,
-        "position":{
-          "y":768.09997558594,
-          "x":768,
-          "z":128.10000610352
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,6.283185005188],
-        "scale":1,
-        "position":{
-          "y":512,
-          "x":1024,
-          "z":128
-        },
-        "id":"ss20_in_daeHallSStair"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":0,
           "x":1024,
           "z":0
         },
-        "id":"ss20_in_daeRoomSSide"
+        "id":"in_dae_doorjamb_01"
       },{
-        "orientation":[0,0,6.283185005188],
-        "scale":1,
+        "orientation":[0,0,1.5707963705063],
+        "scale":0.5,
         "position":{
-          "y":256,
-          "x":512,
-          "z":256
+          "y":-462.07974243164,
+          "x":303.52737426758,
+          "z":10
         },
-        "id":"ss20_in_daeRoomSCorner"
+        "id":"ss20_in_daeCrackFloor03"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
+        "orientation":[0,0,0],
+        "scale":0.5,
         "position":{
-          "y":-6.103515625e-05,
-          "x":768,
-          "z":256
+          "y":-459.82266235352,
+          "x":972.54144287109,
+          "z":6
         },
-        "id":"ss20_in_daeRoomSSide"
+        "id":"ss20_in_daeCrackFloor03"
       },{
-        "orientation":[0,0,1.5707964897156],
-        "scale":1,
+        "orientation":[0,0,0],
+        "scale":0.5,
         "position":{
-          "y":256,
-          "x":768,
-          "z":256
+          "y":490.80502319336,
+          "x":981.37103271484,
+          "z":10
         },
-        "id":"ss20_in_daeRoomSEntry"
+        "id":"ss20_in_daeCrackFloor03"
       },{
-        "orientation":[0,0,1.5707964897156],
-        "scale":1,
+        "orientation":[0,0,0],
+        "scale":0.5,
         "position":{
-          "y":255.99987792969,
-          "x":1024,
-          "z":256
+          "y":482.00756835938,
+          "x":350.2668762207,
+          "z":6
         },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,3.1415929794312],
-        "scale":1,
-        "position":{
-          "y":-6.103515625e-05,
-          "x":1024,
-          "z":256
-        },
-        "id":"ss20_in_daeRoomSCorner"
+        "id":"ss20_in_daeCrackFloor03"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
           "y":0,
-          "x":512,
-          "z":256
-        },
-        "id":"ss20_in_daeRoomSCenter"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-128,
           "x":640,
-          "z":256
+          "z":-2.9781856536865
         },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":128,
-          "x":384,
-          "z":256
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":0,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSEntry"
+        "id":"ss20_dae_platTeleport"
       },{
         "orientation":[0,0,4.7123889923096],
         "scale":1,
         "position":{
-          "y":0,
-          "x":0,
-          "z":0.10000000149012
+          "y":0.10000000149012,
+          "x":0.10000000149012,
+          "z":-0.10000000149012
         },
         "id":"ss20_in_daeHallS01"
-      },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
-        "position":{
-          "y":12.353742599487,
-          "x":1081.3635253906,
-          "z":152.27896118164
-        },
-        "id":"ss20_furn_daeShelf01"
-      },{
-        "orientation":[0,0,1.1920928955078e-07],
-        "scale":1,
-        "position":{
-          "y":9.9020414352417,
-          "x":1101.6004638672,
-          "z":270.79632568359
-        },
-        "id":"ss20_dae_chest_large_01"
-      },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
-        "position":{
-          "y":12.353742599487,
-          "x":1081.3640136719,
-          "z":256.27862548828
-        },
-        "id":"ss20_furn_daeShelf01"
-      },{
-        "orientation":[0,0,1.1920928955078e-07],
-        "scale":1,
-        "position":{
-          "y":1.8831177949905,
-          "x":1109.1070556641,
-          "z":374.79595947266
-        },
-        "id":"ss20_dae_chest_large_01"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":256,
-          "x":1024,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":841,
-          "x":1019,
-          "z":64
-        },
-        "id":"ss20_furn_daeShelf02"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":841,
-          "x":773,
-          "z":64
-        },
-        "id":"ss20_furn_daeShelf02"
-      },{
-        "orientation":[0,0,6.283185005188],
-        "scale":1,
-        "position":{
-          "y":-840.40881347656,
-          "x":506.17684936523,
-          "z":64
-        },
-        "id":"ss20_furn_daeShelf02"
-      },{
-        "orientation":[0,0,6.283185005188],
-        "scale":1,
-        "position":{
-          "y":-840.40881347656,
-          "x":260.17684936523,
-          "z":64
-        },
-        "id":"ss20_furn_daeShelf02"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-83.36483001709,
-          "x":992.83728027344,
-          "z":570
-        },
-        "id":"ss20_in_daeCrackFloor03"
-      },{
-        "orientation":[0,0,4.7123889923096],
-        "scale":1,
-        "position":{
-          "y":768,
-          "x":768,
-          "z":128
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":-768,
-          "x":256,
-          "z":128
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":-768,
-          "x":512,
-          "z":128
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,4.7123889923096],
-        "scale":1,
-        "position":{
-          "y":768,
-          "x":1024,
-          "z":128
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":256,
-          "x":640,
-          "z":-0.73953121900558
-        },
-        "id":"ss20_light_daeLamp01_256"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-102.75900268555,
-          "x":513.875,
-          "z":570
-        },
-        "id":"ss20_in_daeCrackFloor03"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":768,
-          "x":896,
-          "z":345.93701171875
-        },
-        "id":"ss20_light_dae_chnd_01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-768,
-          "x":384,
-          "z":345.4189453125
-        },
-        "id":"ss20_light_dae_chnd_01"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":128,
-          "x":768,
-          "z":465.71084594727
-        },
-        "id":"ss20_light_wellClaw03_room"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":-128,
-          "x":256,
-          "z":459.09802246094
-        },
-        "id":"ss20_light_wellClaw03_room"
       }],
     "ss20_underwatertunnel":[{
         "position":{
@@ -3915,6 +3519,719 @@
         },
         "id":"ss20_in_daeCrackFloor03"
       }],
+    "ss20_armory":[{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":702.01177978516,
+          "x":-12.618008613586,
+          "z":46
+        },
+        "id":"ss20_BB_Mannequin_F3"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":574.08947753906,
+          "x":-15.250606536865,
+          "z":46
+        },
+        "id":"ss20_BB_Mannequin_M3"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":1535.9000244141,
+          "x":767.90002441406,
+          "z":-0.099998474121094
+        },
+        "id":"ss20_in_daeBarrier01b"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":0,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1568.7102050781,
+          "x":126.70181274414,
+          "z":97.19913482666
+        },
+        "id":"ss20_practice_dummy"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":703.62725830078,
+          "x":-48.936897277832,
+          "z":0
+        },
+        "id":"ss20_dae_display_01"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":832,
+          "x":512,
+          "z":-16.990783691406
+        },
+        "id":"ss20_dae_forge_01"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":1596.8889160156,
+          "x":-48.652893066406,
+          "z":3.814697265625e-05
+        },
+        "id":"ss20_dae_stone_shelves03"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":575.62713623047,
+          "x":-48.936866760254,
+          "z":0
+        },
+        "id":"ss20_dae_display_01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1031.9925537109,
+          "x":-23.641067504883,
+          "z":87.244194030762
+        },
+        "id":"ss20_dae_Sack_02"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1036.1090087891,
+          "x":-19.924268722534,
+          "z":32.000015258789
+        },
+        "id":"ss20_dae_crate"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1536,
+          "x":128,
+          "z":0
+        },
+        "id":"ss20_dae_mat"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":1474.9517822266,
+          "x":306.76000976563,
+          "z":1.52587890625e-05
+        },
+        "id":"ss20_dae_stone_shelves03"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1536,
+          "x":0,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":1536,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1376,
+          "x":128,
+          "z":0
+        },
+        "id":"ss20_dae_mat"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":1024,
+          "x":512,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":768,
+          "x":512,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,5.58318567276],
+        "scale":1,
+        "position":{
+          "y":1024,
+          "x":512,
+          "z":31.985389709473
+        },
+        "id":"ss20_furn_anvil00"
+      },{
+        "orientation":[0,0,1.5707964897156],
+        "scale":1,
+        "position":{
+          "y":512,
+          "x":512,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":0.10000000149012,
+          "x":0.10000000149012,
+          "z":0.10000000149012
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":256,
+          "x":0,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,3.1415929794312],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":512,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":256.00006103516,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,3.1415929794312],
+        "scale":1,
+        "position":{
+          "y":1536,
+          "x":512,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,6.283185005188],
+        "scale":1,
+        "position":{
+          "y":1535.9000244141,
+          "x":511.90002441406,
+          "z":-0.099998474121094
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,3.1415929794312],
+        "scale":1,
+        "position":{
+          "y":1279.9000244141,
+          "x":511.90002441406,
+          "z":-0.099998474121094
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":128,
+          "x":128,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1408,
+          "x":384,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1152,
+          "x":384,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":640,
+          "x":384,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,4.7123894691467],
+        "scale":1,
+        "position":{
+          "y":512,
+          "x":0,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,1.1920928955078e-07],
+        "scale":1,
+        "position":{
+          "y":768,
+          "x":6.103515625e-05,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,4.7123894691467],
+        "scale":1,
+        "position":{
+          "y":1024,
+          "x":0,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1280,
+          "x":0,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSSide"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":256,
+          "x":512,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSSide"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":384,
+          "x":128,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":896,
+          "x":128,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":256,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCenter"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":512,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCenter"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1024,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCenter"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":768,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCenter"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1280,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCenter"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":834.37847900391,
+          "x":477.25866699219,
+          "z":72.098037719727
+        },
+        "id":"ss20_light_logpile_177"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1216,
+          "x":576,
+          "z":-1
+        },
+        "id":"ss20_light_daeLamp01_256"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-52.833198547363,
+          "x":545.58416748047,
+          "z":-1
+        },
+        "id":"ss20_light_daeLamp01_256"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-49.52619934082,
+          "x":209.6443939209,
+          "z":-1
+        },
+        "id":"ss20_light_daeLamp01_256"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":317.93414306641,
+          "x":-44.314510345459,
+          "z":-1
+        },
+        "id":"ss20_light_daeLamp01_256"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":464.166015625,
+          "x":-52.636333465576,
+          "z":-1
+        },
+        "id":"ss20_light_daeLamp01_256"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":820.1435546875,
+          "x":-50.133594512939,
+          "z":-1
+        },
+        "id":"ss20_light_daeLamp01_256"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":968.75665283203,
+          "x":-54.53133392334,
+          "z":-1
+        },
+        "id":"ss20_light_daeLamp01_256"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1350.7615966797,
+          "x":-56.875205993652,
+          "z":-1
+        },
+        "id":"ss20_light_daeLamp01_256"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":1152,
+          "x":384,
+          "z":317
+        },
+        "id":"ss20_in_daeCrackFloor03"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":320,
+          "x":256,
+          "z":317
+        },
+        "id":"ss20_in_daeCrackFloor03"
+      }],
+    "ss20_round room":[{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":0,
+          "x":1024,
+          "z":0
+        },
+        "id":"ss20_in_daeBarrier01b"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":0,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":384,
+          "z":0
+        },
+        "id":"in_dae_room_l_floor_01"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":768,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,3.9269909858704],
+        "scale":1,
+        "position":{
+          "y":128,
+          "x":512,
+          "z":0
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,0,5.4977874755859],
+        "scale":1,
+        "position":{
+          "y":-128,
+          "x":512,
+          "z":0
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,0,0.78539818525314],
+        "scale":1,
+        "position":{
+          "y":-128,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,0,2.3561944961548],
+        "scale":1,
+        "position":{
+          "y":128,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":256,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":256,
+          "x":512,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":128,
+          "x":640,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-128,
+          "x":640,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-256,
+          "x":512,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-256,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-128,
+          "x":128,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":128,
+          "x":128,
+          "z":0
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":0,
+          "z":0
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":768,
+          "z":0
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":768,
+          "z":0
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":0,
+          "z":0
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":384,
+          "z":-632
+        },
+        "id":"in_dae_room_l_roof_03"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":128,
+          "x":384,
+          "z":0
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,0,6.2831854820251],
+        "scale":1,
+        "position":{
+          "y":-128,
+          "x":384,
+          "z":0
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":0,
+          "x":384,
+          "z":384
+        },
+        "id":"ss20_in_daeCrackFloor03"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":-0.23882502317429,
+          "x":385.93869018555,
+          "z":263.51879882813
+        },
+        "id":"ss20_light_wellClaw03_room"
+      }],
     "ss20_living_quarters":[{
         "orientation":[0,0,0],
         "scale":0.5,
@@ -4617,836 +4934,6 @@
           "z":-256
         },
         "id":"ss20_sound_waterLayer"
-      }],
-    "ss20_round room":[{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":0,
-          "x":1024,
-          "z":0
-        },
-        "id":"ss20_in_daeBarrier01b"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":0,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":384,
-          "z":0
-        },
-        "id":"in_dae_room_l_floor_01"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":768,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,3.9269909858704],
-        "scale":1,
-        "position":{
-          "y":128,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,0,5.4977874755859],
-        "scale":1,
-        "position":{
-          "y":-128,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,0,0.78539818525314],
-        "scale":1,
-        "position":{
-          "y":-128,
-          "x":256,
-          "z":0
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,0,2.3561944961548],
-        "scale":1,
-        "position":{
-          "y":128,
-          "x":256,
-          "z":0
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":256,
-          "x":256,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":256,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":128,
-          "x":640,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-128,
-          "x":640,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-256,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-256,
-          "x":256,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-128,
-          "x":128,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":128,
-          "x":128,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":0,
-          "z":0
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":768,
-          "z":0
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":768,
-          "z":0
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":0,
-          "z":0
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":384,
-          "z":-632
-        },
-        "id":"in_dae_room_l_roof_03"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":128,
-          "x":384,
-          "z":0
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,0,6.2831854820251],
-        "scale":1,
-        "position":{
-          "y":-128,
-          "x":384,
-          "z":0
-        },
-        "id":"ss20_in_daeHallSCap"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":0,
-          "x":384,
-          "z":384
-        },
-        "id":"ss20_in_daeCrackFloor03"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":-0.23882502317429,
-          "x":385.93869018555,
-          "z":263.51879882813
-        },
-        "id":"ss20_light_wellClaw03_room"
-      }],
-    "ss20_magic_room":[{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":0,
-          "x":1280,
-          "z":0
-        },
-        "id":"ss20_in_daeBarrier01b"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":256,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":256,
-          "x":256,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSSide"
-      },{
-        "orientation":[0,0,6.2831854820251],
-        "scale":1,
-        "position":{
-          "y":-256,
-          "x":256,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSSide"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-384,
-          "x":1152,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-640,
-          "x":384,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-384,
-          "x":128,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":384,
-          "x":128,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":640,
-          "x":384,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":384,
-          "x":1152,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":1024,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":-128,
-          "x":512,
-          "z":0
-        },
-        "id":"in_dae_pillar_tall.max"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":128,
-          "x":768,
-          "z":0
-        },
-        "id":"in_dae_pillar_tall.max"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":128,
-          "x":512,
-          "z":0
-        },
-        "id":"in_dae_pillar_tall.max"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":-128,
-          "x":768,
-          "z":0
-        },
-        "id":"in_dae_pillar_tall.max"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCenter"
-      },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
-        "position":{
-          "y":576,
-          "x":192,
-          "z":-64
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,3.1415927410126,4.7123894691467],
-        "scale":1,
-        "position":{
-          "y":576,
-          "x":192,
-          "z":320
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,0,3.9269917011261],
-        "scale":1,
-        "position":{
-          "y":576,
-          "x":192,
-          "z":128
-        },
-        "id":"ss20_in_daeLedge"
-      },{
-        "orientation":[0,0,3.1415929794312],
-        "scale":1,
-        "position":{
-          "y":-576,
-          "x":192,
-          "z":-64
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,0,2.3561952114105],
-        "scale":1,
-        "position":{
-          "y":-576,
-          "x":192,
-          "z":128
-        },
-        "id":"ss20_in_daeLedge"
-      },{
-        "orientation":[0,3.1415927410126,3.1415929794312],
-        "scale":1,
-        "position":{
-          "y":-576,
-          "x":192,
-          "z":320
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":256,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCenter"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-256,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCenter"
-      },{
-        "orientation":[0,0,1.5707957744598],
-        "scale":1,
-        "position":{
-          "y":512,
-          "x":768,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSSide"
-      },{
-        "orientation":[0,0,4.7123889923096],
-        "scale":1,
-        "position":{
-          "y":-512,
-          "x":768,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSSide"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-640,
-          "x":896,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":640,
-          "x":896,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":768,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCenter"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":256,
-          "x":768,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCenter"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-256,
-          "x":768,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCenter"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":256,
-          "x":1024,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSSide"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":-256,
-          "x":1024,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSSide"
-      },{
-        "orientation":[0,0,4.7123889923096],
-        "scale":1,
-        "position":{
-          "y":-512,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSSide"
-      },{
-        "orientation":[0,0,1.5707957744598],
-        "scale":1,
-        "position":{
-          "y":512,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSSide"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":576,
-          "x":1088,
-          "z":-64
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,0,5.4977874755859],
-        "scale":1,
-        "position":{
-          "y":576,
-          "x":1088,
-          "z":128
-        },
-        "id":"ss20_in_daeLedge"
-      },{
-        "orientation":[0,3.1415927410126,0],
-        "scale":1,
-        "position":{
-          "y":576,
-          "x":1088,
-          "z":320
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":-576,
-          "x":1088,
-          "z":-64
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,0,0.7853986620903],
-        "scale":1,
-        "position":{
-          "y":-576,
-          "x":1088,
-          "z":128
-        },
-        "id":"ss20_in_daeLedge"
-      },{
-        "orientation":[0,3.1415927410126,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":-576,
-          "x":1088,
-          "z":320
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":0,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":533.67449951172,
-          "x":236.95428466797,
-          "z":186.83752441406
-        },
-        "id":"Amber"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":542.45422363281,
-          "x":1050.0501708984,
-          "z":165.67141723633
-        },
-        "id":"Amber"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-553.92724609375,
-          "x":216.31979370117,
-          "z":169.50405883789
-        },
-        "id":"Amber"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-554.18511962891,
-          "x":1068.8428955078,
-          "z":160.42242431641
-        },
-        "id":"Amber"
-      },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":0.5,
-        "position":{
-          "y":0,
-          "x":640,
-          "z":-26.863088607788
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":0.5,
-        "position":{
-          "y":10.166780471802,
-          "x":696.88714599609,
-          "z":264.13381958008
-        },
-        "id":"ss20_in_daeCrackFloor01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":582.98724365234,
-          "x":428.91394042969,
-          "z":22.169031143188
-        },
-        "id":"ss20_light_daeCrystal02_red"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":353.43856811523,
-          "x":182.34777832031,
-          "z":22.169031143188
-        },
-        "id":"ss20_light_daeCrystal02_red"
-      },{
-        "orientation":[0,0,0.90000009536743],
-        "scale":1,
-        "position":{
-          "y":593.20391845703,
-          "x":847.92901611328,
-          "z":22.16902923584
-        },
-        "id":"ss20_light_daeCrystal02_red"
-      },{
-        "orientation":[0,0,6.1831860542297],
-        "scale":1,
-        "position":{
-          "y":340.43240356445,
-          "x":1105.1538085938,
-          "z":22.16902923584
-        },
-        "id":"ss20_light_daeCrystal02_red"
-      },{
-        "orientation":[0,0,0.60000002384186],
-        "scale":1,
-        "position":{
-          "y":-338.57986450195,
-          "x":1101.9895019531,
-          "z":22.16902923584
-        },
-        "id":"ss20_light_daeCrystal02_red"
-      },{
-        "orientation":[0,0,3.4831881523132],
-        "scale":1,
-        "position":{
-          "y":-587.60900878906,
-          "x":856.06311035156,
-          "z":22.169031143188
-        },
-        "id":"ss20_light_daeCrystal02_red"
-      },{
-        "orientation":[0,0,4.5831871032715],
-        "scale":1,
-        "position":{
-          "y":-592.91595458984,
-          "x":425.77993774414,
-          "z":22.169031143188
-        },
-        "id":"ss20_light_daeCrystal02_red"
-      },{
-        "orientation":[0,0,5.0831866264343],
-        "scale":1,
-        "position":{
-          "y":-339.10845947266,
-          "x":182.69177246094,
-          "z":22.169031143188
-        },
-        "id":"ss20_light_daeCrystal02_red"
-      },{
-        "orientation":[0,0,3.8831872940063],
-        "scale":1,
-        "position":{
-          "y":-548.62817382813,
-          "x":229.31246948242,
-          "z":26.48978805542
-        },
-        "id":"ss20_tbl_alch"
-      },{
-        "orientation":[0,0,5.4977874755859],
-        "scale":0.75000005960464,
-        "position":{
-          "y":512,
-          "x":256,
-          "z":22.169013977051
-        },
-        "id":"in_dae_doorjamb_01"
-      },{
-        "orientation":[0,0,3.9269909858704],
-        "scale":0.75000005960464,
-        "position":{
-          "y":-512,
-          "x":256,
-          "z":22.169017791748
-        },
-        "id":"in_dae_doorjamb_01"
-      },{
-        "orientation":[0,0,5.4977874755859],
-        "scale":0.75000005960464,
-        "position":{
-          "y":-512,
-          "x":1024,
-          "z":22.169017791748
-        },
-        "id":"in_dae_doorjamb_01"
-      },{
-        "orientation":[0,0,0.78539818525314],
-        "scale":0.75000005960464,
-        "position":{
-          "y":512,
-          "x":1024,
-          "z":0
-        },
-        "id":"in_dae_doorjamb_01"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":0.5,
-        "position":{
-          "y":-462.07974243164,
-          "x":303.52737426758,
-          "z":10
-        },
-        "id":"ss20_in_daeCrackFloor03"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":-459.82266235352,
-          "x":972.54144287109,
-          "z":6
-        },
-        "id":"ss20_in_daeCrackFloor03"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":490.80502319336,
-          "x":981.37103271484,
-          "z":10
-        },
-        "id":"ss20_in_daeCrackFloor03"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":482.00756835938,
-          "x":350.2668762207,
-          "z":6
-        },
-        "id":"ss20_in_daeCrackFloor03"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":640,
-          "z":-2.9781856536865
-        },
-        "id":"ss20_dae_platTeleport"
-      },{
-        "orientation":[0,0,4.7123889923096],
-        "scale":1,
-        "position":{
-          "y":0.10000000149012,
-          "x":0.10000000149012,
-          "z":-0.10000000149012
-        },
-        "id":"ss20_in_daeHallS01"
       }],
     "ss20_study":[{
         "orientation":[0,0,0],
@@ -6548,11 +6035,11 @@
         },
         "id":"ss20_in_daeHallSCap"
       },{
-        "orientation":[0,0,3.1415929794312],
+        "orientation":[0,0,0.78539752960205],
         "scale":1,
         "position":{
-          "y":128.00024414063,
-          "x":1408.0001220703,
+          "y":223.99995422363,
+          "x":672,
           "z":-256
         },
         "id":"ss20_in_daeColumn01"
@@ -6598,7 +6085,7 @@
         "position":{
           "y":0,
           "x":1024,
-          "z":-470.07495117188
+          "z":-416.89749145508
         },
         "id":"in_dae_platform_512_01"
       },{
@@ -6607,7 +6094,7 @@
         "position":{
           "y":512,
           "x":1024,
-          "z":-338.09796142578
+          "z":-319.67254638672
         },
         "id":"in_dae_platform_512_01"
       },{
@@ -6625,7 +6112,7 @@
         "position":{
           "y":-512,
           "x":1024,
-          "z":-338.09796142578
+          "z":-319.67254638672
         },
         "id":"in_dae_platform_512_01"
       },{
@@ -6643,7 +6130,7 @@
         "position":{
           "y":448.10000610352,
           "x":1024.0999755859,
-          "z":-402
+          "z":-378.68969726563
         },
         "id":"in_dae_platform_512_01"
       },{
@@ -6670,7 +6157,7 @@
         "position":{
           "y":-448,
           "x":1024,
-          "z":-402.09796142578
+          "z":-378.78765869141
         },
         "id":"in_dae_platform_512_01"
       },{
@@ -6832,7 +6319,7 @@
         "position":{
           "y":237.74479675293,
           "x":857.81958007813,
-          "z":-201.64064025879
+          "z":-200.06684875488
         },
         "id":"Flora_BC_Lilypad"
       },{
@@ -6841,7 +6328,7 @@
         "position":{
           "y":-132.53146362305,
           "x":764.53234863281,
-          "z":-198.04058837891
+          "z":-196.466796875
         },
         "id":"flora_bc_lilypad_02"
       },{
@@ -6850,7 +6337,7 @@
         "position":{
           "y":233.74406433105,
           "x":861.99188232422,
-          "z":-179.5244140625
+          "z":-177.95062255859
         },
         "id":"ss20_dae_candleBLK_01"
       },{
@@ -6859,7 +6346,7 @@
         "position":{
           "y":-136.19755554199,
           "x":766.65161132813,
-          "z":-193.92434692383
+          "z":-192.35055541992
         },
         "id":"ss20_dae_candleBLK_02"
       },{
@@ -6868,7 +6355,7 @@
         "position":{
           "y":-238.86245727539,
           "x":1193.7614746094,
-          "z":-198.47605895996
+          "z":-196.90226745605
         },
         "id":"Flora_BC_Lilypad"
       },{
@@ -6877,7 +6364,7 @@
         "position":{
           "y":-233.40338134766,
           "x":1195.6633300781,
-          "z":-176.35981750488
+          "z":-174.78602600098
         },
         "id":"ss20_dae_candleBLK_01"
       },{
@@ -6886,7 +6373,7 @@
         "position":{
           "y":203.07363891602,
           "x":1313.1098632813,
-          "z":-194.35981750488
+          "z":-192.78602600098
         },
         "id":"ss20_dae_candleBLK_02"
       },{
@@ -6895,7 +6382,7 @@
         "position":{
           "y":203.27113342285,
           "x":1308.8797607422,
-          "z":-198.47605895996
+          "z":-196.90226745605
         },
         "id":"flora_bc_lilypad_02"
       },{
@@ -6916,6 +6403,222 @@
           "z":52.439502716064
         },
         "id":"AB_In_CaveMoldFloor01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1.1700000762939,
+        "position":{
+          "y":-687.23724365234,
+          "x":800.83123779297,
+          "z":-125.0258026123
+        },
+        "id":"In_Lava_Blacksquare"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.98000001907349,
+        "position":{
+          "y":381.3752746582,
+          "x":388.90420532227,
+          "z":-125.0258026123
+        },
+        "id":"In_Lava_Blacksquare"
+      },{
+        "orientation":[0,0,0],
+        "scale":1.1700000762939,
+        "position":{
+          "y":688.01971435547,
+          "x":800.83123779297,
+          "z":-125.0258026123
+        },
+        "id":"In_Lava_Blacksquare"
+      },{
+        "orientation":[0,0,0],
+        "scale":1.1700000762939,
+        "position":{
+          "y":688.01971435547,
+          "x":1378.0852050781,
+          "z":311.84582519531
+        },
+        "id":"In_Lava_Blacksquare"
+      },{
+        "orientation":[0,0,0],
+        "scale":1.1700000762939,
+        "position":{
+          "y":-687.23724365234,
+          "x":1378.0852050781,
+          "z":311.84582519531
+        },
+        "id":"In_Lava_Blacksquare"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.98000001907349,
+        "position":{
+          "y":-370.69802856445,
+          "x":388.90420532227,
+          "z":-125.0258026123
+        },
+        "id":"In_Lava_Blacksquare"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.98000001907349,
+        "position":{
+          "y":-370.69802856445,
+          "x":1657.1470947266,
+          "z":311.84582519531
+        },
+        "id":"In_Lava_Blacksquare"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.98000001907349,
+        "position":{
+          "y":381.3752746582,
+          "x":1657.1470947266,
+          "z":311.84582519531
+        },
+        "id":"In_Lava_Blacksquare"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":-1.9727984181372e-05,
+          "x":896,
+          "z":-256
+        },
+        "id":"ss20_in_daeHallSTrans"
+      },{
+        "orientation":[0,0,3.1415929794312],
+        "scale":1,
+        "position":{
+          "y":128.00024414063,
+          "x":1408.0001220703,
+          "z":-256
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0.78539752960205],
+        "scale":1,
+        "position":{
+          "y":-224,
+          "x":672,
+          "z":-256
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,3.9269907474518],
+        "scale":1,
+        "position":{
+          "y":-224,
+          "x":1376,
+          "z":-256
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":1152,
+          "z":-256
+        },
+        "id":"ss20_in_daeHallSTrans"
+      },{
+        "orientation":[0,0,3.9269907474518],
+        "scale":1,
+        "position":{
+          "y":224,
+          "x":1376,
+          "z":-256
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1.0600000619888,
+        "position":{
+          "y":0,
+          "x":1568,
+          "z":-261.91299438477
+        },
+        "id":"in_dae_platform_stairs"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":1.0600000619888,
+        "position":{
+          "y":0,
+          "x":480,
+          "z":-261.91299438477
+        },
+        "id":"in_dae_platform_stairs"
+      },{
+        "orientation":[0,2.099999666214,5.4977869987488],
+        "scale":1.3600000143051,
+        "position":{
+          "y":-410.77508544922,
+          "x":1455.3836669922,
+          "z":90.718292236328
+        },
+        "id":"in_moldboulder00"
+      },{
+        "orientation":[0,1.1999999284744,5.4977869987488],
+        "scale":1.3600000143051,
+        "position":{
+          "y":360.12548828125,
+          "x":1398.576171875,
+          "z":108.7594909668
+        },
+        "id":"in_moldboulder00"
+      },{
+        "orientation":[0,0,0],
+        "scale":1.1700000762939,
+        "position":{
+          "y":-687.23724365234,
+          "x":1378.0852050781,
+          "z":-125.0258026123
+        },
+        "id":"In_Lava_Blacksquare"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.98000001907349,
+        "position":{
+          "y":-370.69802856445,
+          "x":1657.1470947266,
+          "z":-125.0258026123
+        },
+        "id":"In_Lava_Blacksquare"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.98000001907349,
+        "position":{
+          "y":381.3752746582,
+          "x":1657.1470947266,
+          "z":-125.0258026123
+        },
+        "id":"In_Lava_Blacksquare"
+      },{
+        "orientation":[0,0,0],
+        "scale":1.1700000762939,
+        "position":{
+          "y":688.01971435547,
+          "x":1378.0852050781,
+          "z":-125.0258026123
+        },
+        "id":"In_Lava_Blacksquare"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":4.1634540557861,
+          "x":745.02227783203,
+          "z":-197.05027770996
+        },
+        "id":"ss20_sound_waterLayer"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":10.126263618469,
+          "x":1288.5443115234,
+          "z":-197.05027770996
+        },
+        "id":"ss20_sound_waterLayer"
       }],
     "ss20_VeryLargeDuplex":[{
         "orientation":[0,0,1.1920928955078e-07],
@@ -7305,492 +7008,321 @@
         },
         "id":"ss20_in_daeHallSCap"
       }],
-    "ss20_armory":[{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":702.01177978516,
-          "x":-12.618008613586,
-          "z":46
-        },
-        "id":"ss20_BB_Mannequin_F3"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":574.08947753906,
-          "x":-15.250606536865,
-          "z":46
-        },
-        "id":"ss20_BB_Mannequin_M3"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":1535.9000244141,
-          "x":767.90002441406,
-          "z":-0.099998474121094
-        },
-        "id":"ss20_in_daeBarrier01b"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":0,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":1568.7102050781,
-          "x":126.70181274414,
-          "z":97.19913482666
-        },
-        "id":"ss20_practice_dummy"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":703.62725830078,
-          "x":-48.936897277832,
-          "z":0
-        },
-        "id":"ss20_dae_display_01"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":832,
-          "x":512,
-          "z":-16.990783691406
-        },
-        "id":"ss20_dae_forge_01"
-      },{
-        "orientation":[0,0,4.7123889923096],
-        "scale":1,
-        "position":{
-          "y":1596.8889160156,
-          "x":-48.652893066406,
-          "z":3.814697265625e-05
-        },
-        "id":"ss20_dae_stone_shelves03"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":575.62713623047,
-          "x":-48.936866760254,
-          "z":0
-        },
-        "id":"ss20_dae_display_01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":1031.9925537109,
-          "x":-23.641067504883,
-          "z":87.244194030762
-        },
-        "id":"ss20_dae_Sack_02"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":1036.1090087891,
-          "x":-19.924268722534,
-          "z":32.000015258789
-        },
-        "id":"ss20_dae_crate"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":1536,
-          "x":128,
-          "z":0
-        },
-        "id":"ss20_dae_mat"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":1474.9517822266,
-          "x":306.76000976563,
-          "z":1.52587890625e-05
-        },
-        "id":"ss20_dae_stone_shelves03"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":1536,
-          "x":0,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":1536,
-          "x":256,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":1376,
-          "x":128,
-          "z":0
-        },
-        "id":"ss20_dae_mat"
-      },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
-        "position":{
-          "y":1024,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":768,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,5.58318567276],
-        "scale":1,
-        "position":{
-          "y":1024,
-          "x":512,
-          "z":31.985389709473
-        },
-        "id":"ss20_furn_anvil00"
-      },{
-        "orientation":[0,0,1.5707964897156],
-        "scale":1,
-        "position":{
-          "y":512,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":0.10000000149012,
-          "x":0.10000000149012,
-          "z":0.10000000149012
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":256,
-          "x":0,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,3.1415929794312],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,4.7123889923096],
-        "scale":1,
-        "position":{
-          "y":0,
-          "x":256.00006103516,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCorner"
-      },{
-        "orientation":[0,0,3.1415929794312],
-        "scale":1,
-        "position":{
-          "y":1536,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSEntry"
-      },{
+    "ss20_duplex":[{
         "orientation":[0,0,6.283185005188],
         "scale":1,
         "position":{
-          "y":1535.9000244141,
-          "x":511.90002441406,
-          "z":-0.099998474121094
+          "y":4928,
+          "x":3904,
+          "z":15040.099609375
         },
-        "id":"ss20_in_daeRoomSCorner"
+        "id":"in_dae_hall_l_01"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":4416,
+          "x":3904,
+          "z":15040
+        },
+        "id":"in_dae_hall_l_entry_01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":4416,
+          "x":3392,
+          "z":15040
+        },
+        "id":"in_dae_room_l_corner_01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":3904,
+          "x":3392,
+          "z":15040
+        },
+        "id":"in_dae_room_l_side_01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":3904,
+          "x":3904,
+          "z":15040
+        },
+        "id":"in_dae_room_l_floor_01"
+      },{
+        "orientation":[0,0,1.5707957744598],
+        "scale":1,
+        "position":{
+          "y":4416,
+          "x":4416,
+          "z":15040
+        },
+        "id":"in_dae_room_l_corner_01"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":3904,
+          "x":4416,
+          "z":15040
+        },
+        "id":"in_dae_room_l_side_01"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":3392,
+          "x":4416,
+          "z":15040
+        },
+        "id":"in_dae_room_l_corner_01"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":3392,
+          "x":3904,
+          "z":15040
+        },
+        "id":"in_dae_room_l_side_01"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":3392,
+          "x":3392,
+          "z":15040
+        },
+        "id":"in_dae_room_l_corner_01"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":0.5,
+        "position":{
+          "y":3776,
+          "x":3904,
+          "z":15424
+        },
+        "id":"ex_dae_ruin_stair01_short"
       },{
         "orientation":[0,0,3.1415929794312],
-        "scale":1,
+        "scale":0.56000000238419,
         "position":{
-          "y":1279.9000244141,
-          "x":511.90002441406,
-          "z":-0.099998474121094
+          "y":3891.5573730469,
+          "x":3908.8603515625,
+          "z":15214.198242188
         },
-        "id":"ss20_in_daeRoomSCorner"
+        "id":"in_dae_platform_512_01"
       },{
-        "orientation":[0,0,0],
-        "scale":1,
+        "orientation":[0,3.1415927410126,3.1415929794312],
+        "scale":0.56000000238419,
         "position":{
-          "y":128,
-          "x":128,
-          "z":0
+          "y":3891.5573730469,
+          "x":3908.8603515625,
+          "z":15214.198242188
         },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":1408,
-          "x":384,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":1152,
-          "x":384,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":640,
-          "x":384,
-          "z":0
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
-        "position":{
-          "y":512,
-          "x":0,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSCorner"
+        "id":"in_dae_platform_512_01"
       },{
         "orientation":[0,0,1.1920928955078e-07],
         "scale":1,
         "position":{
-          "y":768,
-          "x":6.103515625e-05,
-          "z":0
+          "y":3479.0300292969,
+          "x":3652.6501464844,
+          "z":15360
         },
-        "id":"ss20_in_daeRoomSCorner"
+        "id":"in_dae_platform_512_01"
       },{
-        "orientation":[0,0,4.7123894691467],
+        "orientation":[0,3.1415927410126,1.1920928955078e-07],
         "scale":1,
         "position":{
-          "y":1024,
-          "x":0,
-          "z":0
+          "y":3479.0300292969,
+          "x":3652.6501464844,
+          "z":15360
         },
-        "id":"ss20_in_daeRoomSCorner"
+        "id":"in_dae_platform_512_01"
+      },{
+        "orientation":[0,0,1.1920928955078e-07],
+        "scale":1,
+        "position":{
+          "y":3479.0300292969,
+          "x":4164.6489257813,
+          "z":15360
+        },
+        "id":"in_dae_platform_512_01"
+      },{
+        "orientation":[0,3.1415927410126,1.1920928955078e-07],
+        "scale":1,
+        "position":{
+          "y":3479.0300292969,
+          "x":4164.6489257813,
+          "z":15360
+        },
+        "id":"in_dae_platform_512_01"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":0.60000002384186,
+        "position":{
+          "y":4046.005859375,
+          "x":3909.4658203125,
+          "z":15247.803710938
+        },
+        "id":"ex_dae_ruin_stair01_short"
+      },{
+        "orientation":[0,3.1415927410126,3.1415929794312],
+        "scale":0.56000000238419,
+        "position":{
+          "y":4173.513671875,
+          "x":3913.3876953125,
+          "z":15038
+        },
+        "id":"in_dae_platform_512_01"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":1280,
-          "x":0,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSSide"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":256,
-          "x":512,
-          "z":0
-        },
-        "id":"ss20_in_daeRoomSSide"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":384,
-          "x":128,
-          "z":0
+          "y":3648,
+          "x":3456,
+          "z":15040
         },
         "id":"ss20_in_daeColumn01"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":896,
-          "x":128,
-          "z":0
+          "y":3795.4108886719,
+          "x":3814.8518066406,
+          "z":14933.469726563
         },
         "id":"ss20_in_daeColumn01"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":256,
-          "x":256,
-          "z":0
+          "y":3648,
+          "x":4352,
+          "z":15040
         },
-        "id":"ss20_in_daeRoomSCenter"
+        "id":"ss20_in_daeColumn01"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":512,
-          "x":256,
-          "z":0
+          "y":3799.8862304688,
+          "x":3993.1586914063,
+          "z":14933
         },
-        "id":"ss20_in_daeRoomSCenter"
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,3.1415929794312],
+        "scale":0.6700000166893,
+        "position":{
+          "y":4184.1020507813,
+          "x":3909.751953125,
+          "z":14991.079101563
+        },
+        "id":"in_dae_platform_512_01"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":4051.74609375,
+          "x":4019.9560546875,
+          "z":15261
+        },
+        "id":"in_dae_pillar_tall.max"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":4064.6298828125,
+          "x":3819.1169433594,
+          "z":15261
+        },
+        "id":"in_dae_pillar_tall.max"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":3790.7880859375,
+          "x":3822.7180175781,
+          "z":15009.512695313
+        },
+        "id":"in_dae_pillar_tall.max"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":3777.4250488281,
+          "x":3987.3239746094,
+          "z":15005.952148438
+        },
+        "id":"in_dae_pillar_tall.max"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":1024,
-          "x":256,
-          "z":0
+          "y":3904,
+          "x":3904,
+          "z":15040
         },
-        "id":"ss20_in_daeRoomSCenter"
+        "id":"in_dae_room_l_roof_03"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.71000003814697,
+        "position":{
+          "y":3904,
+          "x":3904,
+          "z":15936
+        },
+        "id":"ss20_light_dae_censer_red"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":768,
-          "x":256,
-          "z":0
+          "y":3392,
+          "x":3392,
+          "z":15040
         },
-        "id":"ss20_in_daeRoomSCenter"
+        "id":"ss20_dae_brazier00"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":1280,
-          "x":256,
-          "z":0
+          "y":3392,
+          "x":4416,
+          "z":15040
         },
-        "id":"ss20_in_daeRoomSCenter"
+        "id":"ss20_dae_brazier00"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":4416,
+          "x":4416,
+          "z":15040
+        },
+        "id":"ss20_dae_brazier00"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":4416,
+          "x":3392,
+          "z":15040
+        },
+        "id":"ss20_dae_brazier00"
       },{
         "orientation":[0,0,1.5707963705063],
         "scale":1,
         "position":{
-          "y":834.37847900391,
-          "x":477.25866699219,
-          "z":72.098037719727
+          "y":5056,
+          "x":3904,
+          "z":15040
         },
-        "id":"ss20_light_logpile_177"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":1216,
-          "x":576,
-          "z":-1
-        },
-        "id":"ss20_light_daeLamp01_256"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-52.833198547363,
-          "x":545.58416748047,
-          "z":-1
-        },
-        "id":"ss20_light_daeLamp01_256"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":-49.52619934082,
-          "x":209.6443939209,
-          "z":-1
-        },
-        "id":"ss20_light_daeLamp01_256"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":317.93414306641,
-          "x":-44.314510345459,
-          "z":-1
-        },
-        "id":"ss20_light_daeLamp01_256"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":464.166015625,
-          "x":-52.636333465576,
-          "z":-1
-        },
-        "id":"ss20_light_daeLamp01_256"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":820.1435546875,
-          "x":-50.133594512939,
-          "z":-1
-        },
-        "id":"ss20_light_daeLamp01_256"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":968.75665283203,
-          "x":-54.53133392334,
-          "z":-1
-        },
-        "id":"ss20_light_daeLamp01_256"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":1350.7615966797,
-          "x":-56.875205993652,
-          "z":-1
-        },
-        "id":"ss20_light_daeLamp01_256"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":1152,
-          "x":384,
-          "z":317
-        },
-        "id":"ss20_in_daeCrackFloor03"
-      },{
-        "orientation":[0,0,3.1415927410126],
-        "scale":1,
-        "position":{
-          "y":320,
-          "x":256,
-          "z":317
-        },
-        "id":"ss20_in_daeCrackFloor03"
+        "id":"ss20_in_daeRoomSEntry"
       }],
     "ss20_gallery":[{
         "orientation":[0,0,4.7123889923096],
@@ -9379,365 +8911,410 @@
         "id":"ss20_dae_brazier00"
       }],
     "ss20_worshiproom":[{
-        "orientation":[0,0,1.1920928955078e-07],
-        "scale":0.5,
         "position":{
           "y":0,
           "x":2048,
           "z":0
         },
+        "scale":0.5,
+        "orientation":[0,0,1.1920928955078e-07],
         "id":"ss20_in_daeBarrier01b"
       },{
-        "orientation":[0,0,1.1920928955078e-07],
-        "scale":1,
         "position":{
           "y":0.000244140625,
           "x":384.00054931641,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,1.1920928955078e-07],
         "id":"in_dae_hall_l_entry_01"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":-511.99975585938,
           "x":384.00054931641,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"in_dae_room_l_corner_01"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":-511.99987792969,
           "x":896.00048828125,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"in_dae_room_l_side_01"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":0.00018310546875,
           "x":896.00061035156,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"in_dae_room_l_floor_01"
       },{
-        "orientation":[0,0,6.2831845283508],
-        "scale":1,
         "position":{
           "y":512.00024414063,
           "x":384.00067138672,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,6.2831845283508],
         "id":"in_dae_room_l_corner_01"
       },{
-        "orientation":[0,0,1.5707960128784],
-        "scale":1,
         "position":{
           "y":512,
           "x":896.00073242188,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,1.5707960128784],
         "id":"in_dae_room_l_side_01"
       },{
-        "orientation":[0,0,1.5707960128784],
-        "scale":1,
         "position":{
           "y":511.99993896484,
           "x":1408.0004882813,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,1.5707960128784],
         "id":"in_dae_room_l_corner_01"
       },{
-        "orientation":[0,0,3.1415929794312],
-        "scale":1,
         "position":{
           "y":-511.99987792969,
           "x":1408.0002441406,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,3.1415929794312],
         "id":"in_dae_room_l_corner_01"
       },{
-        "orientation":[0,3.1415927410126,1.5707960128784],
-        "scale":0.56000000238419,
         "position":{
           "y":9.3878784179688,
           "x":626.48687744141,
           "z":-2
         },
+        "scale":0.56000000238419,
+        "orientation":[0,3.1415927410126,1.5707960128784],
         "id":"in_dae_platform_512_01"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":256,
           "x":704,
           "z":-1920
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"in_dae_pillar_tall.max"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":-256,
           "x":704,
           "z":-1920
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"in_dae_pillar_tall.max"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":256,
           "x":704,
           "z":128
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"ss20_dae_brazier00"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":-256,
           "x":704,
           "z":128
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"ss20_dae_brazier00"
       },{
-        "orientation":[0,0,1.1920928955078e-07],
-        "scale":1,
         "position":{
           "y":0,
           "x":0.00045680999755859,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,1.1920928955078e-07],
         "id":"ss20_in_daeRoomSEntry"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":0.000244140625,
           "x":384.00054931641,
           "z":0
         },
-        "id":"ss20_dae_hallS_trans"
-      },{
-        "orientation":[0,0,4.7123894691467],
         "scale":1,
+        "orientation":[0,0,4.7123894691467],
+        "id":"ss20_in_daeHallSTrans"
+      },{
         "position":{
           "y":0.0003662109375,
           "x":-0.099396705627441,
           "z":-0.0999755859375
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"ss20_in_daeHallS01"
       },{
-        "orientation":[0,0,3.1415929794312],
-        "scale":1,
         "position":{
           "y":0,
           "x":1792.0002441406,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,3.1415929794312],
         "id":"ss20_in_daeRoomSEntry"
       },{
-        "orientation":[0,0,1.5707960128784],
-        "scale":1,
         "position":{
           "y":0,
           "x":1792.0998535156,
           "z":-0.10003662109375
         },
+        "scale":1,
+        "orientation":[0,0,1.5707960128784],
         "id":"ss20_in_daeHallS01"
       },{
-        "orientation":[0,0,3.1415929794312],
-        "scale":1,
         "position":{
           "y":0,
           "x":1408,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,3.1415929794312],
         "id":"in_dae_hall_l_entry_01"
       },{
-        "orientation":[0,0,1.5707960128784],
-        "scale":1,
         "position":{
           "y":0.0001220703125,
           "x":1408.0002441406,
           "z":0
         },
-        "id":"ss20_dae_hallS_trans"
+        "scale":1,
+        "orientation":[0,0,1.5707960128784],
+        "id":"ss20_in_daeHallSTrans"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":0.78000003099442,
         "position":{
           "y":0,
           "x":960,
           "z":0
         },
+        "scale":0.78000003099442,
+        "orientation":[0,0,4.7123894691467],
         "id":"in_dae_platform_512_01"
       },{
-        "orientation":[0,0,0],
-        "scale":1,
         "position":{
           "y":0,
           "x":768,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,0],
         "id":"ss20_furn_daeTable02"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":-256,
           "x":940.14605712891,
           "z":320
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"ss20_dae_brazier00"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":-256,
           "x":940.14605712891,
           "z":-1728
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"in_dae_pillar_tall.max"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":256,
           "x":940.14605712891,
           "z":320
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"ss20_dae_brazier00"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":256,
           "x":940.14605712891,
           "z":-1728
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"in_dae_pillar_tall.max"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":-256,
           "x":1152,
           "z":512
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"ss20_dae_brazier00"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":-256,
           "x":1152,
           "z":-1536
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"in_dae_pillar_tall.max"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":256,
           "x":1152,
           "z":512
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"ss20_dae_brazier00"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":256,
           "x":1152,
           "z":-1536
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"in_dae_pillar_tall.max"
       },{
-        "orientation":[0,0,0],
-        "scale":1,
         "position":{
           "y":0,
           "x":896,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,0],
         "id":"in_dae_room_l_roof_01"
       },{
-        "orientation":[0,0,0],
-        "scale":1,
         "position":{
           "y":0,
           "x":1024,
           "z":768
         },
+        "scale":1,
+        "orientation":[0,0,0],
         "id":"ss20_in_daeCrackFloor03"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":99.639808654785,
           "x":556.93511962891,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"ss20_furn_daeBench02"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":1,
         "position":{
           "y":-92.360160827637,
           "x":556.93511962891,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,4.7123894691467],
         "id":"ss20_furn_daeBench02"
       },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
         "position":{
           "y":-92.360160827637,
           "x":536.93499755859,
           "z":-85.150299072266
         },
+        "scale":1,
+        "orientation":[0,0,1.5707963705063],
         "id":"ss20_furn_daeShelf01"
       },{
-        "orientation":[0,0,1.5707963705063],
-        "scale":1,
         "position":{
           "y":99.639808654785,
           "x":536.93499755859,
           "z":-85.150299072266
         },
+        "scale":1,
+        "orientation":[0,0,1.5707963705063],
         "id":"ss20_furn_daeShelf01"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":0.90000003576279,
         "position":{
           "y":99.639808654785,
           "x":461.93515014648,
           "z":33.300689697266
         },
+        "scale":0.90000003576279,
+        "orientation":[0,0,4.7123894691467],
         "id":"ss20_furn_daeBench02"
       },{
-        "orientation":[0,0,4.7123894691467],
-        "scale":0.90000003576279,
         "position":{
           "y":-92.360160827637,
           "x":461.93515014648,
           "z":33.300689697266
         },
+        "scale":0.90000003576279,
+        "orientation":[0,0,4.7123894691467],
         "id":"ss20_furn_daeBench02"
       },{
-        "orientation":[0,0,4.7123889923096],
-        "scale":1,
         "position":{
           "y":0,
           "x":1216,
           "z":0
         },
+        "scale":1,
+        "orientation":[0,0,4.7123889923096],
         "id":"ss20_furn_daeAltar01"
+      },{
+        "position":{
+          "y":-691.06988525391,
+          "x":638.80560302734,
+          "z":200.32722473145
+        },
+        "scale":1,
+        "orientation":[4.7123889923096,0,6.2831854820251],
+        "id":"ss20_daedplaque8"
+      },{
+        "position":{
+          "y":-692.02954101563,
+          "x":1153.4038085938,
+          "z":200.10597229004
+        },
+        "scale":1,
+        "orientation":[4.7123889923096,6.2831854820251,6.2831854820251],
+        "id":"ss20_daedplaque9"
+      },{
+        "position":{
+          "y":696.61187744141,
+          "x":1151.5891113281,
+          "z":200.79934692383
+        },
+        "scale":1,
+        "orientation":[4.7123889923096,0,0],
+        "id":"ss20_daedplaque10"
+      },{
+        "position":{
+          "y":695.51507568359,
+          "x":639.69799804688,
+          "z":201.96020507813
+        },
+        "scale":1,
+        "orientation":[4.7123889923096,0,0],
+        "id":"ss20_daedplaque11"
+      },{
+        "position":{
+          "y":-1.1128897666931,
+          "x":694.46002197266,
+          "z":47.999996185303
+        },
+        "scale":1,
+        "orientation":[0,0,1.5707963705063],
+        "id":"ss20_daedplaque12"
       }],
     "Shrine of Vernaccus":[{
         "orientation":[0,0,1.0098568201065],
@@ -16184,321 +15761,1005 @@
         },
         "id":"ss20_dae_hallS_trans"
       }],
-    "ss20_duplex":[{
-        "orientation":[0,0,6.283185005188],
+    "ss20_storage":[{
+        "orientation":[0,0,3.1415927410126],
         "scale":1,
         "position":{
-          "y":4928,
-          "x":3904,
-          "z":15040.099609375
+          "y":79.232810974121,
+          "x":6.703245639801,
+          "z":258
         },
-        "id":"in_dae_hall_l_01"
+        "id":"ss20_BB_Mannequin_F1"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":58.480709075928,
+          "x":2.4823250770569,
+          "z":258
+        },
+        "id":"ss20_BB_Mannequin_M1"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":256,
+          "x":1280,
+          "z":0
+        },
+        "id":"ss20_in_daeBarrier01b"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":256,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
       },{
         "orientation":[0,0,1.5707963705063],
         "scale":1,
         "position":{
-          "y":4416,
-          "x":3904,
-          "z":15040
+          "y":256,
+          "x":512,
+          "z":0
         },
-        "id":"in_dae_hall_l_entry_01"
+        "id":"ss20_in_daeRoomSSide"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":4416,
-          "x":3392,
-          "z":15040
+          "y":0,
+          "x":512,
+          "z":0
         },
-        "id":"in_dae_room_l_corner_01"
+        "id":"ss20_in_daeRoomSCenter"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":3904,
-          "x":3392,
-          "z":15040
+          "y":-512,
+          "x":256,
+          "z":256
         },
-        "id":"in_dae_room_l_side_01"
+        "id":"ss20_in_daeHallSStair"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":-512,
+          "x":512,
+          "z":128
+        },
+        "id":"ss20_in_daeHallSStair"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":-768.09997558594,
+          "x":256,
+          "z":128.10000610352
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":-768.09997558594,
+          "x":512,
+          "z":128.10000610352
+        },
+        "id":"ss20_in_daeRoomSCorner"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":3904,
-          "x":3904,
-          "z":15040
+          "y":384,
+          "x":384,
+          "z":0
         },
-        "id":"in_dae_room_l_floor_01"
+        "id":"ss20_in_daeColumn01"
       },{
         "orientation":[0,0,1.5707957744598],
         "scale":1,
         "position":{
-          "y":4416,
-          "x":4416,
-          "z":15040
+          "y":256,
+          "x":768,
+          "z":0
         },
-        "id":"in_dae_room_l_corner_01"
+        "id":"ss20_in_daeRoomSSide"
       },{
         "orientation":[0,0,3.1415927410126],
         "scale":1,
         "position":{
-          "y":3904,
-          "x":4416,
-          "z":15040
+          "y":0,
+          "x":768,
+          "z":0
         },
-        "id":"in_dae_room_l_side_01"
+        "id":"ss20_in_daeRoomSCenter"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":-256,
+          "x":768,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSSide"
       },{
         "orientation":[0,0,3.1415927410126],
         "scale":1,
         "position":{
-          "y":3392,
-          "x":4416,
-          "z":15040
+          "y":256.10000610352,
+          "x":1024.0999755859,
+          "z":0.10000000149012
         },
-        "id":"in_dae_room_l_corner_01"
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":-256,
+          "x":1024,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSCorner"
       },{
         "orientation":[0,0,4.7123889923096],
         "scale":1,
         "position":{
-          "y":3392,
-          "x":3904,
-          "z":15040
+          "y":-256,
+          "x":256,
+          "z":0
         },
-        "id":"in_dae_room_l_side_01"
+        "id":"ss20_in_daeRoomSCorner"
       },{
         "orientation":[0,0,4.7123889923096],
         "scale":1,
         "position":{
-          "y":3392,
-          "x":3392,
-          "z":15040
+          "y":-256,
+          "x":512,
+          "z":0
         },
-        "id":"in_dae_room_l_corner_01"
+        "id":"ss20_in_daeRoomSEntry"
       },{
         "orientation":[0,0,4.7123889923096],
-        "scale":0.5,
-        "position":{
-          "y":3776,
-          "x":3904,
-          "z":15424
-        },
-        "id":"ex_dae_ruin_stair01_short"
-      },{
-        "orientation":[0,0,3.1415929794312],
-        "scale":0.56000000238419,
-        "position":{
-          "y":3891.5573730469,
-          "x":3908.8603515625,
-          "z":15214.198242188
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,3.1415927410126,3.1415929794312],
-        "scale":0.56000000238419,
-        "position":{
-          "y":3891.5573730469,
-          "x":3908.8603515625,
-          "z":15214.198242188
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,0,1.1920928955078e-07],
         "scale":1,
         "position":{
-          "y":3479.0300292969,
-          "x":3652.6501464844,
-          "z":15360
+          "y":-256,
+          "x":0,
+          "z":256
         },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,3.1415927410126,1.1920928955078e-07],
-        "scale":1,
-        "position":{
-          "y":3479.0300292969,
-          "x":3652.6501464844,
-          "z":15360
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,0,1.1920928955078e-07],
-        "scale":1,
-        "position":{
-          "y":3479.0300292969,
-          "x":4164.6489257813,
-          "z":15360
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,3.1415927410126,1.1920928955078e-07],
-        "scale":1,
-        "position":{
-          "y":3479.0300292969,
-          "x":4164.6489257813,
-          "z":15360
-        },
-        "id":"in_dae_platform_512_01"
+        "id":"ss20_in_daeRoomSCorner"
       },{
         "orientation":[0,0,4.7123889923096],
-        "scale":0.60000002384186,
+        "scale":1,
         "position":{
-          "y":4046.005859375,
-          "x":3909.4658203125,
-          "z":15247.803710938
+          "y":-256,
+          "x":256,
+          "z":256
         },
-        "id":"ex_dae_ruin_stair01_short"
+        "id":"ss20_in_daeRoomSEntry"
       },{
-        "orientation":[0,3.1415927410126,3.1415929794312],
-        "scale":0.56000000238419,
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
         "position":{
-          "y":4173.513671875,
-          "x":3913.3876953125,
-          "z":15038
+          "y":-256,
+          "x":512,
+          "z":256
         },
-        "id":"in_dae_platform_512_01"
+        "id":"ss20_in_daeRoomSCorner"
       },{
         "orientation":[0,0,0],
         "scale":1,
         "position":{
-          "y":3648,
-          "x":3456,
-          "z":15040
+          "y":0,
+          "x":0,
+          "z":256
         },
-        "id":"ss20_in_daeColumn01"
+        "id":"ss20_in_daeRoomSCorner"
       },{
-        "orientation":[0,0,0],
+        "orientation":[0,0,1.5707963705063],
         "scale":1,
         "position":{
-          "y":3795.4108886719,
-          "x":3814.8518066406,
-          "z":14933.469726563
+          "y":0,
+          "x":256,
+          "z":256
         },
-        "id":"ss20_in_daeColumn01"
+        "id":"ss20_in_daeRoomSSide"
       },{
-        "orientation":[0,0,0],
+        "orientation":[0,0,1.5707963705063],
         "scale":1,
         "position":{
-          "y":3648,
-          "x":4352,
-          "z":15040
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":3799.8862304688,
-          "x":3993.1586914063,
-          "z":14933
-        },
-        "id":"ss20_in_daeColumn01"
-      },{
-        "orientation":[0,0,3.1415929794312],
-        "scale":0.6700000166893,
-        "position":{
-          "y":4184.1020507813,
-          "x":3909.751953125,
-          "z":14991.079101563
-        },
-        "id":"in_dae_platform_512_01"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":4051.74609375,
-          "x":4019.9560546875,
-          "z":15261
-        },
-        "id":"in_dae_pillar_tall.max"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":4064.6298828125,
-          "x":3819.1169433594,
-          "z":15261
-        },
-        "id":"in_dae_pillar_tall.max"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":3790.7880859375,
-          "x":3822.7180175781,
-          "z":15009.512695313
-        },
-        "id":"in_dae_pillar_tall.max"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.5,
-        "position":{
-          "y":3777.4250488281,
-          "x":3987.3239746094,
-          "z":15005.952148438
-        },
-        "id":"in_dae_pillar_tall.max"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":3904,
-          "x":3904,
-          "z":15040
-        },
-        "id":"in_dae_room_l_roof_03"
-      },{
-        "orientation":[0,0,0],
-        "scale":0.71000003814697,
-        "position":{
-          "y":3904,
-          "x":3904,
-          "z":15936
-        },
-        "id":"ss20_light_dae_censer_red"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":3392,
-          "x":3392,
-          "z":15040
-        },
-        "id":"ss20_dae_brazier00"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":3392,
-          "x":4416,
-          "z":15040
-        },
-        "id":"ss20_dae_brazier00"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":4416,
-          "x":4416,
-          "z":15040
-        },
-        "id":"ss20_dae_brazier00"
-      },{
-        "orientation":[0,0,0],
-        "scale":1,
-        "position":{
-          "y":4416,
-          "x":3392,
-          "z":15040
+          "y":-128,
+          "x":384,
+          "z":0
         },
         "id":"ss20_dae_brazier00"
       },{
         "orientation":[0,0,1.5707963705063],
         "scale":1,
         "position":{
-          "y":5056,
-          "x":3904,
-          "z":15040
+          "y":327,
+          "x":196,
+          "z":0
+        },
+        "id":"ss20_dae_stone_shelves02"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":384,
+          "x":256,
+          "z":0
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":384,
+          "x":512,
+          "z":0
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,3.1415927410126,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":384,
+          "x":512,
+          "z":402.73565673828
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,3.1415927410126,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":384.10000610352,
+          "x":256.10000610352,
+          "z":402.13598632813
+        },
+        "id":"ss20_in_daeHallSCap"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":246,
+          "x":384,
+          "z":-776
+        },
+        "id":"in_dae_pillar_tall.max"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":-121.55432891846,
+          "x":896,
+          "z":0
+        },
+        "id":"ss20_dae_brazier00"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":320,
+          "x":768,
+          "z":81.572326660156
+        },
+        "id":"ss20_dae_Closet_02"
+      },{
+        "orientation":[0,0,5.4977874755859],
+        "scale":1,
+        "position":{
+          "y":323.48648071289,
+          "x":189.21868896484,
+          "z":169.08337402344
+        },
+        "id":"ss20_o_daeChest01"
+      },{
+        "orientation":[0,0,2.3561944961548],
+        "scale":1,
+        "position":{
+          "y":296.39801025391,
+          "x":161.32418823242,
+          "z":120.59971618652
+        },
+        "id":"ss20_o_daeChest02"
+      },{
+        "orientation":[0,0,2.3561944961548],
+        "scale":1,
+        "position":{
+          "y":347.18756103516,
+          "x":213.22927856445,
+          "z":120.59971618652
+        },
+        "id":"ss20_o_daeChest02"
+      },{
+        "orientation":[0,0,2.3561944961548],
+        "scale":1,
+        "position":{
+          "y":347.22091674805,
+          "x":213.50132751465,
+          "z":72.116012573242
+        },
+        "id":"ss20_o_daeChest02"
+      },{
+        "orientation":[0,0,2.3561944961548],
+        "scale":1,
+        "position":{
+          "y":296.4313659668,
+          "x":161.59622192383,
+          "z":72.116012573242
+        },
+        "id":"ss20_o_daeChest02"
+      },{
+        "orientation":[0,0,2.3561944961548],
+        "scale":1,
+        "position":{
+          "y":295.59036254883,
+          "x":162.56230163574,
+          "z":23.632278442383
+        },
+        "id":"ss20_o_daeChest02"
+      },{
+        "orientation":[0,0,2.3561944961548],
+        "scale":1,
+        "position":{
+          "y":347.01736450195,
+          "x":213.46557617188,
+          "z":23.632278442383
+        },
+        "id":"ss20_o_daeChest02"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-320,
+          "x":840,
+          "z":32.000034332275
+        },
+        "id":"ss20_dae_crate"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-320,
+          "x":768,
+          "z":160.00003051758
+        },
+        "id":"ss20_dae_crate"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-320,
+          "x":696,
+          "z":31.999988555908
+        },
+        "id":"ss20_dae_crate"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-320,
+          "x":795.52801513672,
+          "z":96.000030517578
+        },
+        "id":"ss20_dae_crate"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-320,
+          "x":723.52801513672,
+          "z":96.000022888184
+        },
+        "id":"ss20_dae_crate"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-320,
+          "x":768,
+          "z":32.000022888184
+        },
+        "id":"ss20_dae_crate"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":64,
+          "x":0,
+          "z":292.65551757813
+        },
+        "id":"ss20_dae_crate_open_05"
+      },{
+        "orientation":[0,0,5.0831866264343],
+        "scale":1,
+        "position":{
+          "y":12.021026611328,
+          "x":-86.525207519531,
+          "z":262.14776611328
+        },
+        "id":"ss20_misc_daeBoethiah"
+      },{
+        "orientation":[4.7831864356995,0.10000000149012,3.0999999046326],
+        "scale":1,
+        "position":{
+          "y":9.9248199462891,
+          "x":-53.974060058594,
+          "z":271.583984375
+        },
+        "id":"ss20_misc_daeMalacath"
+      },{
+        "orientation":[1.6000007390976,6.08318567276,5.9831857681274],
+        "scale":1,
+        "position":{
+          "y":-18.999877929688,
+          "x":-50.755615234375,
+          "z":266.47863769531
+        },
+        "id":"ss20_misc_daeMehrunesDagon"
+      },{
+        "orientation":[5.5831861495972,1.8000003099442,0],
+        "scale":1,
+        "position":{
+          "y":-9.9261779785156,
+          "x":-74.396667480469,
+          "z":267.88220214844
+        },
+        "id":"ss20_misc_daeMolagBal"
+      },{
+        "orientation":[1.6000002622604,6.1831855773926,5.9831857681274],
+        "scale":1,
+        "position":{
+          "y":3.931884765625,
+          "x":-71.519165039063,
+          "z":270.31079101563
+        },
+        "id":"ss20_misc_daeSheogorath"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":64,
+          "x":64,
+          "z":292.65551757813
+        },
+        "id":"ss20_dae_crate_open_05"
+      },{
+        "orientation":[5.0614547729492,0,0],
+        "scale":1,
+        "position":{
+          "y":79.404571533203,
+          "x":65.435302734375,
+          "z":293.98211669922
+        },
+        "id":"ss20_pillow02"
+      },{
+        "orientation":[5.0614547729492,0,0],
+        "scale":1,
+        "position":{
+          "y":67.519134521484,
+          "x":73.832946777344,
+          "z":293.98211669922
+        },
+        "id":"ss20_pillow_01"
+      },{
+        "orientation":[5.0614547729492,0,0],
+        "scale":1,
+        "position":{
+          "y":48.907775878906,
+          "x":52.347778320313,
+          "z":295.17065429688
+        },
+        "id":"ss20_pillow_01"
+      },{
+        "orientation":[5.0614547729492,0,0],
+        "scale":1,
+        "position":{
+          "y":60.074066162109,
+          "x":59.390930175781,
+          "z":295.17065429688
+        },
+        "id":"ss20_pillow02"
+      },{
+        "orientation":[0,0,4.7123894691467],
+        "scale":1,
+        "position":{
+          "y":-64,
+          "x":-64,
+          "z":292.65551757813
+        },
+        "id":"ss20_dae_crate_open_05"
+      },{
+        "orientation":[0,0,4.7123894691467],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":-64,
+          "z":292.65551757813
+        },
+        "id":"ss20_dae_crate_open_05"
+      },{
+        "orientation":[0,0,5.8831858634949],
+        "scale":1,
+        "position":{
+          "y":7.45654296875,
+          "x":-57.836303710938,
+          "z":267.56213378906
+        },
+        "id":"ss20_dea_cloth02"
+      },{
+        "orientation":[0,0,5.383186340332],
+        "scale":1,
+        "position":{
+          "y":7.45654296875,
+          "x":-57.836303710938,
+          "z":266.56213378906
+        },
+        "id":"ss20_dea_cloth03"
+      },{
+        "orientation":[0,0,6.08318567276],
+        "scale":1,
+        "position":{
+          "y":7.45654296875,
+          "x":-57.836303710938,
+          "z":265.56213378906
+        },
+        "id":"ss20_dea_cloth04"
+      },{
+        "orientation":[0,0,0.20000001788139],
+        "scale":1,
+        "position":{
+          "y":7.45654296875,
+          "x":-57.836303710938,
+          "z":264.56213378906
+        },
+        "id":"ss20_dea_cloth05"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":7.45654296875,
+          "x":-57.836303710938,
+          "z":263.56213378906
+        },
+        "id":"ss20_dea_cloth01"
+      },{
+        "orientation":[0,0,0.5],
+        "scale":1,
+        "position":{
+          "y":-74.350311279297,
+          "x":-54.398620605469,
+          "z":270.23980712891
+        },
+        "id":"misc_com_basket_01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-63.137359619141,
+          "x":-82.44287109375,
+          "z":277.74237060547
+        },
+        "id":"misc_com_bottle_01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-76.967895507813,
+          "x":-83.433837890625,
+          "z":278.05096435547
+        },
+        "id":"misc_com_bottle_02"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-89.124786376953,
+          "x":-77.163330078125,
+          "z":279.94775390625
+        },
+        "id":"Misc_Com_Bottle_04"
+      },{
+        "orientation":[5.5501470565796,0,0],
+        "scale":1,
+        "position":{
+          "y":-77.613983154297,
+          "x":-46.756713867188,
+          "z":307.14288330078
+        },
+        "id":"misc_com_broom_01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-73.139068603516,
+          "x":-54.198669433594,
+          "z":266.41003417969
+        },
+        "id":"AB_Misc_DeClayFlask_01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-74.072387695313,
+          "x":-53.900451660156,
+          "z":267.52319335938
+        },
+        "id":"misc_com_redware_bowl_01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-73.660736083984,
+          "x":-53.906066894531,
+          "z":266.43322753906
+        },
+        "id":"misc_com_wood_bowl_02"
+      },{
+        "orientation":[0,0,5.6831860542297],
+        "scale":1,
+        "position":{
+          "y":-45.344604492188,
+          "x":-81.550354003906,
+          "z":273.8681640625
+        },
+        "id":"misc_lw_flask"
+      },{
+        "orientation":[0,0,0.70000004768372],
+        "scale":1,
+        "position":{
+          "y":322.59936523438,
+          "x":184.12261962891,
+          "z":121.68316650391
+        },
+        "id":"ss20_dae_candleBLK_02"
+      },{
+        "orientation":[0,0,0.70000004768372],
+        "scale":1,
+        "position":{
+          "y":323.39666748047,
+          "x":184.29986572266,
+          "z":73.200218200684
+        },
+        "id":"ss20_dae_candleBLK_02"
+      },{
+        "orientation":[0,0,0.78539818525314],
+        "scale":1,
+        "position":{
+          "y":324.08099365234,
+          "x":185.25213623047,
+          "z":24.700000762939
+        },
+        "id":"ss20_dae_candleBLK_02"
+      },{
+        "orientation":[0,0,3.1415929794312],
+        "scale":1,
+        "position":{
+          "y":512,
+          "x":768,
+          "z":256
+        },
+        "id":"ss20_in_daeHallSStair"
+      },{
+        "orientation":[0,0,1.5707964897156],
+        "scale":1,
+        "position":{
+          "y":768.09997558594,
+          "x":1024,
+          "z":128.10000610352
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,6.283185005188],
+        "scale":1,
+        "position":{
+          "y":768.09997558594,
+          "x":768,
+          "z":128.10000610352
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,6.283185005188],
+        "scale":1,
+        "position":{
+          "y":512,
+          "x":1024,
+          "z":128
+        },
+        "id":"ss20_in_daeHallSStair"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":1024,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSSide"
+      },{
+        "orientation":[0,0,6.283185005188],
+        "scale":1,
+        "position":{
+          "y":256,
+          "x":512,
+          "z":256
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,4.7123894691467],
+        "scale":1,
+        "position":{
+          "y":-6.103515625e-05,
+          "x":768,
+          "z":256
+        },
+        "id":"ss20_in_daeRoomSSide"
+      },{
+        "orientation":[0,0,1.5707964897156],
+        "scale":1,
+        "position":{
+          "y":256,
+          "x":768,
+          "z":256
         },
         "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,1.5707964897156],
+        "scale":1,
+        "position":{
+          "y":255.99987792969,
+          "x":1024,
+          "z":256
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,3.1415929794312],
+        "scale":1,
+        "position":{
+          "y":-6.103515625e-05,
+          "x":1024,
+          "z":256
+        },
+        "id":"ss20_in_daeRoomSCorner"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":512,
+          "z":256
+        },
+        "id":"ss20_in_daeRoomSCenter"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-128,
+          "x":640,
+          "z":256
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":128,
+          "x":384,
+          "z":256
+        },
+        "id":"ss20_in_daeColumn01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":0,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":0,
+          "x":0,
+          "z":0.10000000149012
+        },
+        "id":"ss20_in_daeHallS01"
+      },{
+        "orientation":[0,0,4.7123894691467],
+        "scale":1,
+        "position":{
+          "y":12.353742599487,
+          "x":1081.3635253906,
+          "z":152.27896118164
+        },
+        "id":"ss20_furn_daeShelf01"
+      },{
+        "orientation":[0,0,1.1920928955078e-07],
+        "scale":1,
+        "position":{
+          "y":9.9020414352417,
+          "x":1101.6004638672,
+          "z":270.79632568359
+        },
+        "id":"ss20_dae_chest_large_01"
+      },{
+        "orientation":[0,0,4.7123894691467],
+        "scale":1,
+        "position":{
+          "y":12.353742599487,
+          "x":1081.3640136719,
+          "z":256.27862548828
+        },
+        "id":"ss20_furn_daeShelf01"
+      },{
+        "orientation":[0,0,1.1920928955078e-07],
+        "scale":1,
+        "position":{
+          "y":1.8831177949905,
+          "x":1109.1070556641,
+          "z":374.79595947266
+        },
+        "id":"ss20_dae_chest_large_01"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":256,
+          "x":1024,
+          "z":0
+        },
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":841,
+          "x":1019,
+          "z":64
+        },
+        "id":"ss20_furn_daeShelf02"
+      },{
+        "orientation":[0,0,3.1415927410126],
+        "scale":1,
+        "position":{
+          "y":841,
+          "x":773,
+          "z":64
+        },
+        "id":"ss20_furn_daeShelf02"
+      },{
+        "orientation":[0,0,6.283185005188],
+        "scale":1,
+        "position":{
+          "y":-840.40881347656,
+          "x":506.17684936523,
+          "z":64
+        },
+        "id":"ss20_furn_daeShelf02"
+      },{
+        "orientation":[0,0,6.283185005188],
+        "scale":1,
+        "position":{
+          "y":-840.40881347656,
+          "x":260.17684936523,
+          "z":64
+        },
+        "id":"ss20_furn_daeShelf02"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-83.36483001709,
+          "x":992.83728027344,
+          "z":570
+        },
+        "id":"ss20_in_daeCrackFloor03"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":768,
+          "x":768,
+          "z":128
+        },
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":-768,
+          "x":256,
+          "z":128
+        },
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":-768,
+          "x":512,
+          "z":128
+        },
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,4.7123889923096],
+        "scale":1,
+        "position":{
+          "y":768,
+          "x":1024,
+          "z":128
+        },
+        "id":"ss20_in_daeRoomSEntry"
+      },{
+        "orientation":[0,0,1.5707963705063],
+        "scale":1,
+        "position":{
+          "y":256,
+          "x":640,
+          "z":-0.73953121900558
+        },
+        "id":"ss20_light_daeLamp01_256"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-102.75900268555,
+          "x":513.875,
+          "z":570
+        },
+        "id":"ss20_in_daeCrackFloor03"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":768,
+          "x":896,
+          "z":345.93701171875
+        },
+        "id":"ss20_light_dae_chnd_01"
+      },{
+        "orientation":[0,0,0],
+        "scale":1,
+        "position":{
+          "y":-768,
+          "x":384,
+          "z":345.4189453125
+        },
+        "id":"ss20_light_dae_chnd_01"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":128,
+          "x":768,
+          "z":465.71084594727
+        },
+        "id":"ss20_light_wellClaw03_room"
+      },{
+        "orientation":[0,0,0],
+        "scale":0.5,
+        "position":{
+          "y":-128,
+          "x":256,
+          "z":459.09802246094
+        },
+        "id":"ss20_light_wellClaw03_room"
       }]
   },
   "menuKey":{
