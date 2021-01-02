@@ -2,8 +2,8 @@ local this  = {}
 this.config = require("ss20.config")
 local modName = this.config.modName
 this.mcmConfig = mwse.loadConfig(this.config.modName, this.config.mcmDefaultValues)
-
-
+this.data = {}
+ 
 local logLevel = this.mcmConfig.logLevel
 mwse.log("loglevel")
 local logger = require("ss20.logger")
