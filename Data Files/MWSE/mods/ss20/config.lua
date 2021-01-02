@@ -565,5 +565,50 @@ local config = {
             }
         },
     },
+    
+    offerings = {
+        --booze
+        potion_local_liquor_01 = true,
+        potion_local_brew_01 = true,
+        potion_comberry_wine_01 = true,
+        
+        --gold
+        gold_025 = true,
+        gold_100 = true,
+    
+        --potions
+        p_fortify_agility_q = true,
+        p_reflection_c = true,
+        p_restore_health_q = true,
+        p_restore_strength_s = true,
+        p_restore_magicka_q = true,
+        potion_skooma_01 = true,
+        potion_t_bug_musk_01 = true,
+    
+        --jewels
+        ingred_diamond_01 = true,
+        ingred_ruby_01 = true,
+        ingred_emerald_01 = true,
+        ab_ingmine_topaz_01 = true,
+        ingred_pearl_01 = true,
+        AB_IngMine_Amethyst_01 = true,
+        AB_IngMine_Peridot_01 = true,
+    
+        --ingredients
+        ingred_fire_salts_01 = true,
+        ingred_void_salts_01 = true,
+        ingred_raw_ebony_01 = true,
+        ingred_daedra_skin_01 = true,
+        ingred_dreugh_wax_01 = true,
+        ['ingred_hackle-lo_leaf_01'] = true,
+    
+        --jewelery
+        ab_c_extravagantamulet01 = true,
+        ab_c_exquisiteamulet01 = true,
+        expensive_amulet_02 = true,
+    
+        --stone!
+        ss20_w_stone = true
+    }
 }
 return config
