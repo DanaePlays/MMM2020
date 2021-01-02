@@ -1,9 +1,9 @@
 local prices = {
-    clutter = 100,
+    clutter = 50,
     furniture = 200,
-    container = 1000,
-    activator = 5000,
-    vernaccus = 10000,
+    container = 500,
+    activator = 2000,
+    vernaccus = 5000,
     trophy01 = 50000,
     trophy02 = 100000,
     trophy03 = 1000000,
@@ -40,8 +40,8 @@ local config = {
     shrineTeleportEffectId = 'ss20VernTeleportEffect',
     shrineTeleportSpellId = 'ss20VernaccusTeleport',
 
-    soulsAtLvl1 = 50,
-    soulsAtLvl100 = 4000,
+    soulsAtLvl1 = 100,
+    soulsAtLvl100 = 5000,
     soulMultipliers = {
         [tes3.objectType.creature] = 1,
         [tes3.objectType.npc] = 5
@@ -67,7 +67,7 @@ local config = {
     shrineTeleportPosition = {
         cell = "Shrine of Vernaccus",
         orientation = {0,0,3.14},
-        position = {-8.32,5260.69,194.00},
+        position = {1.12,6382.27,194.00},
         reference = tes3.player
     },
     horavathaTeleportPosition = {

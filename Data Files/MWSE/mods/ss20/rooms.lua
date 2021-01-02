@@ -312,7 +312,9 @@ local function openBuildRoomMenu()
         listBlock.widthProportional = 1.0
         listBlock.borderTop = 10
         --populate listBlock with rooms
-
+        table.sort(config.rooms, function(a, b)
+            return a.cost < b.cost
+        end)
         for _, room in ipairs(config.rooms) do
             makeRoomSelectButton(room, listBlock, targetWall)
         end
@@ -365,9 +367,7 @@ local function openBuildRoomMenu()
     closeButton:register("mouseClick", function()
         closeRoomMenu()
     end)
-    table.sort(config.rooms, function(a, b)
-        return a.cost < b.cost
-    end)
+
     updateSelectedRoom(config.rooms[1])
     menu:updateLayout()
     tes3ui.enterMenuMode(roomMenuIds.menu)

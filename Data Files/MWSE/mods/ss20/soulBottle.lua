@@ -89,6 +89,9 @@ local function onDeath(e)
     if tes3.player.object.inventory:contains("ss20_Bottle_of_Souls") then
         local multi = config.soulMultipliers[e.reference.baseObject.objectType]
         if multi then
+            local hasNoSoul = e.reference.object.type == tes3.creatureType.daedra
+                or e.reference.object.type == tes3.creatureType.undead
+            if hasNoSoul then return end
             local shardsCaptured = math.floor(multi * math.remap(e.reference.object.level, 1, 100, config.soulsAtLvl1, config.soulsAtLvl100))
             if common.mcmConfig.showSoulMessage then
                 tes3.messageBox("%d soul shards captured!", shardsCaptured)

@@ -13,12 +13,14 @@ local animGroups = {
     closing = tes3.animationGroup.idle4,
 }
 -----------------------------------------
+local musicBoxTimer
 
 local common = require('ss20.common')
 local musicBoxes = {}--for object invalidation
 
 local function closeMusicBox(musicBox)
     if musicBoxes[musicBox] == nil then return end
+    if musicBoxTimer then musicBoxTimer:cancel() end
     common.log:debug("Stopping Music Box")
     mwscript.stopSound{ reference = musicBox, sound = trackId }
     tes3.playSound{ reference = musicBox, soundPath = closeLidSound }
@@ -57,7 +59,8 @@ local function playMusicBox(musicBox)
         loopCount = 1
     })
     common.log:debug("Opening Music Box")
-    timer.start{
+    if musicBoxTimer then musicBoxTimer:cancel() end
+    musicBoxTimer = timer.start{
         duration = openingTime,
         callback = function()
             if musicBoxes[musicBox] then
@@ -71,7 +74,7 @@ local function playMusicBox(musicBox)
                 common.log:debug("Started Music Box Sound")
 
                 --close music box when track finishes playing
-                timer.start{
+                musicBoxTimer = timer.start{
                     type = timer.real,
                     duration = trackDuration,
                     callback = function() 
