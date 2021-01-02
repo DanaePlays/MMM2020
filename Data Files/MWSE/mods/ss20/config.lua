@@ -352,7 +352,7 @@ local config = {
             id = 'containers_02',
             name = "Furniture Pack",
             cost = 1000,
-            description = "Desks, closets and drawers",
+            description = "Desks, closets, drawers and platters",
             items = {
                 { id = 'ss20_dae_Closet_01', name = 'Closet 01' , cost = prices.container},
                 { id = 'ss20_dae_Closet_02', name = 'Closet 02' , cost = prices.container},
@@ -360,6 +360,8 @@ local config = {
                 { id = 'ss20_dae_desk01', name = 'Desk' , cost = prices.container},
                 { id = 'ss20_dae_table01', name = 'Table with drawers' , cost = prices.container},
                 { id = 'ss20_dae_table02', name = 'Small table with drawer' , cost = prices.container},
+                { id = "ss20_misc_stone_platter_plain", name = "Plain stone platter" , cost = prices.furniture },
+                { id = "ss20_misc_stone_platter_bug", name = "Decorated stone platter" , cost = prices.furniture },
             }
         },
         {
