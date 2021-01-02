@@ -19,7 +19,7 @@ require('ss20.teleport')
 require('ss20.tooltip')
 require('ss20.shrink')
 require('ss20.blockWaterSound')
-
+require('ss20.offering')
 require('ss20.musicBox')
 --MCM MENU
 require('ss20.mcm')
